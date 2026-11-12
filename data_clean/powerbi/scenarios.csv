@@ -1,0 +1,6 @@
+order,scenario,action,people,avoided_resignations,annual_benefit,annual_cost,net_annual_benefit,roi_pct,recommended
+1,Staff to budget (no freeze),Keep hiring to approved headcount so overtime stays at 2024 levels (cost = salaries the freeze saved less the extra overtime it paid),,45.4286,1167358.1062,-256489.1112,1423847.2174,,Yes
+2,Hybrid exceptions,Let people moved off remote in Sep 2024 apply for remote exceptions (half take it up),196.0,18.4887,525224.4716,0.0,525224.4716,,Yes
+3,Pay correction,Lift everyone paid under 90 % of band midpoint to 90 %,373.0,63.9252,1727618.1353,1250636.5,476981.6353,38.1391,Yes
+4,Fix manager hot spots,Coaching or re-assignment for the 12 flagged managers (assume half the excess goes),12.0,13.8833,368994.7887,72000.0,296994.7887,412.4928,Yes
+5,Promote stalled top performers,Promote people rated 4-5 who have waited 3+ years (10 % rise),198.0,18.4286,551362.0886,1243723.85,-692361.7614,-55.6684,No

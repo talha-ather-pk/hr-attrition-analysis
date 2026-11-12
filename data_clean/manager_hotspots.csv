@@ -1,0 +1,283 @@
+manager_id,person_months,resignations,expected,department,manager_support,ratio_raw,ratio_shrunk,manager,employment_status,excess_resignations,hotspot,true_bad_manager
+OD11847,333,16,4.796,Sales & Marketing,2.82,3.336,2.274,Oscar Evans,Active,11.2,1,1
+OD10060,332,14,5.542,Engineering,2.952,2.526,1.886,Fatima Roberts,Active,8.5,1,1
+OD10061,324,16,6.622,Engineering,2.951,2.416,1.883,Liam Ward,Active,9.4,1,1
+OD11458,320,12,4.597,Customer Support,2.974,2.61,1.861,Adam Hughes,Terminated,7.4,1,1
+OD10044,343,14,5.932,Engineering,2.938,2.36,1.812,Hannah Clarke,Active,8.1,1,1
+OD11206,342,11,4.326,Delivery,2.945,2.543,1.802,Tomasz Young,Active,6.7,1,1
+OD11864,313,12,5.179,Sales & Marketing,2.942,2.317,1.743,Fatima Williams,Active,6.8,1,1
+OD11440,355,11,5.051,Customer Support,3.928,2.178,1.657,Daniel Rossi,Active,5.9,1,0
+OD13355,117,5,1.452,Data & AI,3.226,3.444,1.651,Charlie Khan,Active,3.5,1,1
+OD12096,336,8,3.278,Corporate Services,3.049,2.44,1.649,Rachel Begum,Active,4.7,1,1
+OD11457,305,11,5.214,Customer Support,2.898,2.11,1.628,Luca Wang,Terminated,5.8,1,1
+OD10516,244,10,4.696,Engineering,2.963,2.13,1.61,Ella Young,Active,5.3,1,1
+OD10348,280,10,4.763,Engineering,3.914,2.1,1.598,Ava Thompson,Active,5.2,0,0
+OD12098,343,8,3.533,Corporate Services,2.786,2.264,1.593,Poppy Hussain,Active,4.5,0,1
+OD11443,345,11,5.64,Customer Support,3.865,1.95,1.556,Freya Ward,Terminated,5.4,0,0
+OD11028,205,6,2.515,Product & Design,3.929,2.385,1.535,Callum Shah,Terminated,3.5,0,0
+OD10017,365,12,6.428,Engineering,2.904,1.867,1.534,Ayesha Davies,Active,5.6,0,1
+OD12362,295,11,6.154,Engineering,3.96,1.788,1.477,Sarah Rossi,Active,4.8,0,0
+OD11429,360,9,4.881,Customer Support,3.946,1.844,1.464,Ali Martin,Active,4.1,0,0
+OD12084,363,7,3.619,Corporate Services,2.794,1.934,1.444,Mia Singh,Active,3.4,0,1
+OD10835,225,6,3.021,Data & AI,3.935,1.986,1.424,Zofia Patel,Terminated,3.0,0,0
+OD10010,364,12,7.262,Engineering,3.819,1.652,1.421,Zofia Moore,Active,4.7,0,0
+OD11425,148,5,2.497,Customer Support,3.871,2.002,1.385,James Jackson,Terminated,2.5,0,0
+OD10448,58,3,1.056,Engineering,3.362,2.842,1.385,Ethan Wright,Terminated,1.9,0,1
+OD10015,354,13,8.411,Engineering,2.93,1.546,1.37,Ella Wood,Active,4.6,0,1
+OD10005,365,10,6.229,Engineering,3.875,1.605,1.369,Thomas Walker,Active,3.8,0,0
+OD10018,362,10,6.229,Engineering,3.945,1.605,1.369,Harry King,Active,3.8,0,0
+OD13406,111,3,1.121,Data & AI,3.843,2.676,1.367,Daniel Jones,Active,1.9,0,0
+OD10828,362,8,4.941,Data & AI,4.003,1.619,1.342,Leo Clarke,Active,3.1,0,0
+OD10022,219,7,4.198,Engineering,3.921,1.667,1.342,Emily King,Terminated,2.8,0,0
+OD11026,70,3,1.225,Product & Design,3.694,2.449,1.34,Chloe Hussain,Terminated,1.8,0,0
+OD11427,366,9,5.724,Customer Support,3.829,1.572,1.337,Anjali Williams,Active,3.3,0,0
+OD10831,359,8,5.007,Data & AI,3.96,1.598,1.332,Thomas Martin,Active,3.0,0,0
+OD13304,127,5,2.763,Customer Support,3.967,1.809,1.331,Daniel Young,Active,2.2,0,0
+OD10028,362,9,5.852,Engineering,3.853,1.538,1.32,Kwame Okafor,Active,3.1,0,0
+OD11023,339,8,5.105,Product & Design,3.898,1.567,1.318,Jack Campbell,Active,2.9,0,0
+OD10029,366,9,5.913,Engineering,3.975,1.522,1.311,Michael MacDonald,Active,3.1,0,0
+OD11424,368,9,5.953,Customer Support,3.788,1.512,1.306,Jacob Thompson,Active,3.0,0,0
+OD10019,365,10,6.734,Engineering,3.896,1.485,1.304,Sean Mensah,Active,3.3,0,0
+OD11845,350,7,4.452,Sales & Marketing,3.88,1.572,1.302,Ella Walker,Active,2.5,0,0
+OD11572,125,4,2.235,Customer Support,3.092,1.79,1.283,Priya Green,Active,1.8,0,1
+OD11196,365,7,4.661,Delivery,3.916,1.502,1.27,Laura Moore,Active,2.3,0,0
+OD10045,351,9,6.239,Engineering,2.907,1.442,1.27,Priya Campbell,Active,2.8,0,1
+OD11017,364,8,5.536,Product & Design,3.834,1.445,1.258,Muhammad Ali,Active,2.5,0,0
+OD10025,359,10,7.201,Engineering,2.915,1.389,1.25,Adam Young,Active,2.8,0,1
+OD11012,373,7,4.842,Product & Design,3.949,1.446,1.244,Priya Morris,Active,2.2,0,0
+OD11426,372,8,5.698,Customer Support,3.838,1.404,1.237,Priya Murphy,Active,2.3,0,0
+OD11432,355,8,5.716,Customer Support,3.902,1.4,1.235,Niamh Singh,Terminated,2.3,0,0
+OD10062,339,8,5.725,Engineering,3.897,1.397,1.234,Michael White,Active,2.3,0,0
+OD11460,336,8,5.735,Customer Support,3.871,1.395,1.233,Mei Hughes,Active,2.3,0,0
+OD11844,352,7,4.955,Sales & Marketing,3.81,1.413,1.228,Amelia Rossi,Active,2.0,0,0
+OD10011,127,4,2.519,Engineering,3.825,1.588,1.227,David Young,Terminated,1.5,0,0
+OD11439,357,7,5.066,Customer Support,3.85,1.382,1.213,Samuel MacDonald,Active,1.9,0,0
+OD11848,360,7,5.092,Sales & Marketing,3.927,1.375,1.21,Laura Brown,Active,1.9,0,0
+OD11019,363,7,5.101,Product & Design,3.975,1.372,1.209,Chen Cooper,Active,1.9,0,0
+OD11213,214,4,2.627,Delivery,3.886,1.523,1.207,Ama O'Brien,Terminated,1.4,0,0
+OD11209,343,7,5.115,Delivery,2.836,1.369,1.207,Fatima Roberts,Active,1.9,0,1
+OD10567,259,7,5.12,Engineering,3.821,1.367,1.206,Aarav Moore,Active,1.9,0,0
+OD12090,176,3,1.83,Corporate Services,3.909,1.64,1.201,Zofia Brown,Terminated,1.2,0,0
+OD10199,214,5,3.497,Engineering,3.944,1.43,1.2,Isla Martin,Active,1.5,0,0
+OD11194,368,6,4.466,Delivery,3.895,1.343,1.181,Zofia King,Active,1.5,0,0
+OD12844,209,5,3.696,Engineering,3.935,1.353,1.169,Sean Walker,Active,1.3,0,0
+OD13456,58,2,1.146,Engineering,3.672,1.746,1.166,Sophia Wood,Active,0.9,0,1
+OD11450,346,7,5.522,Customer Support,3.874,1.268,1.155,Charlie Young,Active,1.5,0,0
+OD10002,370,9,7.335,Engineering,4.02,1.227,1.147,Megan Wang,Active,1.7,0,0
+OD11433,277,6,4.721,Customer Support,3.905,1.271,1.147,Jacob Murphy,Terminated,1.3,0,0
+OD11860,301,6,4.776,Sales & Marketing,3.928,1.256,1.14,Adam Evans,Terminated,1.2,0,0
+OD10058,139,4,3.054,Engineering,4.056,1.31,1.134,Ava Ali,Terminated,0.9,0,0
+OD11208,346,6,4.838,Delivery,2.919,1.24,1.132,Evie Begum,Active,1.2,0,1
+OD13251,138,4,3.075,Engineering,3.828,1.301,1.131,Aisha Davies,Active,0.9,0,0
+OD12085,367,5,3.97,Corporate Services,2.901,1.259,1.129,Isla MacDonald,Active,1.0,0,1
+OD13667,28,1,0.429,Customer Support,2.881,2.333,1.129,Grace Singh,Active,0.6,0,0
+OD10070,332,8,6.644,Engineering,3.891,1.204,1.127,Megan Hughes,Active,1.4,0,0
+OD10477,165,4,3.158,Engineering,3.872,1.267,1.118,Ethan Murphy,Active,0.8,0,0
+OD13428,81,3,2.295,Customer Support,3.986,1.307,1.112,Oscar Walker,Active,0.7,0,0
+OD12094,356,5,4.127,Corporate Services,3.854,1.212,1.107,Mei Reid,Active,0.9,0,0
+OD11411,127,2,1.436,Delivery,3.856,1.393,1.104,Jack Reid,Active,0.6,0,0
+OD11211,339,5,4.167,Delivery,2.845,1.2,1.102,Mei Chen,Active,0.8,0,1
+OD10063,341,7,5.983,Engineering,3.909,1.17,1.102,Oscar Brown,Active,1.0,0,0
+OD10825,370,6,5.143,Data & AI,3.895,1.167,1.094,Daniel Roberts,Active,0.9,0,0
+OD10035,359,9,7.922,Engineering,3.829,1.136,1.09,Thomas Green,Active,1.1,0,0
+OD10007,357,7,6.089,Engineering,3.872,1.15,1.09,Isla Jones,Terminated,0.9,0,0
+OD12195,277,4,3.375,Corporate Services,3.84,1.185,1.085,Isla Nowak,Active,0.6,0,0
+OD10020,368,9,8.006,Engineering,3.918,1.124,1.083,Noah Brown,Active,1.0,0,0
+OD11014,373,6,5.262,Product & Design,2.847,1.14,1.08,Freya Wright,Active,0.7,0,1
+OD11859,345,7,6.193,Sales & Marketing,3.833,1.13,1.079,Ama Khan,Active,0.8,0,0
+OD11428,361,7,6.199,Customer Support,3.987,1.129,1.079,Grace Clarke,Active,0.8,0,0
+OD10209,152,3,2.493,Engineering,3.926,1.203,1.078,Sophia Kowalski,Active,0.5,0,0
+OD11201,257,4,3.446,Delivery,3.01,1.161,1.074,Hassan Edwards,Terminated,0.6,0,1
+OD10286,144,3,2.516,Engineering,3.761,1.192,1.074,Aarav Shah,Terminated,0.5,0,0
+OD12621,52,1,0.664,Delivery,3.747,1.506,1.072,Fatima Thompson,Active,0.3,0,0
+OD10077,339,6,5.336,Engineering,3.883,1.125,1.071,Hannah Lewis,Active,0.7,0,0
+OD13057,182,3,2.544,Corporate Services,3.758,1.179,1.07,Anjali Chen,Active,0.5,0,0
+OD10055,62,2,1.622,Engineering,3.993,1.233,1.067,Oscar Johnson,Terminated,0.4,0,0
+OD11862,326,5,4.436,Sales & Marketing,3.894,1.127,1.067,Liam Robinson,Active,0.6,0,0
+OD10048,27,1,0.721,Engineering,,1.387,1.059,Chen Wang,Terminated,0.3,0,0
+OD11210,342,7,6.486,Delivery,3.953,1.079,1.049,Ethan Walker,Active,0.5,0,0
+OD10013,243,5,4.615,Engineering,3.894,1.084,1.045,Ella Taylor,Terminated,0.4,0,0
+OD11861,350,5,4.63,Sales & Marketing,3.806,1.08,1.043,Michael Edwards,Active,0.4,0,0
+OD11018,376,5,4.643,Product & Design,2.965,1.077,1.041,Isla Hughes,Active,0.4,0,1
+OD11852,340,6,5.639,Sales & Marketing,4.028,1.064,1.037,Ayesha Cooper,Active,0.4,0,0
+OD11024,344,6,5.647,Product & Design,3.897,1.062,1.037,Chen Turner,Active,0.4,0,0
+OD12123,98,1,0.824,Corporate Services,3.891,1.214,1.037,Charlie Mensah,Active,0.2,0,0
+OD10827,374,5,4.699,Data & AI,3.832,1.064,1.035,Samuel Baker,Active,0.3,0,0
+OD10052,39,1,0.838,Engineering,3.712,1.194,1.034,George Hill,Terminated,0.2,0,0
+OD11808,58,1,0.841,Customer Support,3.923,1.189,1.033,Oliver Wright,Terminated,0.2,0,0
+OD13561,39,1,0.844,Customer Support,4.111,1.185,1.032,Ella Martin,Active,0.2,0,0
+OD11200,237,3,2.796,Delivery,3.95,1.073,1.03,Michael Moore,Terminated,0.2,0,0
+OD11435,363,5,4.768,Customer Support,3.884,1.049,1.026,Callum Johnson,Active,0.2,0,0
+OD11193,375,6,5.757,Delivery,3.763,1.042,1.025,Jacob Shah,Active,0.2,0,0
+OD10064,35,1,0.879,Engineering,2.867,1.137,1.025,Priya Rossi,Terminated,0.1,0,1
+OD10038,363,7,6.772,Engineering,3.903,1.034,1.021,Anjali Jackson,Active,0.2,0,0
+OD10021,108,2,1.905,Engineering,4.049,1.05,1.016,Chloe Ali,Terminated,0.1,0,0
+OD11022,74,1,0.963,Product & Design,3.646,1.038,1.007,Aisha King,Terminated,0.0,0,0
+OD11444,353,7,6.922,Customer Support,3.869,1.011,1.007,Chloe Williams,Active,0.1,0,0
+OD12082,381,4,3.961,Corporate Services,3.843,1.01,1.005,Giulia Clarke,Active,0.0,0,0
+OD10074,302,7,6.996,Engineering,3.884,1.001,1.0,Mei Wilson,Terminated,0.0,0,0
+OD11448,66,1,1.0,Customer Support,3.842,1.0,1.0,Emily Singh,Terminated,0.0,0,0
+OD10822,379,5,5.024,Data & AI,3.941,0.995,0.997,Michael Walker,Active,-0.0,0,0
+OD11842,351,5,5.046,Sales & Marketing,3.935,0.991,0.995,Kwame Cooper,Active,-0.0,0,0
+OD11192,373,5,5.089,Delivery,3.918,0.982,0.99,Hannah Williams,Active,-0.1,0,0
+OD10069,337,6,6.104,Engineering,3.76,0.983,0.99,Sarah Turner,Active,-0.1,0,0
+OD10837,238,3,3.116,Data & AI,3.734,0.963,0.984,Emily Begum,Terminated,-0.1,0,0
+OD11453,341,6,6.2,Customer Support,3.856,0.968,0.98,Megan Stewart,Active,-0.2,0,0
+OD11027,344,5,5.189,Product & Design,3.89,0.963,0.979,Ali Murphy,Active,-0.2,0,0
+OD11042,10,0,0.092,Product & Design,3.729,0.0,0.977,Poppy Khan,Active,-0.1,0,0
+OD12547,9,0,0.094,Engineering,3.911,0.0,0.977,Niamh Jackson,Active,-0.1,0,0
+OD11016,363,6,6.235,Product & Design,3.946,0.962,0.977,Mei Hill,Active,-0.2,0,0
+OD13356,125,3,3.167,Customer Support,3.87,0.947,0.977,Priya Wright,Active,-0.2,0,0
+OD11459,343,6,6.242,Customer Support,3.891,0.961,0.976,Muhammad Kowalski,Active,-0.2,0,0
+OD13814,10,0,0.098,Customer Support,3.822,0.0,0.976,Hannah White,Active,-0.1,0,0
+OD12012,8,0,0.1,Sales & Marketing,3.471,0.0,0.976,Priya Singh,Active,-0.1,0,0
+OD13231,10,0,0.104,Customer Support,2.857,0.0,0.975,Arthur King,Active,-0.1,0,0
+OD10559,126,2,2.164,Engineering,3.776,0.924,0.973,Raj Wilson,Active,-0.2,0,0
+OD10037,359,6,6.309,Engineering,3.874,0.951,0.97,Oliver Wright,Active,-0.3,0,0
+OD11512,10,0,0.124,Customer Support,3.8,0.0,0.97,Oliver Cooper,Active,-0.1,0,1
+OD10057,171,3,3.24,Engineering,3.835,0.926,0.967,Emily Williams,Terminated,-0.2,0,0
+OD10841,254,3,3.251,Data & AI,3.936,0.923,0.965,James Patel,Active,-0.3,0,0
+OD13106,112,2,2.222,Engineering,3.894,0.9,0.964,Mei Begum,Terminated,-0.2,0,0
+OD10051,361,6,6.4,Engineering,3.992,0.938,0.962,Priya White,Active,-0.4,0,0
+OD10829,365,5,5.417,Data & AI,3.89,0.923,0.956,Priya Turner,Active,-0.4,0,0
+OD11015,370,5,5.439,Product & Design,3.961,0.919,0.953,Ryan Morrison,Active,-0.4,0,0
+OD12541,269,4,4.393,Product & Design,3.878,0.911,0.953,Tomasz Green,Active,-0.4,0,0
+OD13744,19,0,0.206,Customer Support,4.053,0.0,0.951,Niamh Hall,Active,-0.2,0,1
+OD10040,197,3,3.373,Engineering,3.727,0.889,0.949,Noah Roberts,Terminated,-0.4,0,0
+OD11393,255,3,3.402,Delivery,3.875,0.882,0.946,Jacob Martin,Active,-0.4,0,0
+OD13105,180,4,4.469,Engineering,3.853,0.895,0.945,Priya Lewis,Active,-0.5,0,0
+OD10054,354,7,7.662,Engineering,3.895,0.914,0.943,James Mensah,Active,-0.7,0,0
+OD10833,368,5,5.543,Data & AI,3.941,0.902,0.943,Sophia Morris,Active,-0.5,0,0
+OD11965,67,1,1.309,Sales & Marketing,4.012,0.764,0.942,Thomas Morris,Active,-0.3,0,0
+OD11221,22,0,0.264,Delivery,4.133,0.0,0.938,Daniel Nowak,Active,-0.3,0,0
+OD11849,351,5,5.598,Sales & Marketing,3.843,0.893,0.938,Oliver Moore,Active,-0.6,0,0
+OD13056,175,3,3.472,Engineering,3.905,0.864,0.937,Raj Mensah,Active,-0.5,0,0
+OD13668,27,0,0.293,Sales & Marketing,4.022,0.0,0.932,Daniel Morris,Active,-0.3,0,0
+OD10003,369,6,6.753,Engineering,3.921,0.889,0.93,Samuel Wang,Active,-0.8,0,0
+OD13745,20,0,0.301,Sales & Marketing,3.78,0.0,0.93,Ayesha Singh,Active,-0.3,0,0
+OD10043,147,2,2.453,Engineering,3.848,0.815,0.93,Muhammad Thompson,Terminated,-0.5,0,0
+OD10824,370,6,6.793,Data & AI,3.899,0.883,0.927,Giulia Ali,Active,-0.8,0,0
+OD10832,368,5,5.781,Data & AI,3.925,0.865,0.92,Aarav Ahmed,Active,-0.8,0,0
+OD11446,224,3,3.614,Customer Support,3.976,0.83,0.919,Ryan Singh,Terminated,-0.6,0,0
+OD11437,347,5,5.796,Customer Support,3.813,0.863,0.919,Tomasz Cooper,Terminated,-0.8,0,0
+OD10023,365,6,6.905,Engineering,3.808,0.869,0.917,Emily Jones,Active,-0.9,0,0
+OD11020,357,4,4.734,Product & Design,3.919,0.845,0.916,Ava Johnson,Active,-0.7,0,0
+OD13404,108,1,1.463,Customer Support,3.999,0.683,0.915,Jack Ahmed,Active,-0.5,0,0
+OD11843,359,5,5.859,Sales & Marketing,2.86,0.853,0.913,Lily Davies,Active,-0.9,0,1
+OD10009,204,3,3.669,Engineering,4.074,0.818,0.913,Arthur Thompson,Terminated,-0.7,0,0
+OD12095,346,3,3.702,Corporate Services,3.975,0.81,0.909,Charlie Wright,Active,-0.7,0,0
+OD11212,341,4,4.843,Delivery,3.944,0.826,0.905,Jack Thompson,Active,-0.8,0,0
+OD11025,27,0,0.423,Product & Design,,0.0,0.904,Chen Jackson,Terminated,-0.4,0,0
+OD11195,119,1,1.547,Delivery,3.932,0.647,0.901,Thomas Begum,Terminated,-0.5,0,0
+OD10079,335,5,5.985,Engineering,3.933,0.835,0.901,Priya Morris,Active,-1.0,0,0
+OD10823,120,1,1.592,Data & AI,3.96,0.628,0.894,Mia Murphy,Terminated,-0.6,0,0
+OD12083,40,0,0.489,Corporate Services,3.95,0.0,0.891,Thomas White,Terminated,-0.5,0,0
+OD13666,30,0,0.49,Engineering,3.911,0.0,0.891,Zofia Hussain,Active,-0.5,0,0
+OD10834,353,4,4.997,Data & AI,3.905,0.8,0.889,Mei Hughes,Active,-1.0,0,0
+OD10445,293,5,6.151,Engineering,3.829,0.813,0.887,Samuel Edwards,Active,-1.2,0,0
+OD12739,150,1,1.64,Corporate Services,3.97,0.61,0.886,Rachel Wright,Terminated,-0.6,0,0
+OD11461,36,0,0.52,Customer Support,3.778,0.0,0.885,Chen Kelly,Terminated,-0.5,0,0
+OD10024,370,5,6.171,Engineering,3.879,0.81,0.885,Sophia Morrison,Active,-1.2,0,0
+OD10068,339,5,6.239,Engineering,3.956,0.801,0.879,Aoife Cooper,Active,-1.2,0,0
+OD11204,358,4,5.114,Delivery,3.93,0.782,0.878,Giulia Hughes,Active,-1.1,0,0
+OD11449,362,4,5.146,Customer Support,3.814,0.777,0.875,Oscar Martin,Active,-1.1,0,0
+OD10027,210,4,5.202,Engineering,3.843,0.769,0.869,Chen Harrison,Terminated,-1.2,0,0
+OD10830,373,4,5.224,Data & AI,3.889,0.766,0.867,Rachel Cooper,Active,-1.2,0,0
+OD11203,364,3,4.148,Delivery,3.87,0.723,0.859,Mei Chen,Active,-1.1,0,0
+OD10046,364,5,6.494,Engineering,3.916,0.77,0.858,Ryan Scott,Active,-1.5,0,0
+OD13414,104,1,1.831,Sales & Marketing,3.895,0.546,0.857,Ali Moore,Active,-0.8,0,0
+OD11434,366,4,5.339,Customer Support,3.88,0.749,0.857,Niamh Ali,Active,-1.3,0,0
+OD10039,355,7,8.845,Engineering,3.955,0.791,0.856,Ali Chen,Active,-1.8,0,0
+OD11853,340,4,5.388,Sales & Marketing,3.984,0.742,0.852,Mei Wang,Active,-1.4,0,0
+OD11197,376,3,4.242,Delivery,3.948,0.707,0.849,Kwame O'Brien,Active,-1.2,0,0
+OD10059,348,5,6.645,Engineering,3.953,0.752,0.845,Mia Stewart,Active,-1.6,0,0
+OD10049,356,5,6.659,Engineering,3.914,0.751,0.844,Hassan Johnson,Active,-1.7,0,0
+OD11455,347,4,5.486,Customer Support,3.761,0.729,0.843,Arthur Wilson,Active,-1.5,0,0
+OD11850,282,3,4.315,Sales & Marketing,3.952,0.695,0.842,Zofia Murphy,Terminated,-1.3,0,0
+OD10041,357,6,7.883,Engineering,3.922,0.761,0.842,Ali Evans,Active,-1.9,0,0
+OD11422,377,5,6.696,Customer Support,3.906,0.747,0.841,Harry Wilson,Active,-1.7,0,0
+OD12321,76,1,1.953,Engineering,3.188,0.512,0.84,Zofia Turner,Terminated,-1.0,0,1
+OD11178,312,3,4.337,Product & Design,3.967,0.692,0.84,Jack Campbell,Terminated,-1.3,0,0
+OD11202,357,5,6.744,Delivery,3.827,0.741,0.838,Niamh Walker,Active,-1.7,0,0
+OD11454,240,3,4.38,Customer Support,3.829,0.685,0.835,Eilidh Hussain,Terminated,-1.4,0,0
+OD11851,340,3,4.389,Sales & Marketing,3.865,0.683,0.834,Laura Cooper,Terminated,-1.4,0,0
+OD11858,333,4,5.613,Sales & Marketing,3.863,0.713,0.832,Evie Johnson,Active,-1.6,0,0
+OD10032,188,3,4.45,Engineering,3.834,0.674,0.828,Aisha Johnson,Terminated,-1.4,0,0
+OD11267,50,0,0.83,Delivery,3.613,0.0,0.828,Tomasz Lewis,Terminated,-0.8,0,0
+OD13195,148,1,2.091,Engineering,3.666,0.478,0.821,Adam O'Brien,Active,-1.1,0,0
+OD10071,127,2,3.312,Engineering,3.901,0.604,0.821,Niamh Harrison,Terminated,-1.3,0,0
+OD12093,75,0,0.9,Corporate Services,4.062,0.0,0.816,Emily Morrison,Terminated,-0.9,0,0
+OD10004,378,5,7.029,Engineering,3.932,0.711,0.816,Daniel Chen,Active,-2.0,0,0
+OD10066,342,4,5.806,Engineering,3.823,0.689,0.816,Niamh Morrison,Active,-1.8,0,0
+OD10053,208,2,3.358,Engineering,3.925,0.596,0.815,Sean Edwards,Terminated,-1.4,0,0
+OD10034,40,0,0.907,Engineering,3.867,0.0,0.815,Giulia Wright,Terminated,-0.9,0,0
+OD10030,88,1,2.139,Engineering,3.765,0.468,0.815,Luca Johnson,Terminated,-1.1,0,0
+OD10826,378,4,5.845,Data & AI,3.883,0.684,0.813,Giulia Ali,Active,-1.8,0,0
+OD10075,338,6,8.307,Engineering,3.953,0.722,0.813,Isla Kowalski,Active,-2.3,0,0
+OD10026,369,5,7.09,Engineering,3.88,0.705,0.812,Lily Cooper,Active,-2.1,0,0
+OD10014,372,5,7.1,Engineering,3.992,0.704,0.811,Adam Singh,Active,-2.1,0,0
+OD10016,375,4,5.876,Engineering,3.84,0.681,0.81,Fatima Williams,Active,-1.9,0,0
+OD13405,103,1,2.173,Engineering,4.03,0.46,0.81,Jacob Harrison,Active,-1.2,0,0
+OD12097,350,2,3.411,Corporate Services,3.95,0.586,0.81,Oscar Roberts,Active,-1.4,0,0
+OD11856,344,3,4.665,Sales & Marketing,3.984,0.643,0.808,Callum Wang,Active,-1.7,0,0
+OD11199,347,3,4.747,Delivery,4.069,0.632,0.8,Chloe Kowalski,Terminated,-1.7,0,0
+OD12894,229,2,3.505,Customer Support,3.88,0.571,0.799,Ava Wilson,Active,-1.5,0,0
+OD10006,370,5,7.26,Engineering,3.901,0.689,0.799,Emily Begum,Active,-2.3,0,0
+OD11207,349,4,6.013,Delivery,3.863,0.665,0.799,Evie Turner,Active,-2.0,0,0
+OD12087,370,2,3.558,Corporate Services,3.861,0.562,0.794,Niamh Walker,Active,-1.6,0,0
+OD10791,240,3,4.849,Engineering,3.821,0.619,0.791,Thomas Wright,Active,-1.8,0,0
+OD11205,362,4,6.128,Delivery,3.797,0.653,0.79,Anjali Kelly,Active,-2.1,0,0
+OD10836,181,1,2.339,Data & AI,3.953,0.428,0.789,George Walker,Terminated,-1.3,0,0
+OD12089,120,0,1.074,Corporate Services,4.011,0.0,0.788,Oliver Turner,Terminated,-1.1,0,0
+OD10031,370,5,7.483,Engineering,3.794,0.668,0.784,Isla Jackson,Active,-2.5,0,0
+OD10008,378,5,7.492,Engineering,3.774,0.667,0.783,Luca Martin,Active,-2.5,0,0
+OD12185,338,2,3.738,Corporate Services,3.865,0.535,0.775,Aisha Wang,Active,-1.7,0,0
+OD11431,373,4,6.385,Customer Support,4.01,0.627,0.77,Grace Turner,Active,-2.4,0,0
+OD10839,345,3,5.097,Data & AI,3.829,0.589,0.769,Noah Wright,Active,-2.1,0,0
+OD10274,167,2,3.818,Engineering,3.915,0.524,0.768,Jack White,Active,-1.8,0,0
+OD11445,351,4,6.425,Customer Support,3.828,0.623,0.767,Muhammad Shah,Active,-2.4,0,0
+OD10036,80,0,1.234,Engineering,3.842,0.0,0.764,Sean Turner,Terminated,-1.2,0,0
+OD10872,171,1,2.595,Data & AI,4.122,0.385,0.758,Mei Robinson,Active,-1.6,0,0
+OD10056,347,4,6.557,Engineering,3.97,0.61,0.758,Ava Hall,Active,-2.6,0,0
+OD11310,132,1,2.621,Delivery,4.076,0.382,0.755,Isla Ward,Active,-1.6,0,0
+OD10033,361,6,9.347,Engineering,3.966,0.642,0.749,Noah Williams,Active,-3.3,0,0
+OD11854,363,3,5.353,Sales & Marketing,3.96,0.56,0.748,Rachel Evans,Active,-2.4,0,0
+OD12542,275,2,4.031,Product & Design,3.905,0.496,0.747,Mia Clarke,Active,-2.0,0,0
+OD11863,345,3,5.638,Sales & Marketing,4.006,0.532,0.726,David Chen,Active,-2.6,0,0
+OD10078,236,2,4.267,Engineering,4.018,0.469,0.726,Aarav Turner,Terminated,-2.3,0,0
+OD10838,355,3,5.777,Data & AI,3.898,0.519,0.716,Ava Evans,Active,-2.8,0,0
+OD11451,346,3,5.798,Customer Support,3.871,0.517,0.714,Muhammad Okafor,Active,-2.8,0,0
+OD11438,369,3,5.801,Customer Support,3.91,0.517,0.714,Isla Campbell,Active,-2.8,0,0
+OD12088,377,2,4.435,Corporate Services,3.857,0.451,0.711,Niamh Okafor,Active,-2.4,0,0
+OD10067,346,3,5.847,Engineering,3.918,0.513,0.711,Mia Ali,Active,-2.8,0,0
+OD10042,361,3,5.933,Engineering,3.906,0.506,0.705,Luca King,Active,-2.9,0,0
+OD11436,370,4,7.362,Customer Support,4.014,0.543,0.704,Ruby Kelly,Active,-3.4,0,0
+OD11442,238,2,4.557,Customer Support,3.897,0.439,0.701,Muhammad Wright,Terminated,-2.6,0,0
+OD11447,357,2,4.565,Customer Support,3.89,0.438,0.701,Luca Evans,Active,-2.6,0,0
+OD11855,338,3,6.049,Sales & Marketing,3.888,0.496,0.697,Giulia Wang,Terminated,-3.0,0,0
+OD10576,285,3,6.273,Engineering,3.916,0.478,0.681,Luca Murphy,Active,-3.3,0,0
+OD10047,356,3,6.308,Engineering,3.923,0.476,0.679,Aisha Davies,Active,-3.3,0,0
+OD10050,356,3,6.365,Engineering,3.859,0.471,0.675,Grace Morrison,Active,-3.4,0,0
+OD12363,312,2,4.947,Customer Support,3.884,0.404,0.671,Evie Martin,Active,-2.9,0,0
+OD11198,367,2,4.95,Delivery,3.837,0.404,0.67,Thomas Wang,Active,-3.0,0,0
+OD12092,363,1,3.474,Corporate Services,4.0,0.288,0.669,Leo Edwards,Active,-2.5,0,0
+OD13250,140,0,2.032,Product & Design,3.961,0.0,0.663,Ama Kelly,Active,-2.0,0,0
+OD10424,331,2,5.049,Engineering,3.808,0.396,0.663,Zofia Young,Active,-3.0,0,0
+OD11013,385,2,5.102,Product & Design,3.955,0.392,0.659,Thomas Jackson,Active,-3.1,0,0
+OD10072,343,3,6.637,Engineering,3.911,0.452,0.658,Rachel Wang,Active,-3.6,0,0
+OD11430,369,3,6.952,Customer Support,3.811,0.432,0.639,Samuel Cooper,Active,-4.0,0,0
+OD10065,349,2,5.413,Engineering,3.957,0.369,0.637,Ayesha Williams,Active,-3.4,0,0
+OD11441,364,4,8.59,Customer Support,3.99,0.466,0.635,Priya Ward,Active,-4.6,0,0
+OD10073,342,3,7.069,Engineering,3.825,0.424,0.632,Grace Patel,Active,-4.1,0,0
+OD11857,254,1,3.913,Sales & Marketing,3.974,0.256,0.632,Hannah Okafor,Terminated,-2.9,0,0
+OD11423,382,3,7.116,Customer Support,3.917,0.422,0.63,Grace Wang,Active,-4.1,0,0
+OD10076,347,2,5.529,Engineering,3.848,0.362,0.63,Niamh Robinson,Active,-3.5,0,0
+OD12091,361,1,3.943,Corporate Services,3.874,0.254,0.629,Raj Davies,Active,-2.9,0,0
+OD10012,376,3,7.34,Engineering,3.904,0.409,0.617,Ella Begum,Active,-4.3,0,0
+OD12786,240,1,4.143,Customer Support,3.91,0.241,0.614,Amelia Williams,Active,-3.1,0,0
+OD13196,161,1,4.289,Engineering,3.992,0.233,0.603,Ethan Harrison,Active,-3.3,0,0
+OD12086,379,1,4.328,Corporate Services,3.95,0.231,0.6,Adam Moore,Active,-3.3,0,0
+OD11452,224,0,2.75,Customer Support,3.855,0.0,0.593,Sophia O'Brien,Terminated,-2.8,0,0
+OD11021,356,1,4.604,Product & Design,3.782,0.217,0.581,Leo Martin,Active,-3.6,0,0
+OD11456,312,2,6.77,Customer Support,3.988,0.295,0.557,Megan Jackson,Terminated,-4.8,0,0
+OD11846,379,0,5.069,Sales & Marketing,3.869,0.0,0.441,Anjali Reid,Active,-5.1,0,0

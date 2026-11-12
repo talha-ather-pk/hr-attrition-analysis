@@ -1,0 +1,105 @@
+table scenarios
+	lineageTag: 6eb91cc2-0c8f-5a32-ac14-880c512d105b
+
+	column order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8341dd25-c958-5d15-8b0e-c1239d98112c
+		summarizeBy: none
+		sourceColumn: order
+
+		annotation SummarizationSetBy = User
+
+	column scenario
+		dataType: string
+		sortByColumn: order
+		lineageTag: a7fcdc62-5612-548b-b57c-84e9cd1488df
+		summarizeBy: none
+		sourceColumn: scenario
+
+		annotation SummarizationSetBy = User
+
+	column action
+		dataType: string
+		lineageTag: 0ef5c97e-3ac4-5bb1-88ad-3f12bc13c586
+		summarizeBy: none
+		sourceColumn: action
+
+		annotation SummarizationSetBy = User
+
+	column people
+		dataType: double
+		isHidden
+		lineageTag: 513f5b6c-6e18-5702-b792-e52b98c8c67a
+		summarizeBy: none
+		sourceColumn: people
+
+		annotation SummarizationSetBy = User
+
+	column avoided_resignations
+		dataType: double
+		isHidden
+		lineageTag: ea7dc50a-3226-5943-af7a-3a9d7cd8764b
+		summarizeBy: none
+		sourceColumn: avoided_resignations
+
+		annotation SummarizationSetBy = User
+
+	column annual_benefit
+		dataType: double
+		isHidden
+		lineageTag: a5d889ef-9be6-5e41-8ba3-80f1f28f1da6
+		summarizeBy: none
+		sourceColumn: annual_benefit
+
+		annotation SummarizationSetBy = User
+
+	column annual_cost
+		dataType: double
+		isHidden
+		lineageTag: 431e6a4d-07e0-5544-922d-2bed4692d357
+		summarizeBy: none
+		sourceColumn: annual_cost
+
+		annotation SummarizationSetBy = User
+
+	column net_annual_benefit
+		dataType: double
+		isHidden
+		lineageTag: 606b358c-2d17-5748-ac61-6b450a964b82
+		summarizeBy: none
+		sourceColumn: net_annual_benefit
+
+		annotation SummarizationSetBy = User
+
+	column roi_pct
+		dataType: double
+		isHidden
+		lineageTag: 14eefdc7-78b3-5315-b91a-d052f2ddfd26
+		summarizeBy: none
+		sourceColumn: roi_pct
+
+		annotation SummarizationSetBy = User
+
+	column recommended
+		dataType: string
+		lineageTag: bc6606c9-0f82-59be-b29c-55910edf684c
+		summarizeBy: none
+		sourceColumn: recommended
+
+		annotation SummarizationSetBy = User
+
+	partition scenarios = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "scenarios.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"order", "scenario", "action", "people", "avoided_resignations", "annual_benefit", "annual_cost", "net_annual_benefit", "roi_pct", "recommended"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"order", Int64.Type}, {"scenario", type text}, {"action", type text}, {"people", type number}, {"avoided_resignations", type number}, {"annual_benefit", type number}, {"annual_cost", type number}, {"net_annual_benefit", type number}, {"roi_pct", type number}, {"recommended", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

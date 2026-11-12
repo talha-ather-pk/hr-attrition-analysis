@@ -1,0 +1,259 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "975a659352f45c26bf67",
+  "position": {
+    "x": 24,
+    "y": 473,
+    "z": 6200,
+    "height": 231,
+    "width": 640,
+    "tabOrder": 6200
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_event"
+                    }
+                  },
+                  "Property": "effective_date"
+                }
+              },
+              "queryRef": "fact_event.effective_date",
+              "nativeQueryRef": "effective_date",
+              "displayName": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_event"
+                    }
+                  },
+                  "Property": "event_type"
+                }
+              },
+              "queryRef": "fact_event.event_type",
+              "nativeQueryRef": "event_type",
+              "displayName": "Event"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_event"
+                    }
+                  },
+                  "Property": "job_title"
+                }
+              },
+              "queryRef": "fact_event.job_title",
+              "nativeQueryRef": "job_title",
+              "displayName": "Job title"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_event"
+                    }
+                  },
+                  "Property": "work_mode"
+                }
+              },
+              "queryRef": "fact_event.work_mode",
+              "nativeQueryRef": "work_mode",
+              "displayName": "Work mode"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_event"
+                    }
+                  },
+                  "Property": "manager"
+                }
+              },
+              "queryRef": "fact_event.manager",
+              "nativeQueryRef": "manager",
+              "displayName": "Manager"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_event"
+                  }
+                },
+                "Property": "effective_date"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "135.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_event.effective_date"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115.0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_event.event_type"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115.0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_event.job_title"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115.0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_event.work_mode"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115.0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_event.manager"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'HR events since 2023'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'From the effective-dated job history'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

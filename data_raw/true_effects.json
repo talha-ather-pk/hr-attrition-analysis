@@ -1,0 +1,3189 @@
+{
+  "company": "Orrin Digital Ltd (fictional UK software and IT services company)",
+  "period": "Jan 2023 - Dec 2025 (monthly simulation)",
+  "hazard_model": {
+    "form": "monthly logit P(resign) for staff not already on notice",
+    "intercept": -5.07,
+    "coefficients": {
+      "overtime_high": 0.88,
+      "below_band": 0.64,
+      "promotion_stalled": 0.47,
+      "low_engagement": 0.47,
+      "bad_manager": 0.59,
+      "rto_mandate": 0.53,
+      "first_year": 0.41,
+      "long_tenure": -0.3,
+      "age_under_30": 0.2,
+      "age_55_plus": -0.4,
+      "manager_level": -0.25,
+      "head_level": -1.0,
+      "rating_1_2": 0.15,
+      "rating_5": -0.1
+    },
+    "odds_ratios": {
+      "overtime_high": 2.41,
+      "below_band": 1.9,
+      "promotion_stalled": 1.6,
+      "low_engagement": 1.6,
+      "bad_manager": 1.8,
+      "rto_mandate": 1.7,
+      "first_year": 1.51,
+      "long_tenure": 0.74,
+      "age_under_30": 1.22,
+      "age_55_plus": 0.67,
+      "manager_level": 0.78,
+      "head_level": 0.37,
+      "rating_1_2": 1.16,
+      "rating_5": 0.9
+    },
+    "department_shift": {
+      "Engineering": 0.15,
+      "Data & AI": 0.2,
+      "Product & Design": 0.0,
+      "Delivery": 0.0,
+      "Customer Support": 0.1,
+      "Sales & Marketing": 0.0,
+      "Corporate Services": -0.2
+    },
+    "month_of_year_shift": [
+      0.3,
+      0.1,
+      0.0,
+      0.15,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.05,
+      0.0,
+      -0.05,
+      -0.4
+    ],
+    "market_shift": {
+      "2023": {
+        "Engineering": 0.25,
+        "Data & AI": 0.25
+      },
+      "2024": {},
+      "2025": {}
+    },
+    "flag_definitions": {
+      "overtime_high": "average overtime over the last 3 months > 20 h a month",
+      "below_band": "salary / band midpoint (dept, level, location, current band) < 0.90",
+      "promotion_stalled": "level 1-3 and 36+ months since last promotion or hire",
+      "low_engagement": "true engagement < 2.9 (survey observes it with noise; disengaged staff respond less)",
+      "bad_manager": "line manager is one of the generator's 'bad managers' (not directly in the data)",
+      "rto_mandate": "was fully remote at an office location and moved to hybrid on 1 Sep 2024",
+      "first_year": "tenure < 12 months",
+      "long_tenure": "tenure >= 96 months"
+    }
+  },
+  "attributable_resignations": {
+    "note": "expected resignations that would not have happened if only this flag were switched off (direct effect)",
+    "expected_total": 1299.6,
+    "below_band": 195.7,
+    "overtime_high": 181.1,
+    "promotion_stalled": 173.4,
+    "low_engagement": 148.4,
+    "bad_manager": 98.6,
+    "first_year": 96.0,
+    "rto_mandate": 46.0
+  },
+  "top_three_drivers": [
+    "below_band",
+    "overtime_high",
+    "promotion_stalled"
+  ],
+  "engagement_model": "engagement = latent - 0.45 overtime_high - 0.40 bad_manager - 0.30 below_band - 0.35 rto_mandate - 0.20 promotion_stalled + noise",
+  "driver_prevalence_by_month": [
+    {
+      "month": 0,
+      "overtime_high": 0.048230088495575224,
+      "below_band": 0.23495575221238937,
+      "promotion_stalled": 0.19778761061946903,
+      "low_engagement": 0.12477876106194691,
+      "bad_manager": 0.09955752212389381,
+      "rto_mandate": 0.0,
+      "first_year": 0.181858407079646
+    },
+    {
+      "month": 1,
+      "overtime_high": 0.04665769403319874,
+      "below_band": 0.22925078510542846,
+      "promotion_stalled": 0.2041274113952445,
+      "low_engagement": 0.1224764468371467,
+      "bad_manager": 0.09825033647375504,
+      "rto_mandate": 0.0,
+      "first_year": 0.1731718259309107
+    },
+    {
+      "month": 2,
+      "overtime_high": 0.043965903992821895,
+      "below_band": 0.22386720502467475,
+      "promotion_stalled": 0.20861372812920592,
+      "low_engagement": 0.12113055181695828,
+      "bad_manager": 0.09869896814715119,
+      "rto_mandate": 0.0,
+      "first_year": 0.1718259309107223
+    },
+    {
+      "month": 3,
+      "overtime_high": 0.054066130473637175,
+      "below_band": 0.27211796246648795,
+      "promotion_stalled": 0.19749776586237713,
+      "low_engagement": 0.13941018766756033,
+      "bad_manager": 0.10098302055406613,
+      "rto_mandate": 0.0,
+      "first_year": 0.16934763181411974
+    },
+    {
+      "month": 4,
+      "overtime_high": 0.06008010680907877,
+      "below_band": 0.2652425456163774,
+      "promotion_stalled": 0.19759679572763686,
+      "low_engagement": 0.13840676457498888,
+      "bad_manager": 0.09612817089452604,
+      "rto_mandate": 0.0,
+      "first_year": 0.17267467734757455
+    },
+    {
+      "month": 5,
+      "overtime_high": 0.06754966887417219,
+      "below_band": 0.2578366445916115,
+      "promotion_stalled": 0.20176600441501102,
+      "low_engagement": 0.1381898454746137,
+      "bad_manager": 0.09933774834437085,
+      "rto_mandate": 0.0,
+      "first_year": 0.1739514348785872
+    },
+    {
+      "month": 6,
+      "overtime_high": 0.06340819022457067,
+      "below_band": 0.24922941435490972,
+      "promotion_stalled": 0.2043152796125055,
+      "low_engagement": 0.1334214002642008,
+      "bad_manager": 0.09907529722589167,
+      "rto_mandate": 0.0,
+      "first_year": 0.17569352708058125
+    },
+    {
+      "month": 7,
+      "overtime_high": 0.06964520367936924,
+      "below_band": 0.2439772229522558,
+      "promotion_stalled": 0.2102496714848883,
+      "low_engagement": 0.13491020586947,
+      "bad_manager": 0.09855453350854139,
+      "rto_mandate": 0.0,
+      "first_year": 0.17345597897503284
+    },
+    {
+      "month": 8,
+      "overtime_high": 0.07320261437908497,
+      "below_band": 0.23877995642701524,
+      "promotion_stalled": 0.21612200435729848,
+      "low_engagement": 0.134640522875817,
+      "bad_manager": 0.09891067538126362,
+      "rto_mandate": 0.0,
+      "first_year": 0.1747276688453159
+    },
+    {
+      "month": 9,
+      "overtime_high": 0.08557775847089487,
+      "below_band": 0.23023457862728064,
+      "promotion_stalled": 0.2219808861859253,
+      "low_engagement": 0.14335360556038226,
+      "bad_manager": 0.0999131190269331,
+      "rto_mandate": 0.0,
+      "first_year": 0.18071242397914858
+    },
+    {
+      "month": 10,
+      "overtime_high": 0.08714408973252805,
+      "below_band": 0.22476272648835202,
+      "promotion_stalled": 0.2286453839516825,
+      "low_engagement": 0.14106988783433994,
+      "bad_manager": 0.10051768766177739,
+      "rto_mandate": 0.0,
+      "first_year": 0.18766177739430542
+    },
+    {
+      "month": 11,
+      "overtime_high": 0.08551783412118608,
+      "below_band": 0.21658788139235066,
+      "promotion_stalled": 0.23678556080790716,
+      "low_engagement": 0.1340782122905028,
+      "bad_manager": 0.1005586592178771,
+      "rto_mandate": 0.0,
+      "first_year": 0.19553072625698323
+    },
+    {
+      "month": 12,
+      "overtime_high": 0.08578745198463508,
+      "below_band": 0.2104139991463935,
+      "promotion_stalled": 0.24413145539906103,
+      "low_engagement": 0.13529662825437475,
+      "bad_manager": 0.09944515578318396,
+      "rto_mandate": 0.0,
+      "first_year": 0.20358514724711907
+    },
+    {
+      "month": 13,
+      "overtime_high": 0.07979626485568761,
+      "below_band": 0.2037351443123939,
+      "promotion_stalled": 0.24830220713073006,
+      "low_engagement": 0.13115449915110355,
+      "bad_manager": 0.100169779286927,
+      "rto_mandate": 0.0,
+      "first_year": 0.21264855687606113
+    },
+    {
+      "month": 14,
+      "overtime_high": 0.086754126110876,
+      "below_band": 0.1993228946254761,
+      "promotion_stalled": 0.25222175201015656,
+      "low_engagement": 0.13118916631400762,
+      "bad_manager": 0.09987304274227676,
+      "rto_mandate": 0.0,
+      "first_year": 0.21752010156580617
+    },
+    {
+      "month": 15,
+      "overtime_high": 0.08840947546531303,
+      "below_band": 0.2406937394247039,
+      "promotion_stalled": 0.23434856175972926,
+      "low_engagement": 0.1455160744500846,
+      "bad_manager": 0.10321489001692047,
+      "rto_mandate": 0.0,
+      "first_year": 0.22123519458544838
+    },
+    {
+      "month": 16,
+      "overtime_high": 0.09014675052410902,
+      "below_band": 0.23438155136268343,
+      "promotion_stalled": 0.23689727463312368,
+      "low_engagement": 0.14633123689727465,
+      "bad_manager": 0.10482180293501048,
+      "rto_mandate": 0.0,
+      "first_year": 0.22138364779874214
+    },
+    {
+      "month": 17,
+      "overtime_high": 0.08795331388078366,
+      "below_band": 0.2275948311796582,
+      "promotion_stalled": 0.2463526469362234,
+      "low_engagement": 0.14756148395164653,
+      "bad_manager": 0.10462692788661943,
+      "rto_mandate": 0.0,
+      "first_year": 0.22426010837849103
+    },
+    {
+      "month": 18,
+      "overtime_high": 0.07887090078870901,
+      "below_band": 0.22125363221253633,
+      "promotion_stalled": 0.25280199252801994,
+      "low_engagement": 0.1324200913242009,
+      "bad_manager": 0.1012868410128684,
+      "rto_mandate": 0.0,
+      "first_year": 0.22457451224574512
+    },
+    {
+      "month": 19,
+      "overtime_high": 0.0779436152570481,
+      "below_band": 0.21475953565505804,
+      "promotion_stalled": 0.2603648424543947,
+      "low_engagement": 0.1318407960199005,
+      "bad_manager": 0.10364842454394693,
+      "rto_mandate": 0.0,
+      "first_year": 0.22470978441127695
+    },
+    {
+      "month": 20,
+      "overtime_high": 0.08515915667631252,
+      "below_band": 0.20835055808185202,
+      "promotion_stalled": 0.2682926829268293,
+      "low_engagement": 0.15006200909466721,
+      "bad_manager": 0.10293509714758164,
+      "rto_mandate": 0.12856552294336504,
+      "first_year": 0.22529971062422488
+    },
+    {
+      "month": 21,
+      "overtime_high": 0.08117016893283889,
+      "below_band": 0.2018953440461475,
+      "promotion_stalled": 0.26864441697569014,
+      "low_engagement": 0.16275236918005767,
+      "bad_manager": 0.10094767202307375,
+      "rto_mandate": 0.12525751957148742,
+      "first_year": 0.22826534816646066
+    },
+    {
+      "month": 22,
+      "overtime_high": 0.07906595657517411,
+      "below_band": 0.19786972552232693,
+      "promotion_stalled": 0.28185170012290045,
+      "low_engagement": 0.16018025399426464,
+      "bad_manager": 0.10077836952068825,
+      "rto_mandate": 0.1216714461286358,
+      "first_year": 0.2265464973371569
+    },
+    {
+      "month": 23,
+      "overtime_high": 0.07395367736692401,
+      "below_band": 0.1942299878098334,
+      "promotion_stalled": 0.29337667614790736,
+      "low_engagement": 0.15928484355952865,
+      "bad_manager": 0.10199106054449411,
+      "rto_mandate": 0.11824461600975213,
+      "first_year": 0.2230800487606664
+    },
+    {
+      "month": 24,
+      "overtime_high": 0.06471061093247589,
+      "below_band": 0.18810289389067525,
+      "promotion_stalled": 0.30144694533762056,
+      "low_engagement": 0.16036977491961416,
+      "bad_manager": 0.10490353697749197,
+      "rto_mandate": 0.11495176848874598,
+      "first_year": 0.22186495176848875
+    },
+    {
+      "month": 25,
+      "overtime_high": 0.06454248366013073,
+      "below_band": 0.184640522875817,
+      "promotion_stalled": 0.31004901960784315,
+      "low_engagement": 0.16053921568627452,
+      "bad_manager": 0.10620915032679738,
+      "rto_mandate": 0.1147875816993464,
+      "first_year": 0.2062908496732026
+    },
+    {
+      "month": 26,
+      "overtime_high": 0.07261410788381743,
+      "below_band": 0.1829875518672199,
+      "promotion_stalled": 0.31991701244813275,
+      "low_engagement": 0.15767634854771784,
+      "bad_manager": 0.1012448132780083,
+      "rto_mandate": 0.11244813278008299,
+      "first_year": 0.19211618257261412
+    },
+    {
+      "month": 27,
+      "overtime_high": 0.12404418011894647,
+      "below_band": 0.19328802039082413,
+      "promotion_stalled": 0.3007646559048428,
+      "low_engagement": 0.17757009345794392,
+      "bad_manager": 0.09813084112149532,
+      "rto_mandate": 0.11214953271028037,
+      "first_year": 0.17587085811384875
+    },
+    {
+      "month": 28,
+      "overtime_high": 0.1965665236051502,
+      "below_band": 0.1905579399141631,
+      "promotion_stalled": 0.3133047210300429,
+      "low_engagement": 0.19785407725321888,
+      "bad_manager": 0.0982832618025751,
+      "rto_mandate": 0.11072961373390558,
+      "first_year": 0.16394849785407725
+    },
+    {
+      "month": 29,
+      "overtime_high": 0.2920662598081953,
+      "below_band": 0.1891891891891892,
+      "promotion_stalled": 0.32781168265039234,
+      "low_engagement": 0.21795989537925023,
+      "bad_manager": 0.0993897122929381,
+      "rto_mandate": 0.10810810810810811,
+      "first_year": 0.15082824760244115
+    },
+    {
+      "month": 30,
+      "overtime_high": 0.4169986719787517,
+      "below_band": 0.18636564851704293,
+      "promotion_stalled": 0.33554670208056664,
+      "low_engagement": 0.25143868968570166,
+      "bad_manager": 0.10402833111996458,
+      "rto_mandate": 0.10712704736609119,
+      "first_year": 0.1394422310756972
+    },
+    {
+      "month": 31,
+      "overtime_high": 0.43359375,
+      "below_band": 0.17664930555555555,
+      "promotion_stalled": 0.3324652777777778,
+      "low_engagement": 0.24869791666666666,
+      "bad_manager": 0.10633680555555555,
+      "rto_mandate": 0.10112847222222222,
+      "first_year": 0.1579861111111111
+    },
+    {
+      "month": 32,
+      "overtime_high": 0.3132683340398474,
+      "below_band": 0.16913946587537093,
+      "promotion_stalled": 0.3293768545994065,
+      "low_engagement": 0.21364985163204747,
+      "bad_manager": 0.10809665112335735,
+      "rto_mandate": 0.09325985587113184,
+      "first_year": 0.17931326833403985
+    },
+    {
+      "month": 33,
+      "overtime_high": 0.17008797653958943,
+      "below_band": 0.16422287390029325,
+      "promotion_stalled": 0.3246753246753247,
+      "low_engagement": 0.17008797653958943,
+      "bad_manager": 0.1009635525764558,
+      "rto_mandate": 0.08839547549224969,
+      "first_year": 0.1889400921658986
+    },
+    {
+      "month": 34,
+      "overtime_high": 0.1020239570425444,
+      "below_band": 0.16026435357290375,
+      "promotion_stalled": 0.3242461792647666,
+      "low_engagement": 0.1590251961999174,
+      "bad_manager": 0.10574142916150352,
+      "rto_mandate": 0.08467575382073524,
+      "first_year": 0.1949607600165221
+    },
+    {
+      "month": 35,
+      "overtime_high": 0.07676518883415435,
+      "below_band": 0.1564039408866995,
+      "promotion_stalled": 0.3230706075533662,
+      "low_engagement": 0.15270935960591134,
+      "bad_manager": 0.10796387520525452,
+      "rto_mandate": 0.08045977011494253,
+      "first_year": 0.19704433497536947
+    }
+  ],
+  "department_month": [
+    {
+      "month": 0,
+      "department": "Engineering",
+      "budget": 825.3,
+      "working": 820,
+      "gap": 0.006,
+      "overtime_mean": 7.0,
+      "overtime_high_share": 0.037
+    },
+    {
+      "month": 0,
+      "department": "Data & AI",
+      "budget": 191.2,
+      "working": 190,
+      "gap": 0.006,
+      "overtime_mean": 7.0,
+      "overtime_high_share": 0.042
+    },
+    {
+      "month": 0,
+      "department": "Product & Design",
+      "budget": 181.2,
+      "working": 180,
+      "gap": 0.006,
+      "overtime_mean": 5.8,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 0,
+      "department": "Delivery",
+      "budget": 231.5,
+      "working": 230,
+      "gap": 0.006,
+      "overtime_mean": 11.0,
+      "overtime_high_share": 0.061
+    },
+    {
+      "month": 0,
+      "department": "Customer Support",
+      "budget": 422.7,
+      "working": 420,
+      "gap": 0.006,
+      "overtime_mean": 11.7,
+      "overtime_high_share": 0.102
+    },
+    {
+      "month": 0,
+      "department": "Sales & Marketing",
+      "budget": 241.5,
+      "working": 240,
+      "gap": 0.006,
+      "overtime_mean": 6.0,
+      "overtime_high_share": 0.021
+    },
+    {
+      "month": 0,
+      "department": "Corporate Services",
+      "budget": 181.2,
+      "working": 180,
+      "gap": 0.006,
+      "overtime_mean": 4.2,
+      "overtime_high_share": 0.017
+    },
+    {
+      "month": 1,
+      "department": "Engineering",
+      "budget": 830.6,
+      "working": 834,
+      "gap": 0.0,
+      "overtime_mean": 6.2,
+      "overtime_high_share": 0.028
+    },
+    {
+      "month": 1,
+      "department": "Data & AI",
+      "budget": 192.5,
+      "working": 193,
+      "gap": 0.0,
+      "overtime_mean": 6.3,
+      "overtime_high_share": 0.041
+    },
+    {
+      "month": 1,
+      "department": "Product & Design",
+      "budget": 182.3,
+      "working": 180,
+      "gap": 0.013,
+      "overtime_mean": 7.2,
+      "overtime_high_share": 0.05
+    },
+    {
+      "month": 1,
+      "department": "Delivery",
+      "budget": 233.0,
+      "working": 230,
+      "gap": 0.013,
+      "overtime_mean": 12.0,
+      "overtime_high_share": 0.07
+    },
+    {
+      "month": 1,
+      "department": "Customer Support",
+      "budget": 425.4,
+      "working": 423,
+      "gap": 0.006,
+      "overtime_mean": 11.9,
+      "overtime_high_share": 0.095
+    },
+    {
+      "month": 1,
+      "department": "Sales & Marketing",
+      "budget": 243.1,
+      "working": 240,
+      "gap": 0.013,
+      "overtime_mean": 6.8,
+      "overtime_high_share": 0.029
+    },
+    {
+      "month": 1,
+      "department": "Corporate Services",
+      "budget": 182.3,
+      "working": 180,
+      "gap": 0.013,
+      "overtime_mean": 5.2,
+      "overtime_high_share": 0.017
+    },
+    {
+      "month": 2,
+      "department": "Engineering",
+      "budget": 835.9,
+      "working": 834,
+      "gap": 0.002,
+      "overtime_mean": 6.5,
+      "overtime_high_share": 0.024
+    },
+    {
+      "month": 2,
+      "department": "Data & AI",
+      "budget": 193.7,
+      "working": 194,
+      "gap": 0.0,
+      "overtime_mean": 6.3,
+      "overtime_high_share": 0.036
+    },
+    {
+      "month": 2,
+      "department": "Product & Design",
+      "budget": 183.5,
+      "working": 181,
+      "gap": 0.014,
+      "overtime_mean": 7.0,
+      "overtime_high_share": 0.044
+    },
+    {
+      "month": 2,
+      "department": "Delivery",
+      "budget": 234.5,
+      "working": 232,
+      "gap": 0.011,
+      "overtime_mean": 11.4,
+      "overtime_high_share": 0.065
+    },
+    {
+      "month": 2,
+      "department": "Customer Support",
+      "budget": 428.2,
+      "working": 419,
+      "gap": 0.021,
+      "overtime_mean": 14.6,
+      "overtime_high_share": 0.103
+    },
+    {
+      "month": 2,
+      "department": "Sales & Marketing",
+      "budget": 244.7,
+      "working": 240,
+      "gap": 0.019,
+      "overtime_mean": 7.6,
+      "overtime_high_share": 0.025
+    },
+    {
+      "month": 2,
+      "department": "Corporate Services",
+      "budget": 183.5,
+      "working": 179,
+      "gap": 0.025,
+      "overtime_mean": 6.6,
+      "overtime_high_share": 0.017
+    },
+    {
+      "month": 3,
+      "department": "Engineering",
+      "budget": 841.3,
+      "working": 824,
+      "gap": 0.021,
+      "overtime_mean": 9.6,
+      "overtime_high_share": 0.035
+    },
+    {
+      "month": 3,
+      "department": "Data & AI",
+      "budget": 194.9,
+      "working": 194,
+      "gap": 0.005,
+      "overtime_mean": 7.0,
+      "overtime_high_share": 0.036
+    },
+    {
+      "month": 3,
+      "department": "Product & Design",
+      "budget": 184.7,
+      "working": 180,
+      "gap": 0.025,
+      "overtime_mean": 8.9,
+      "overtime_high_share": 0.061
+    },
+    {
+      "month": 3,
+      "department": "Delivery",
+      "budget": 236.0,
+      "working": 232,
+      "gap": 0.017,
+      "overtime_mean": 12.5,
+      "overtime_high_share": 0.069
+    },
+    {
+      "month": 3,
+      "department": "Customer Support",
+      "budget": 430.9,
+      "working": 428,
+      "gap": 0.007,
+      "overtime_mean": 12.4,
+      "overtime_high_share": 0.107
+    },
+    {
+      "month": 3,
+      "department": "Sales & Marketing",
+      "budget": 246.2,
+      "working": 242,
+      "gap": 0.017,
+      "overtime_mean": 7.3,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 3,
+      "department": "Corporate Services",
+      "budget": 184.7,
+      "working": 178,
+      "gap": 0.036,
+      "overtime_mean": 8.7,
+      "overtime_high_share": 0.034
+    },
+    {
+      "month": 4,
+      "department": "Engineering",
+      "budget": 846.7,
+      "working": 829,
+      "gap": 0.021,
+      "overtime_mean": 9.8,
+      "overtime_high_share": 0.042
+    },
+    {
+      "month": 4,
+      "department": "Data & AI",
+      "budget": 196.2,
+      "working": 195,
+      "gap": 0.006,
+      "overtime_mean": 6.9,
+      "overtime_high_share": 0.036
+    },
+    {
+      "month": 4,
+      "department": "Product & Design",
+      "budget": 185.9,
+      "working": 184,
+      "gap": 0.01,
+      "overtime_mean": 6.7,
+      "overtime_high_share": 0.049
+    },
+    {
+      "month": 4,
+      "department": "Delivery",
+      "budget": 237.5,
+      "working": 232,
+      "gap": 0.023,
+      "overtime_mean": 14.0,
+      "overtime_high_share": 0.091
+    },
+    {
+      "month": 4,
+      "department": "Customer Support",
+      "budget": 433.7,
+      "working": 430,
+      "gap": 0.009,
+      "overtime_mean": 12.3,
+      "overtime_high_share": 0.121
+    },
+    {
+      "month": 4,
+      "department": "Sales & Marketing",
+      "budget": 247.8,
+      "working": 243,
+      "gap": 0.019,
+      "overtime_mean": 7.6,
+      "overtime_high_share": 0.037
+    },
+    {
+      "month": 4,
+      "department": "Corporate Services",
+      "budget": 185.9,
+      "working": 179,
+      "gap": 0.037,
+      "overtime_mean": 8.8,
+      "overtime_high_share": 0.028
+    },
+    {
+      "month": 5,
+      "department": "Engineering",
+      "budget": 852.2,
+      "working": 828,
+      "gap": 0.028,
+      "overtime_mean": 10.8,
+      "overtime_high_share": 0.064
+    },
+    {
+      "month": 5,
+      "department": "Data & AI",
+      "budget": 197.5,
+      "working": 193,
+      "gap": 0.023,
+      "overtime_mean": 9.8,
+      "overtime_high_share": 0.036
+    },
+    {
+      "month": 5,
+      "department": "Product & Design",
+      "budget": 187.1,
+      "working": 184,
+      "gap": 0.016,
+      "overtime_mean": 7.8,
+      "overtime_high_share": 0.054
+    },
+    {
+      "month": 5,
+      "department": "Delivery",
+      "budget": 239.0,
+      "working": 238,
+      "gap": 0.004,
+      "overtime_mean": 10.9,
+      "overtime_high_share": 0.088
+    },
+    {
+      "month": 5,
+      "department": "Customer Support",
+      "budget": 436.5,
+      "working": 431,
+      "gap": 0.013,
+      "overtime_mean": 13.3,
+      "overtime_high_share": 0.114
+    },
+    {
+      "month": 5,
+      "department": "Sales & Marketing",
+      "budget": 249.4,
+      "working": 244,
+      "gap": 0.022,
+      "overtime_mean": 7.8,
+      "overtime_high_share": 0.041
+    },
+    {
+      "month": 5,
+      "department": "Corporate Services",
+      "budget": 187.1,
+      "working": 183,
+      "gap": 0.022,
+      "overtime_mean": 6.5,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 6,
+      "department": "Engineering",
+      "budget": 857.7,
+      "working": 840,
+      "gap": 0.021,
+      "overtime_mean": 9.4,
+      "overtime_high_share": 0.061
+    },
+    {
+      "month": 6,
+      "department": "Data & AI",
+      "budget": 198.7,
+      "working": 195,
+      "gap": 0.019,
+      "overtime_mean": 9.4,
+      "overtime_high_share": 0.051
+    },
+    {
+      "month": 6,
+      "department": "Product & Design",
+      "budget": 188.3,
+      "working": 183,
+      "gap": 0.028,
+      "overtime_mean": 9.6,
+      "overtime_high_share": 0.049
+    },
+    {
+      "month": 6,
+      "department": "Delivery",
+      "budget": 240.6,
+      "working": 235,
+      "gap": 0.023,
+      "overtime_mean": 14.0,
+      "overtime_high_share": 0.089
+    },
+    {
+      "month": 6,
+      "department": "Customer Support",
+      "budget": 439.3,
+      "working": 436,
+      "gap": 0.007,
+      "overtime_mean": 12.0,
+      "overtime_high_share": 0.099
+    },
+    {
+      "month": 6,
+      "department": "Sales & Marketing",
+      "budget": 251.0,
+      "working": 250,
+      "gap": 0.004,
+      "overtime_mean": 5.2,
+      "overtime_high_share": 0.044
+    },
+    {
+      "month": 6,
+      "department": "Corporate Services",
+      "budget": 188.3,
+      "working": 185,
+      "gap": 0.017,
+      "overtime_mean": 5.8,
+      "overtime_high_share": 0.032
+    },
+    {
+      "month": 7,
+      "department": "Engineering",
+      "budget": 863.2,
+      "working": 841,
+      "gap": 0.026,
+      "overtime_mean": 10.4,
+      "overtime_high_share": 0.058
+    },
+    {
+      "month": 7,
+      "department": "Data & AI",
+      "budget": 200.0,
+      "working": 194,
+      "gap": 0.03,
+      "overtime_mean": 11.2,
+      "overtime_high_share": 0.067
+    },
+    {
+      "month": 7,
+      "department": "Product & Design",
+      "budget": 189.5,
+      "working": 187,
+      "gap": 0.013,
+      "overtime_mean": 7.0,
+      "overtime_high_share": 0.053
+    },
+    {
+      "month": 7,
+      "department": "Delivery",
+      "budget": 242.1,
+      "working": 236,
+      "gap": 0.025,
+      "overtime_mean": 14.1,
+      "overtime_high_share": 0.102
+    },
+    {
+      "month": 7,
+      "department": "Customer Support",
+      "budget": 442.1,
+      "working": 432,
+      "gap": 0.023,
+      "overtime_mean": 14.8,
+      "overtime_high_share": 0.127
+    },
+    {
+      "month": 7,
+      "department": "Sales & Marketing",
+      "budget": 252.6,
+      "working": 250,
+      "gap": 0.01,
+      "overtime_mean": 6.4,
+      "overtime_high_share": 0.028
+    },
+    {
+      "month": 7,
+      "department": "Corporate Services",
+      "budget": 189.5,
+      "working": 189,
+      "gap": 0.003,
+      "overtime_mean": 3.8,
+      "overtime_high_share": 0.016
+    },
+    {
+      "month": 8,
+      "department": "Engineering",
+      "budget": 868.7,
+      "working": 843,
+      "gap": 0.03,
+      "overtime_mean": 11.0,
+      "overtime_high_share": 0.057
+    },
+    {
+      "month": 8,
+      "department": "Data & AI",
+      "budget": 201.3,
+      "working": 197,
+      "gap": 0.021,
+      "overtime_mean": 10.0,
+      "overtime_high_share": 0.066
+    },
+    {
+      "month": 8,
+      "department": "Product & Design",
+      "budget": 190.7,
+      "working": 187,
+      "gap": 0.019,
+      "overtime_mean": 8.0,
+      "overtime_high_share": 0.048
+    },
+    {
+      "month": 8,
+      "department": "Delivery",
+      "budget": 243.7,
+      "working": 240,
+      "gap": 0.015,
+      "overtime_mean": 12.9,
+      "overtime_high_share": 0.125
+    },
+    {
+      "month": 8,
+      "department": "Customer Support",
+      "budget": 445.0,
+      "working": 432,
+      "gap": 0.029,
+      "overtime_mean": 16.0,
+      "overtime_high_share": 0.139
+    },
+    {
+      "month": 8,
+      "department": "Sales & Marketing",
+      "budget": 254.3,
+      "working": 248,
+      "gap": 0.025,
+      "overtime_mean": 8.8,
+      "overtime_high_share": 0.044
+    },
+    {
+      "month": 8,
+      "department": "Corporate Services",
+      "budget": 190.7,
+      "working": 184,
+      "gap": 0.035,
+      "overtime_mean": 8.2,
+      "overtime_high_share": 0.016
+    },
+    {
+      "month": 9,
+      "department": "Engineering",
+      "budget": 874.3,
+      "working": 845,
+      "gap": 0.034,
+      "overtime_mean": 11.8,
+      "overtime_high_share": 0.07
+    },
+    {
+      "month": 9,
+      "department": "Data & AI",
+      "budget": 202.6,
+      "working": 196,
+      "gap": 0.033,
+      "overtime_mean": 11.9,
+      "overtime_high_share": 0.077
+    },
+    {
+      "month": 9,
+      "department": "Product & Design",
+      "budget": 191.9,
+      "working": 191,
+      "gap": 0.005,
+      "overtime_mean": 5.8,
+      "overtime_high_share": 0.021
+    },
+    {
+      "month": 9,
+      "department": "Delivery",
+      "budget": 245.2,
+      "working": 240,
+      "gap": 0.021,
+      "overtime_mean": 13.6,
+      "overtime_high_share": 0.117
+    },
+    {
+      "month": 9,
+      "department": "Customer Support",
+      "budget": 447.8,
+      "working": 435,
+      "gap": 0.029,
+      "overtime_mean": 16.3,
+      "overtime_high_share": 0.184
+    },
+    {
+      "month": 9,
+      "department": "Sales & Marketing",
+      "budget": 255.9,
+      "working": 249,
+      "gap": 0.027,
+      "overtime_mean": 9.1,
+      "overtime_high_share": 0.052
+    },
+    {
+      "month": 9,
+      "department": "Corporate Services",
+      "budget": 191.9,
+      "working": 187,
+      "gap": 0.026,
+      "overtime_mean": 6.6,
+      "overtime_high_share": 0.016
+    },
+    {
+      "month": 10,
+      "department": "Engineering",
+      "budget": 879.9,
+      "working": 850,
+      "gap": 0.034,
+      "overtime_mean": 11.8,
+      "overtime_high_share": 0.086
+    },
+    {
+      "month": 10,
+      "department": "Data & AI",
+      "budget": 203.9,
+      "working": 199,
+      "gap": 0.024,
+      "overtime_mean": 10.0,
+      "overtime_high_share": 0.07
+    },
+    {
+      "month": 10,
+      "department": "Product & Design",
+      "budget": 193.2,
+      "working": 190,
+      "gap": 0.016,
+      "overtime_mean": 7.8,
+      "overtime_high_share": 0.026
+    },
+    {
+      "month": 10,
+      "department": "Delivery",
+      "budget": 246.8,
+      "working": 240,
+      "gap": 0.028,
+      "overtime_mean": 15.0,
+      "overtime_high_share": 0.121
+    },
+    {
+      "month": 10,
+      "department": "Customer Support",
+      "budget": 450.7,
+      "working": 445,
+      "gap": 0.013,
+      "overtime_mean": 13.4,
+      "overtime_high_share": 0.166
+    },
+    {
+      "month": 10,
+      "department": "Sales & Marketing",
+      "budget": 257.5,
+      "working": 251,
+      "gap": 0.025,
+      "overtime_mean": 8.4,
+      "overtime_high_share": 0.044
+    },
+    {
+      "month": 10,
+      "department": "Corporate Services",
+      "budget": 193.2,
+      "working": 191,
+      "gap": 0.011,
+      "overtime_mean": 4.5,
+      "overtime_high_share": 0.021
+    },
+    {
+      "month": 11,
+      "department": "Engineering",
+      "budget": 885.6,
+      "working": 857,
+      "gap": 0.032,
+      "overtime_mean": 11.6,
+      "overtime_high_share": 0.093
+    },
+    {
+      "month": 11,
+      "department": "Data & AI",
+      "budget": 205.2,
+      "working": 205,
+      "gap": 0.001,
+      "overtime_mean": 6.5,
+      "overtime_high_share": 0.054
+    },
+    {
+      "month": 11,
+      "department": "Product & Design",
+      "budget": 194.4,
+      "working": 189,
+      "gap": 0.028,
+      "overtime_mean": 9.1,
+      "overtime_high_share": 0.037
+    },
+    {
+      "month": 11,
+      "department": "Delivery",
+      "budget": 248.4,
+      "working": 243,
+      "gap": 0.022,
+      "overtime_mean": 13.7,
+      "overtime_high_share": 0.103
+    },
+    {
+      "month": 11,
+      "department": "Customer Support",
+      "budget": 453.6,
+      "working": 446,
+      "gap": 0.017,
+      "overtime_mean": 14.0,
+      "overtime_high_share": 0.168
+    },
+    {
+      "month": 11,
+      "department": "Sales & Marketing",
+      "budget": 259.2,
+      "working": 254,
+      "gap": 0.02,
+      "overtime_mean": 7.8,
+      "overtime_high_share": 0.047
+    },
+    {
+      "month": 11,
+      "department": "Corporate Services",
+      "budget": 194.4,
+      "working": 190,
+      "gap": 0.023,
+      "overtime_mean": 6.1,
+      "overtime_high_share": 0.016
+    },
+    {
+      "month": 12,
+      "department": "Engineering",
+      "budget": 889.2,
+      "working": 867,
+      "gap": 0.025,
+      "overtime_mean": 10.5,
+      "overtime_high_share": 0.082
+    },
+    {
+      "month": 12,
+      "department": "Data & AI",
+      "budget": 206.0,
+      "working": 201,
+      "gap": 0.024,
+      "overtime_mean": 10.1,
+      "overtime_high_share": 0.06
+    },
+    {
+      "month": 12,
+      "department": "Product & Design",
+      "budget": 195.2,
+      "working": 189,
+      "gap": 0.032,
+      "overtime_mean": 10.2,
+      "overtime_high_share": 0.053
+    },
+    {
+      "month": 12,
+      "department": "Delivery",
+      "budget": 249.4,
+      "working": 245,
+      "gap": 0.018,
+      "overtime_mean": 13.0,
+      "overtime_high_share": 0.102
+    },
+    {
+      "month": 12,
+      "department": "Customer Support",
+      "budget": 455.4,
+      "working": 442,
+      "gap": 0.03,
+      "overtime_mean": 16.2,
+      "overtime_high_share": 0.161
+    },
+    {
+      "month": 12,
+      "department": "Sales & Marketing",
+      "budget": 260.3,
+      "working": 253,
+      "gap": 0.028,
+      "overtime_mean": 9.4,
+      "overtime_high_share": 0.055
+    },
+    {
+      "month": 12,
+      "department": "Corporate Services",
+      "budget": 195.2,
+      "working": 189,
+      "gap": 0.032,
+      "overtime_mean": 7.8,
+      "overtime_high_share": 0.021
+    },
+    {
+      "month": 13,
+      "department": "Engineering",
+      "budget": 892.8,
+      "working": 868,
+      "gap": 0.028,
+      "overtime_mean": 10.8,
+      "overtime_high_share": 0.07
+    },
+    {
+      "month": 13,
+      "department": "Data & AI",
+      "budget": 206.9,
+      "working": 203,
+      "gap": 0.019,
+      "overtime_mean": 9.6,
+      "overtime_high_share": 0.049
+    },
+    {
+      "month": 13,
+      "department": "Product & Design",
+      "budget": 196.0,
+      "working": 194,
+      "gap": 0.01,
+      "overtime_mean": 6.1,
+      "overtime_high_share": 0.052
+    },
+    {
+      "month": 13,
+      "department": "Delivery",
+      "budget": 250.4,
+      "working": 245,
+      "gap": 0.022,
+      "overtime_mean": 14.0,
+      "overtime_high_share": 0.098
+    },
+    {
+      "month": 13,
+      "department": "Customer Support",
+      "budget": 457.3,
+      "working": 446,
+      "gap": 0.025,
+      "overtime_mean": 15.3,
+      "overtime_high_share": 0.168
+    },
+    {
+      "month": 13,
+      "department": "Sales & Marketing",
+      "budget": 261.3,
+      "working": 254,
+      "gap": 0.028,
+      "overtime_mean": 9.0,
+      "overtime_high_share": 0.055
+    },
+    {
+      "month": 13,
+      "department": "Corporate Services",
+      "budget": 196.0,
+      "working": 192,
+      "gap": 0.02,
+      "overtime_mean": 6.0,
+      "overtime_high_share": 0.021
+    },
+    {
+      "month": 14,
+      "department": "Engineering",
+      "budget": 896.5,
+      "working": 877,
+      "gap": 0.022,
+      "overtime_mean": 9.7,
+      "overtime_high_share": 0.058
+    },
+    {
+      "month": 14,
+      "department": "Data & AI",
+      "budget": 207.7,
+      "working": 201,
+      "gap": 0.032,
+      "overtime_mean": 11.8,
+      "overtime_high_share": 0.075
+    },
+    {
+      "month": 14,
+      "department": "Product & Design",
+      "budget": 196.8,
+      "working": 194,
+      "gap": 0.014,
+      "overtime_mean": 7.1,
+      "overtime_high_share": 0.041
+    },
+    {
+      "month": 14,
+      "department": "Delivery",
+      "budget": 251.4,
+      "working": 245,
+      "gap": 0.026,
+      "overtime_mean": 14.6,
+      "overtime_high_share": 0.118
+    },
+    {
+      "month": 14,
+      "department": "Customer Support",
+      "budget": 459.2,
+      "working": 446,
+      "gap": 0.029,
+      "overtime_mean": 16.1,
+      "overtime_high_share": 0.186
+    },
+    {
+      "month": 14,
+      "department": "Sales & Marketing",
+      "budget": 262.4,
+      "working": 256,
+      "gap": 0.024,
+      "overtime_mean": 9.2,
+      "overtime_high_share": 0.078
+    },
+    {
+      "month": 14,
+      "department": "Corporate Services",
+      "budget": 196.8,
+      "working": 193,
+      "gap": 0.019,
+      "overtime_mean": 5.7,
+      "overtime_high_share": 0.016
+    },
+    {
+      "month": 15,
+      "department": "Engineering",
+      "budget": 900.1,
+      "working": 879,
+      "gap": 0.023,
+      "overtime_mean": 10.0,
+      "overtime_high_share": 0.052
+    },
+    {
+      "month": 15,
+      "department": "Data & AI",
+      "budget": 208.6,
+      "working": 201,
+      "gap": 0.036,
+      "overtime_mean": 12.5,
+      "overtime_high_share": 0.09
+    },
+    {
+      "month": 15,
+      "department": "Product & Design",
+      "budget": 197.6,
+      "working": 197,
+      "gap": 0.003,
+      "overtime_mean": 5.0,
+      "overtime_high_share": 0.025
+    },
+    {
+      "month": 15,
+      "department": "Delivery",
+      "budget": 252.5,
+      "working": 243,
+      "gap": 0.038,
+      "overtime_mean": 16.8,
+      "overtime_high_share": 0.156
+    },
+    {
+      "month": 15,
+      "department": "Customer Support",
+      "budget": 461.0,
+      "working": 446,
+      "gap": 0.033,
+      "overtime_mean": 16.6,
+      "overtime_high_share": 0.191
+    },
+    {
+      "month": 15,
+      "department": "Sales & Marketing",
+      "budget": 263.4,
+      "working": 256,
+      "gap": 0.028,
+      "overtime_mean": 9.4,
+      "overtime_high_share": 0.07
+    },
+    {
+      "month": 15,
+      "department": "Corporate Services",
+      "budget": 197.6,
+      "working": 196,
+      "gap": 0.008,
+      "overtime_mean": 4.3,
+      "overtime_high_share": 0.015
+    },
+    {
+      "month": 16,
+      "department": "Engineering",
+      "budget": 903.8,
+      "working": 888,
+      "gap": 0.017,
+      "overtime_mean": 8.9,
+      "overtime_high_share": 0.041
+    },
+    {
+      "month": 16,
+      "department": "Data & AI",
+      "budget": 209.4,
+      "working": 206,
+      "gap": 0.016,
+      "overtime_mean": 9.1,
+      "overtime_high_share": 0.078
+    },
+    {
+      "month": 16,
+      "department": "Product & Design",
+      "budget": 198.4,
+      "working": 197,
+      "gap": 0.007,
+      "overtime_mean": 6.0,
+      "overtime_high_share": 0.025
+    },
+    {
+      "month": 16,
+      "department": "Delivery",
+      "budget": 253.5,
+      "working": 244,
+      "gap": 0.037,
+      "overtime_mean": 16.5,
+      "overtime_high_share": 0.193
+    },
+    {
+      "month": 16,
+      "department": "Customer Support",
+      "budget": 462.9,
+      "working": 447,
+      "gap": 0.034,
+      "overtime_mean": 17.1,
+      "overtime_high_share": 0.228
+    },
+    {
+      "month": 16,
+      "department": "Sales & Marketing",
+      "budget": 264.5,
+      "working": 256,
+      "gap": 0.032,
+      "overtime_mean": 10.1,
+      "overtime_high_share": 0.07
+    },
+    {
+      "month": 16,
+      "department": "Corporate Services",
+      "budget": 198.4,
+      "working": 195,
+      "gap": 0.017,
+      "overtime_mean": 5.4,
+      "overtime_high_share": 0.015
+    },
+    {
+      "month": 17,
+      "department": "Engineering",
+      "budget": 907.5,
+      "working": 892,
+      "gap": 0.017,
+      "overtime_mean": 8.8,
+      "overtime_high_share": 0.041
+    },
+    {
+      "month": 17,
+      "department": "Data & AI",
+      "budget": 210.3,
+      "working": 209,
+      "gap": 0.006,
+      "overtime_mean": 7.6,
+      "overtime_high_share": 0.048
+    },
+    {
+      "month": 17,
+      "department": "Product & Design",
+      "budget": 199.2,
+      "working": 196,
+      "gap": 0.016,
+      "overtime_mean": 7.5,
+      "overtime_high_share": 0.031
+    },
+    {
+      "month": 17,
+      "department": "Delivery",
+      "budget": 254.5,
+      "working": 246,
+      "gap": 0.034,
+      "overtime_mean": 15.7,
+      "overtime_high_share": 0.203
+    },
+    {
+      "month": 17,
+      "department": "Customer Support",
+      "budget": 464.8,
+      "working": 450,
+      "gap": 0.032,
+      "overtime_mean": 16.7,
+      "overtime_high_share": 0.222
+    },
+    {
+      "month": 17,
+      "department": "Sales & Marketing",
+      "budget": 265.6,
+      "working": 262,
+      "gap": 0.014,
+      "overtime_mean": 6.8,
+      "overtime_high_share": 0.038
+    },
+    {
+      "month": 17,
+      "department": "Corporate Services",
+      "budget": 199.2,
+      "working": 196,
+      "gap": 0.016,
+      "overtime_mean": 5.3,
+      "overtime_high_share": 0.02
+    },
+    {
+      "month": 18,
+      "department": "Engineering",
+      "budget": 911.2,
+      "working": 899,
+      "gap": 0.013,
+      "overtime_mean": 8.1,
+      "overtime_high_share": 0.036
+    },
+    {
+      "month": 18,
+      "department": "Data & AI",
+      "budget": 211.1,
+      "working": 210,
+      "gap": 0.005,
+      "overtime_mean": 7.3,
+      "overtime_high_share": 0.038
+    },
+    {
+      "month": 18,
+      "department": "Product & Design",
+      "budget": 200.0,
+      "working": 195,
+      "gap": 0.025,
+      "overtime_mean": 8.6,
+      "overtime_high_share": 0.036
+    },
+    {
+      "month": 18,
+      "department": "Delivery",
+      "budget": 255.6,
+      "working": 249,
+      "gap": 0.026,
+      "overtime_mean": 14.6,
+      "overtime_high_share": 0.173
+    },
+    {
+      "month": 18,
+      "department": "Customer Support",
+      "budget": 466.7,
+      "working": 454,
+      "gap": 0.027,
+      "overtime_mean": 15.6,
+      "overtime_high_share": 0.211
+    },
+    {
+      "month": 18,
+      "department": "Sales & Marketing",
+      "budget": 266.7,
+      "working": 263,
+      "gap": 0.014,
+      "overtime_mean": 7.1,
+      "overtime_high_share": 0.027
+    },
+    {
+      "month": 18,
+      "department": "Corporate Services",
+      "budget": 200.0,
+      "working": 195,
+      "gap": 0.025,
+      "overtime_mean": 7.0,
+      "overtime_high_share": 0.021
+    },
+    {
+      "month": 19,
+      "department": "Engineering",
+      "budget": 914.9,
+      "working": 898,
+      "gap": 0.018,
+      "overtime_mean": 9.3,
+      "overtime_high_share": 0.038
+    },
+    {
+      "month": 19,
+      "department": "Data & AI",
+      "budget": 212.0,
+      "working": 209,
+      "gap": 0.014,
+      "overtime_mean": 8.8,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 19,
+      "department": "Product & Design",
+      "budget": 200.8,
+      "working": 197,
+      "gap": 0.019,
+      "overtime_mean": 7.8,
+      "overtime_high_share": 0.041
+    },
+    {
+      "month": 19,
+      "department": "Delivery",
+      "budget": 256.6,
+      "working": 250,
+      "gap": 0.026,
+      "overtime_mean": 14.6,
+      "overtime_high_share": 0.148
+    },
+    {
+      "month": 19,
+      "department": "Customer Support",
+      "budget": 468.6,
+      "working": 450,
+      "gap": 0.04,
+      "overtime_mean": 17.7,
+      "overtime_high_share": 0.209
+    },
+    {
+      "month": 19,
+      "department": "Sales & Marketing",
+      "budget": 267.8,
+      "working": 265,
+      "gap": 0.01,
+      "overtime_mean": 6.4,
+      "overtime_high_share": 0.019
+    },
+    {
+      "month": 19,
+      "department": "Corporate Services",
+      "budget": 200.8,
+      "working": 194,
+      "gap": 0.034,
+      "overtime_mean": 8.8,
+      "overtime_high_share": 0.026
+    },
+    {
+      "month": 20,
+      "department": "Engineering",
+      "budget": 918.6,
+      "working": 896,
+      "gap": 0.025,
+      "overtime_mean": 10.1,
+      "overtime_high_share": 0.044
+    },
+    {
+      "month": 20,
+      "department": "Data & AI",
+      "budget": 212.8,
+      "working": 211,
+      "gap": 0.009,
+      "overtime_mean": 7.6,
+      "overtime_high_share": 0.038
+    },
+    {
+      "month": 20,
+      "department": "Product & Design",
+      "budget": 201.6,
+      "working": 197,
+      "gap": 0.023,
+      "overtime_mean": 8.5,
+      "overtime_high_share": 0.041
+    },
+    {
+      "month": 20,
+      "department": "Delivery",
+      "budget": 257.7,
+      "working": 249,
+      "gap": 0.034,
+      "overtime_mean": 15.9,
+      "overtime_high_share": 0.145
+    },
+    {
+      "month": 20,
+      "department": "Customer Support",
+      "budget": 470.5,
+      "working": 454,
+      "gap": 0.035,
+      "overtime_mean": 17.1,
+      "overtime_high_share": 0.236
+    },
+    {
+      "month": 20,
+      "department": "Sales & Marketing",
+      "budget": 268.9,
+      "working": 262,
+      "gap": 0.026,
+      "overtime_mean": 9.1,
+      "overtime_high_share": 0.038
+    },
+    {
+      "month": 20,
+      "department": "Corporate Services",
+      "budget": 201.6,
+      "working": 198,
+      "gap": 0.018,
+      "overtime_mean": 6.0,
+      "overtime_high_share": 0.025
+    },
+    {
+      "month": 21,
+      "department": "Engineering",
+      "budget": 922.3,
+      "working": 894,
+      "gap": 0.031,
+      "overtime_mean": 11.5,
+      "overtime_high_share": 0.053
+    },
+    {
+      "month": 21,
+      "department": "Data & AI",
+      "budget": 213.7,
+      "working": 211,
+      "gap": 0.013,
+      "overtime_mean": 8.5,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 21,
+      "department": "Product & Design",
+      "budget": 202.5,
+      "working": 196,
+      "gap": 0.032,
+      "overtime_mean": 10.3,
+      "overtime_high_share": 0.046
+    },
+    {
+      "month": 21,
+      "department": "Delivery",
+      "budget": 258.7,
+      "working": 253,
+      "gap": 0.022,
+      "overtime_mean": 13.5,
+      "overtime_high_share": 0.142
+    },
+    {
+      "month": 21,
+      "department": "Customer Support",
+      "budget": 472.4,
+      "working": 461,
+      "gap": 0.024,
+      "overtime_mean": 15.1,
+      "overtime_high_share": 0.206
+    },
+    {
+      "month": 21,
+      "department": "Sales & Marketing",
+      "budget": 270.0,
+      "working": 266,
+      "gap": 0.015,
+      "overtime_mean": 6.8,
+      "overtime_high_share": 0.034
+    },
+    {
+      "month": 21,
+      "department": "Corporate Services",
+      "budget": 202.5,
+      "working": 197,
+      "gap": 0.027,
+      "overtime_mean": 6.9,
+      "overtime_high_share": 0.025
+    },
+    {
+      "month": 22,
+      "department": "Engineering",
+      "budget": 926.1,
+      "working": 904,
+      "gap": 0.024,
+      "overtime_mean": 9.9,
+      "overtime_high_share": 0.054
+    },
+    {
+      "month": 22,
+      "department": "Data & AI",
+      "budget": 214.6,
+      "working": 212,
+      "gap": 0.012,
+      "overtime_mean": 8.0,
+      "overtime_high_share": 0.024
+    },
+    {
+      "month": 22,
+      "department": "Product & Design",
+      "budget": 203.3,
+      "working": 196,
+      "gap": 0.036,
+      "overtime_mean": 10.9,
+      "overtime_high_share": 0.046
+    },
+    {
+      "month": 22,
+      "department": "Delivery",
+      "budget": 259.8,
+      "working": 255,
+      "gap": 0.018,
+      "overtime_mean": 13.1,
+      "overtime_high_share": 0.149
+    },
+    {
+      "month": 22,
+      "department": "Customer Support",
+      "budget": 474.3,
+      "working": 461,
+      "gap": 0.028,
+      "overtime_mean": 16.1,
+      "overtime_high_share": 0.189
+    },
+    {
+      "month": 22,
+      "department": "Sales & Marketing",
+      "budget": 271.1,
+      "working": 265,
+      "gap": 0.022,
+      "overtime_mean": 8.3,
+      "overtime_high_share": 0.03
+    },
+    {
+      "month": 22,
+      "department": "Corporate Services",
+      "budget": 203.3,
+      "working": 198,
+      "gap": 0.026,
+      "overtime_mean": 6.9,
+      "overtime_high_share": 0.02
+    },
+    {
+      "month": 23,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 912,
+      "gap": 0.019,
+      "overtime_mean": 9.3,
+      "overtime_high_share": 0.053
+    },
+    {
+      "month": 23,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 212,
+      "gap": 0.016,
+      "overtime_mean": 8.4,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 23,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 195,
+      "gap": 0.045,
+      "overtime_mean": 12.4,
+      "overtime_high_share": 0.072
+    },
+    {
+      "month": 23,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 255,
+      "gap": 0.022,
+      "overtime_mean": 14.0,
+      "overtime_high_share": 0.133
+    },
+    {
+      "month": 23,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 466,
+      "gap": 0.022,
+      "overtime_mean": 14.6,
+      "overtime_high_share": 0.148
+    },
+    {
+      "month": 23,
+      "department": "Sales & Marketing",
+      "budget": 272.2,
+      "working": 266,
+      "gap": 0.023,
+      "overtime_mean": 8.1,
+      "overtime_high_share": 0.03
+    },
+    {
+      "month": 23,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 201,
+      "gap": 0.015,
+      "overtime_mean": 5.6,
+      "overtime_high_share": 0.03
+    },
+    {
+      "month": 24,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 913,
+      "gap": 0.018,
+      "overtime_mean": 9.0,
+      "overtime_high_share": 0.042
+    },
+    {
+      "month": 24,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 216,
+      "gap": 0.0,
+      "overtime_mean": 6.5,
+      "overtime_high_share": 0.032
+    },
+    {
+      "month": 24,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 196,
+      "gap": 0.04,
+      "overtime_mean": 11.3,
+      "overtime_high_share": 0.061
+    },
+    {
+      "month": 24,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 257,
+      "gap": 0.015,
+      "overtime_mean": 12.6,
+      "overtime_high_share": 0.117
+    },
+    {
+      "month": 24,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 469,
+      "gap": 0.015,
+      "overtime_mean": 13.3,
+      "overtime_high_share": 0.134
+    },
+    {
+      "month": 24,
+      "department": "Sales & Marketing",
+      "budget": 272.2,
+      "working": 274,
+      "gap": 0.0,
+      "overtime_mean": 5.0,
+      "overtime_high_share": 0.026
+    },
+    {
+      "month": 24,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 198,
+      "gap": 0.03,
+      "overtime_mean": 7.7,
+      "overtime_high_share": 0.025
+    },
+    {
+      "month": 25,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 901,
+      "gap": 0.031,
+      "overtime_mean": 11.3,
+      "overtime_high_share": 0.05
+    },
+    {
+      "month": 25,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 215,
+      "gap": 0.002,
+      "overtime_mean": 6.5,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 25,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 195,
+      "gap": 0.045,
+      "overtime_mean": 12.3,
+      "overtime_high_share": 0.072
+    },
+    {
+      "month": 25,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 256,
+      "gap": 0.018,
+      "overtime_mean": 12.9,
+      "overtime_high_share": 0.109
+    },
+    {
+      "month": 25,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 469,
+      "gap": 0.015,
+      "overtime_mean": 13.3,
+      "overtime_high_share": 0.122
+    },
+    {
+      "month": 25,
+      "department": "Sales & Marketing",
+      "budget": 272.2,
+      "working": 268,
+      "gap": 0.015,
+      "overtime_mean": 7.0,
+      "overtime_high_share": 0.026
+    },
+    {
+      "month": 25,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 198,
+      "gap": 0.03,
+      "overtime_mean": 7.4,
+      "overtime_high_share": 0.025
+    },
+    {
+      "month": 26,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 889,
+      "gap": 0.044,
+      "overtime_mean": 13.5,
+      "overtime_high_share": 0.074
+    },
+    {
+      "month": 26,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 211,
+      "gap": 0.021,
+      "overtime_mean": 9.5,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 26,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 191,
+      "gap": 0.064,
+      "overtime_mean": 15.2,
+      "overtime_high_share": 0.084
+    },
+    {
+      "month": 26,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 253,
+      "gap": 0.03,
+      "overtime_mean": 15.2,
+      "overtime_high_share": 0.119
+    },
+    {
+      "month": 26,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 464,
+      "gap": 0.026,
+      "overtime_mean": 15.0,
+      "overtime_high_share": 0.114
+    },
+    {
+      "month": 26,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 264,
+      "gap": 0.0,
+      "overtime_mean": 4.7,
+      "overtime_high_share": 0.023
+    },
+    {
+      "month": 26,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 193,
+      "gap": 0.054,
+      "overtime_mean": 11.8,
+      "overtime_high_share": 0.026
+    },
+    {
+      "month": 27,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 872,
+      "gap": 0.062,
+      "overtime_mean": 17.1,
+      "overtime_high_share": 0.148
+    },
+    {
+      "month": 27,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 209,
+      "gap": 0.03,
+      "overtime_mean": 11.0,
+      "overtime_high_share": 0.033
+    },
+    {
+      "month": 27,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 188,
+      "gap": 0.079,
+      "overtime_mean": 18.6,
+      "overtime_high_share": 0.176
+    },
+    {
+      "month": 27,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 252,
+      "gap": 0.034,
+      "overtime_mean": 15.9,
+      "overtime_high_share": 0.151
+    },
+    {
+      "month": 27,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 458,
+      "gap": 0.038,
+      "overtime_mean": 17.8,
+      "overtime_high_share": 0.166
+    },
+    {
+      "month": 27,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 235,
+      "gap": 0.049,
+      "overtime_mean": 12.8,
+      "overtime_high_share": 0.03
+    },
+    {
+      "month": 27,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 192,
+      "gap": 0.059,
+      "overtime_mean": 13.1,
+      "overtime_high_share": 0.052
+    },
+    {
+      "month": 28,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 864,
+      "gap": 0.071,
+      "overtime_mean": 18.5,
+      "overtime_high_share": 0.219
+    },
+    {
+      "month": 28,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 206,
+      "gap": 0.044,
+      "overtime_mean": 13.4,
+      "overtime_high_share": 0.073
+    },
+    {
+      "month": 28,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 187,
+      "gap": 0.084,
+      "overtime_mean": 19.0,
+      "overtime_high_share": 0.278
+    },
+    {
+      "month": 28,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 251,
+      "gap": 0.038,
+      "overtime_mean": 16.5,
+      "overtime_high_share": 0.191
+    },
+    {
+      "month": 28,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 451,
+      "gap": 0.053,
+      "overtime_mean": 20.2,
+      "overtime_high_share": 0.279
+    },
+    {
+      "month": 28,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 231,
+      "gap": 0.065,
+      "overtime_mean": 15.4,
+      "overtime_high_share": 0.078
+    },
+    {
+      "month": 28,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 189,
+      "gap": 0.074,
+      "overtime_mean": 15.7,
+      "overtime_high_share": 0.116
+    },
+    {
+      "month": 29,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 850,
+      "gap": 0.086,
+      "overtime_mean": 21.1,
+      "overtime_high_share": 0.346
+    },
+    {
+      "month": 29,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 204,
+      "gap": 0.053,
+      "overtime_mean": 15.0,
+      "overtime_high_share": 0.132
+    },
+    {
+      "month": 29,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 185,
+      "gap": 0.094,
+      "overtime_mean": 21.1,
+      "overtime_high_share": 0.357
+    },
+    {
+      "month": 29,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 247,
+      "gap": 0.053,
+      "overtime_mean": 19.5,
+      "overtime_high_share": 0.267
+    },
+    {
+      "month": 29,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 449,
+      "gap": 0.057,
+      "overtime_mean": 21.0,
+      "overtime_high_share": 0.401
+    },
+    {
+      "month": 29,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 230,
+      "gap": 0.069,
+      "overtime_mean": 16.2,
+      "overtime_high_share": 0.161
+    },
+    {
+      "month": 29,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 190,
+      "gap": 0.069,
+      "overtime_mean": 14.8,
+      "overtime_high_share": 0.142
+    },
+    {
+      "month": 30,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 835,
+      "gap": 0.102,
+      "overtime_mean": 24.1,
+      "overtime_high_share": 0.519
+    },
+    {
+      "month": 30,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 203,
+      "gap": 0.058,
+      "overtime_mean": 15.9,
+      "overtime_high_share": 0.153
+    },
+    {
+      "month": 30,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 179,
+      "gap": 0.123,
+      "overtime_mean": 26.6,
+      "overtime_high_share": 0.598
+    },
+    {
+      "month": 30,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 246,
+      "gap": 0.057,
+      "overtime_mean": 19.6,
+      "overtime_high_share": 0.325
+    },
+    {
+      "month": 30,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 444,
+      "gap": 0.068,
+      "overtime_mean": 22.6,
+      "overtime_high_share": 0.527
+    },
+    {
+      "month": 30,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 227,
+      "gap": 0.082,
+      "overtime_mean": 17.9,
+      "overtime_high_share": 0.233
+    },
+    {
+      "month": 30,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 189,
+      "gap": 0.074,
+      "overtime_mean": 15.8,
+      "overtime_high_share": 0.185
+    },
+    {
+      "month": 31,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 855,
+      "gap": 0.081,
+      "overtime_mean": 20.0,
+      "overtime_high_share": 0.563
+    },
+    {
+      "month": 31,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 206,
+      "gap": 0.044,
+      "overtime_mean": 13.5,
+      "overtime_high_share": 0.16
+    },
+    {
+      "month": 31,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 185,
+      "gap": 0.094,
+      "overtime_mean": 21.1,
+      "overtime_high_share": 0.654
+    },
+    {
+      "month": 31,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 251,
+      "gap": 0.038,
+      "overtime_mean": 16.2,
+      "overtime_high_share": 0.311
+    },
+    {
+      "month": 31,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 450,
+      "gap": 0.055,
+      "overtime_mean": 20.5,
+      "overtime_high_share": 0.531
+    },
+    {
+      "month": 31,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 231,
+      "gap": 0.065,
+      "overtime_mean": 15.0,
+      "overtime_high_share": 0.203
+    },
+    {
+      "month": 31,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 191,
+      "gap": 0.064,
+      "overtime_mean": 14.2,
+      "overtime_high_share": 0.194
+    },
+    {
+      "month": 32,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 885,
+      "gap": 0.048,
+      "overtime_mean": 14.4,
+      "overtime_high_share": 0.371
+    },
+    {
+      "month": 32,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 209,
+      "gap": 0.03,
+      "overtime_mean": 11.4,
+      "overtime_high_share": 0.12
+    },
+    {
+      "month": 32,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 193,
+      "gap": 0.054,
+      "overtime_mean": 14.0,
+      "overtime_high_share": 0.42
+    },
+    {
+      "month": 32,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 255,
+      "gap": 0.022,
+      "overtime_mean": 13.5,
+      "overtime_high_share": 0.2
+    },
+    {
+      "month": 32,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 452,
+      "gap": 0.051,
+      "overtime_mean": 19.7,
+      "overtime_high_share": 0.482
+    },
+    {
+      "month": 32,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 238,
+      "gap": 0.037,
+      "overtime_mean": 10.0,
+      "overtime_high_share": 0.155
+    },
+    {
+      "month": 32,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 194,
+      "gap": 0.05,
+      "overtime_mean": 11.2,
+      "overtime_high_share": 0.139
+    },
+    {
+      "month": 33,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 896,
+      "gap": 0.036,
+      "overtime_mean": 12.2,
+      "overtime_high_share": 0.19
+    },
+    {
+      "month": 33,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 211,
+      "gap": 0.021,
+      "overtime_mean": 9.1,
+      "overtime_high_share": 0.081
+    },
+    {
+      "month": 33,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 196,
+      "gap": 0.04,
+      "overtime_mean": 11.5,
+      "overtime_high_share": 0.179
+    },
+    {
+      "month": 33,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 260,
+      "gap": 0.003,
+      "overtime_mean": 10.1,
+      "overtime_high_share": 0.092
+    },
+    {
+      "month": 33,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 459,
+      "gap": 0.036,
+      "overtime_mean": 17.0,
+      "overtime_high_share": 0.322
+    },
+    {
+      "month": 33,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 240,
+      "gap": 0.029,
+      "overtime_mean": 8.6,
+      "overtime_high_share": 0.071
+    },
+    {
+      "month": 33,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 194,
+      "gap": 0.05,
+      "overtime_mean": 11.3,
+      "overtime_high_share": 0.062
+    },
+    {
+      "month": 34,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 905,
+      "gap": 0.027,
+      "overtime_mean": 10.4,
+      "overtime_high_share": 0.101
+    },
+    {
+      "month": 34,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 212,
+      "gap": 0.016,
+      "overtime_mean": 8.8,
+      "overtime_high_share": 0.047
+    },
+    {
+      "month": 34,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 197,
+      "gap": 0.035,
+      "overtime_mean": 10.6,
+      "overtime_high_share": 0.071
+    },
+    {
+      "month": 34,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 258,
+      "gap": 0.011,
+      "overtime_mean": 11.4,
+      "overtime_high_share": 0.066
+    },
+    {
+      "month": 34,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 465,
+      "gap": 0.024,
+      "overtime_mean": 14.9,
+      "overtime_high_share": 0.228
+    },
+    {
+      "month": 34,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 238,
+      "gap": 0.037,
+      "overtime_mean": 10.1,
+      "overtime_high_share": 0.046
+    },
+    {
+      "month": 34,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 197,
+      "gap": 0.035,
+      "overtime_mean": 9.1,
+      "overtime_high_share": 0.046
+    },
+    {
+      "month": 35,
+      "department": "Engineering",
+      "budget": 929.9,
+      "working": 910,
+      "gap": 0.021,
+      "overtime_mean": 9.6,
+      "overtime_high_share": 0.065
+    },
+    {
+      "month": 35,
+      "department": "Data & AI",
+      "budget": 215.5,
+      "working": 212,
+      "gap": 0.016,
+      "overtime_mean": 8.6,
+      "overtime_high_share": 0.028
+    },
+    {
+      "month": 35,
+      "department": "Product & Design",
+      "budget": 204.1,
+      "working": 198,
+      "gap": 0.03,
+      "overtime_mean": 9.6,
+      "overtime_high_share": 0.045
+    },
+    {
+      "month": 35,
+      "department": "Delivery",
+      "budget": 260.8,
+      "working": 255,
+      "gap": 0.022,
+      "overtime_mean": 13.3,
+      "overtime_high_share": 0.059
+    },
+    {
+      "month": 35,
+      "department": "Customer Support",
+      "budget": 476.3,
+      "working": 460,
+      "gap": 0.034,
+      "overtime_mean": 16.5,
+      "overtime_high_share": 0.196
+    },
+    {
+      "month": 35,
+      "department": "Sales & Marketing",
+      "budget": 247.2,
+      "working": 243,
+      "gap": 0.017,
+      "overtime_mean": 6.7,
+      "overtime_high_share": 0.025
+    },
+    {
+      "month": 35,
+      "department": "Corporate Services",
+      "budget": 204.1,
+      "working": 199,
+      "gap": 0.025,
+      "overtime_mean": 7.1,
+      "overtime_high_share": 0.025
+    }
+  ],
+  "events": {
+    "rto_mandate": "2024-09-01",
+    "hiring_freeze": "2025-01 to 2025-06 (fill rate 4 % a month instead of 35 %)",
+    "redundancy": {
+      "date": "2025-03-31",
+      "department": "Sales & Marketing",
+      "people": 25
+    },
+    "pay_review": {
+      "3": 0.04,
+      "15": 0.03,
+      "27": 0.025
+    },
+    "band_uplift": {
+      "3": 0.06,
+      "15": 0.045,
+      "27": 0.03
+    }
+  },
+  "by_year": {
+    "2023": {
+      "avg_headcount": 2273.8,
+      "leavers": 399,
+      "resignations": 358,
+      "voluntary_attrition_rate": 0.1574,
+      "total_attrition_rate": 0.1755,
+      "by_type": {
+        "Resignation": 358,
+        "Dismissal": 41
+      }
+    },
+    "2024": {
+      "avg_headcount": 2399.2,
+      "leavers": 481,
+      "resignations": 439,
+      "voluntary_attrition_rate": 0.183,
+      "total_attrition_rate": 0.2005,
+      "by_type": {
+        "Resignation": 439,
+        "Dismissal": 42
+      }
+    },
+    "2025": {
+      "avg_headcount": 2389.7,
+      "leavers": 547,
+      "resignations": 478,
+      "voluntary_attrition_rate": 0.2,
+      "total_attrition_rate": 0.2289,
+      "by_type": {
+        "Resignation": 478,
+        "Dismissal": 44,
+        "Redundancy": 25
+      }
+    }
+  },
+  "bad_managers_ever": [
+    "OD10015",
+    "OD10017",
+    "OD10025",
+    "OD10044",
+    "OD10045",
+    "OD10060",
+    "OD10061",
+    "OD10064",
+    "OD10448",
+    "OD10516",
+    "OD11014",
+    "OD11018",
+    "OD11201",
+    "OD11206",
+    "OD11208",
+    "OD11209",
+    "OD11211",
+    "OD11457",
+    "OD11458",
+    "OD11512",
+    "OD11572",
+    "OD11843",
+    "OD11847",
+    "OD11864",
+    "OD12084",
+    "OD12085",
+    "OD12096",
+    "OD12098",
+    "OD12321",
+    "OD13355",
+    "OD13456",
+    "OD13744"
+  ],
+  "boomerangs": [
+    {
+      "original": "OD10557",
+      "rehire": "OD12603",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11403",
+      "rehire": "OD12620",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11882",
+      "rehire": "OD12628",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11974",
+      "rehire": "OD12631",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10864",
+      "rehire": "OD12659",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11668",
+      "rehire": "OD12674",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10820",
+      "rehire": "OD12695",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10088",
+      "rehire": "OD12705",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10910",
+      "rehire": "OD12711",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11545",
+      "rehire": "OD12724",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11523",
+      "rehire": "OD12732",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10651",
+      "rehire": "OD12748",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11563",
+      "rehire": "OD12775",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10971",
+      "rehire": "OD12811",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11266",
+      "rehire": "OD12824",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10876",
+      "rehire": "OD12868",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11342",
+      "rehire": "OD12875",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11982",
+      "rehire": "OD12889",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10563",
+      "rehire": "OD12901",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10173",
+      "rehire": "OD12949",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10226",
+      "rehire": "OD12951",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10961",
+      "rehire": "OD13022",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10434",
+      "rehire": "OD13110",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10863",
+      "rehire": "OD13165",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10914",
+      "rehire": "OD13166",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10911",
+      "rehire": "OD13168",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11498",
+      "rehire": "OD13183",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD12159",
+      "rehire": "OD13190",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD12196",
+      "rehire": "OD13194",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11114",
+      "rehire": "OD13215",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11323",
+      "rehire": "OD13220",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD12045",
+      "rehire": "OD13244",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10644",
+      "rehire": "OD13254",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10487",
+      "rehire": "OD13275",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD12083",
+      "rehire": "OD13303",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10330",
+      "rehire": "OD13316",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11672",
+      "rehire": "OD13345",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10994",
+      "rehire": "OD13372",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11294",
+      "rehire": "OD13383",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD12578",
+      "rehire": "OD13391",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10867",
+      "rehire": "OD13408",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10279",
+      "rehire": "OD13430",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10594",
+      "rehire": "OD13448",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10686",
+      "rehire": "OD13458",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD10282",
+      "rehire": "OD13480",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10475",
+      "rehire": "OD13483",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11060",
+      "rehire": "OD13522",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD11560",
+      "rehire": "OD13548",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11988",
+      "rehire": "OD13556",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10701",
+      "rehire": "OD13564",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11803",
+      "rehire": "OD13646",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD12002",
+      "rehire": "OD13652",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10906",
+      "rehire": "OD13702",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD12316",
+      "rehire": "OD13713",
+      "linked_in_hris": true
+    },
+    {
+      "original": "OD12527",
+      "rehire": "OD13726",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD11066",
+      "rehire": "OD13785",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10214",
+      "rehire": "OD13816",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10179",
+      "rehire": "OD13819",
+      "linked_in_hris": false
+    },
+    {
+      "original": "OD10890",
+      "rehire": "OD13838",
+      "linked_in_hris": false
+    }
+  ],
+  "exit_interview_stated_vs_true": {
+    "below_band": {
+      "Pay": 175,
+      "Better opportunity": 65,
+      "Career progression": 13
+    },
+    "overtime_high": {
+      "Pay": 21,
+      "Workload / burnout": 86,
+      "Better opportunity": 79,
+      "Personal / relocation": 16
+    },
+    "low_engagement": {
+      "Better opportunity": 9,
+      "Career progression": 2,
+      "Personal / relocation": 1,
+      "Workload / burnout": 1,
+      "Manager relationship": 1
+    },
+    "bad_manager": {
+      "Career progression": 20,
+      "Personal / relocation": 11,
+      "Manager relationship": 19,
+      "Better opportunity": 39
+    },
+    "none": {
+      "Personal / relocation": 51,
+      "Better opportunity": 57,
+      "Further study": 23
+    },
+    "first_year": {
+      "Role not as expected": 45,
+      "Personal / relocation": 20,
+      "Better opportunity": 26
+    },
+    "promotion_stalled": {
+      "Better opportunity": 30,
+      "Career progression": 63,
+      "Pay": 1
+    },
+    "rto_mandate": {
+      "Flexibility / remote work": 24,
+      "Better opportunity": 4
+    }
+  },
+  "injected_mess": {
+    "employees_department_variants": 155,
+    "job_history_department_variants": 584,
+    "hire_date_ddmmyyyy": 580,
+    "salary_entered_monthly": 77,
+    "gender_codes": 386,
+    "terminated_but_status_active": [
+      "OD10102",
+      "OD10754",
+      "OD10770",
+      "OD11686",
+      "OD11880",
+      "OD11908",
+      "OD12275",
+      "OD12971",
+      "OD13031"
+    ],
+    "manager_id_blanked": 39,
+    "test_records": 6,
+    "job_history_duplicate_rows": 18,
+    "timesheets_missing": 3442,
+    "timesheets_negative_overtime": 165
+  },
+  "survey_response_rate_low_vs_rest": [
+    0.617,
+    0.815
+  ],
+  "survey_response_rate": 0.783
+}

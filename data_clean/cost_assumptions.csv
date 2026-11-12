@@ -1,0 +1,6 @@
+level,level_name,recruitment_pct,vacancy_months,vacancy_cover_pct,ramp_months,ramp_loss_pct,team_time_pct,cost_share_of_salary
+1,Associate,12,2.0,50,3,50,4,0.368
+2,Professional,15,2.0,50,4,50,5,0.45
+3,Senior,20,2.5,50,6,50,5,0.604
+4,Manager,25,3.0,50,6,50,6,0.685
+5,Head,30,4.0,50,9,50,8,0.922

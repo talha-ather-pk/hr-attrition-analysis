@@ -1,0 +1,374 @@
+employee_id,department,level,job_title,annual_salary,band_mid,compa_ratio
+OD10566,Engineering,2,QA Engineer,46140.0,68200.0,0.677
+OD12168,Corporate Services,2,HR Advisor,27690.0,39900.0,0.694
+OD11104,Product & Design,3,Senior Product Manager,54180.0,77400.0,0.7
+OD10789,Engineering,2,Software Engineer,41640.0,59300.0,0.702
+OD11427,Customer Support,4,Support Team Lead,37940.0,52900.0,0.717
+OD11476,Customer Support,2,Support Analyst,27910.0,38100.0,0.733
+OD11179,Product & Design,1,Associate Product Manager,34820.0,47200.0,0.738
+OD11368,Delivery,2,Project Manager,39610.0,53600.0,0.739
+OD11479,Customer Support,3,Senior Support Analyst,36060.0,48700.0,0.74
+OD10702,Engineering,1,Associate QA Engineer,31520.0,42600.0,0.74
+OD10807,Engineering,1,Associate QA Engineer,39870.0,53200.0,0.749
+OD10023,Engineering,4,Engineering Manager,82590.0,109200.0,0.756
+OD11987,Sales & Marketing,2,Account Executive,34700.0,45600.0,0.761
+OD12087,Corporate Services,4,Operations Manager,48830.0,63800.0,0.765
+OD10819,Engineering,2,DevOps Engineer,52260.0,68200.0,0.766
+OD11634,Customer Support,3,Senior Service Desk Agent,32520.0,42400.0,0.767
+OD10345,Engineering,2,DevOps Engineer,45600.0,59300.0,0.769
+OD11422,Customer Support,4,Support Team Lead,46970.0,60900.0,0.771
+OD10128,Engineering,1,Associate QA Engineer,35780.0,46300.0,0.773
+OD11641,Customer Support,2,Support Analyst,23490.0,30400.0,0.773
+OD10839,Data & AI,4,Data Manager,77750.0,100400.0,0.774
+OD11785,Customer Support,1,Associate Support Analyst,19970.0,25800.0,0.774
+OD10079,Engineering,4,Engineering Manager,84710.0,109200.0,0.776
+OD12026,Sales & Marketing,1,Associate Account Executive,25400.0,32700.0,0.777
+OD10259,Engineering,2,Software Engineer,53060.0,68200.0,0.778
+OD10470,Engineering,3,Senior Software Engineer,68080.0,87300.0,0.78
+OD11119,Product & Design,3,Senior UX Designer,55590.0,71200.0,0.781
+OD11202,Delivery,4,Delivery Manager,67220.0,85800.0,0.783
+OD11030,Product & Design,3,Senior UX Designer,69810.0,89000.0,0.784
+OD11681,Customer Support,3,Senior Service Desk Agent,33300.0,42400.0,0.785
+OD10164,Engineering,3,Senior DevOps Engineer,68550.0,87300.0,0.785
+OD10830,Data & AI,4,Data Manager,90820.0,115500.0,0.786
+OD11014,Product & Design,4,Product Lead,87440.0,111300.0,0.786
+OD11145,Product & Design,2,UX Designer,47760.0,60500.0,0.789
+OD11848,Sales & Marketing,4,Sales Manager,53050.0,67200.0,0.789
+OD12235,Corporate Services,3,Senior HR Advisor,43840.0,55500.0,0.79
+OD11539,Customer Support,3,Senior Support Analyst,38530.0,48700.0,0.791
+OD10744,Engineering,2,DevOps Engineer,43240.0,54600.0,0.792
+OD10065,Engineering,4,Engineering Manager,69410.0,87300.0,0.795
+OD13142,Customer Support,1,Associate Service Desk Agent,23600.0,29700.0,0.795
+OD10025,Engineering,4,Engineering Manager,75490.0,94900.0,0.795
+OD11608,Customer Support,3,Senior Support Analyst,33710.0,42400.0,0.795
+OD12234,Corporate Services,3,Senior Finance Analyst,44180.0,55500.0,0.796
+OD11924,Sales & Marketing,2,Marketing Specialist,36310.0,45600.0,0.796
+OD11246,Delivery,2,Business Analyst,42670.0,53600.0,0.796
+OD11252,Delivery,3,Senior Business Analyst,62800.0,78900.0,0.796
+OD11521,Customer Support,1,Associate Service Desk Agent,20610.0,25800.0,0.799
+OD12066,Sales & Marketing,3,Senior Marketing Specialist,46740.0,58400.0,0.8
+OD10714,Engineering,2,DevOps Engineer,54730.0,68200.0,0.802
+OD10895,Data & AI,3,Senior Data Analyst,74070.0,92400.0,0.802
+OD12097,Corporate Services,4,Operations Manager,64320.0,79800.0,0.806
+OD11455,Customer Support,4,Support Team Lead,42660.0,52900.0,0.806
+OD11849,Sales & Marketing,4,Sales Manager,58990.0,73000.0,0.808
+OD10012,Engineering,4,Engineering Manager,70510.0,87300.0,0.808
+OD11434,Customer Support,4,Support Team Lead,42800.0,52900.0,0.809
+OD11495,Customer Support,3,Senior Support Analyst,34290.0,42400.0,0.809
+OD13491,Engineering,3,Senior DevOps Engineer,61410.0,75900.0,0.809
+OD11016,Product & Design,4,Product Lead,72110.0,89000.0,0.81
+OD10300,Engineering,3,Senior Software Engineer,70690.0,87300.0,0.81
+OD10852,Data & AI,2,Data Engineer,58600.0,72200.0,0.812
+OD11410,Delivery,3,Senior Project Manager,55670.0,68600.0,0.812
+OD11470,Customer Support,2,Service Desk Agent,24690.0,30400.0,0.812
+OD11696,Customer Support,2,Support Analyst,30920.0,38100.0,0.812
+OD10699,Engineering,2,DevOps Engineer,48200.0,59300.0,0.813
+OD11234,Delivery,2,Business Analyst,43600.0,53600.0,0.813
+OD12227,Corporate Services,2,HR Advisor,40620.0,49900.0,0.814
+OD10394,Engineering,3,Senior QA Engineer,61750.0,75900.0,0.814
+OD11095,Product & Design,2,Product Manager,45290.0,55600.0,0.815
+OD11716,Customer Support,2,Service Desk Agent,26970.0,33100.0,0.815
+OD11782,Customer Support,1,Associate Service Desk Agent,24230.0,29700.0,0.816
+OD10948,Data & AI,3,Senior Data Analyst,65490.0,80300.0,0.816
+OD11169,Product & Design,2,UX Designer,49440.0,60500.0,0.817
+OD11208,Delivery,4,Delivery Manager,80630.0,98700.0,0.817
+OD11805,Customer Support,2,Service Desk Agent,27030.0,33100.0,0.817
+OD11330,Delivery,2,Business Analyst,40280.0,49300.0,0.817
+OD10073,Engineering,4,Engineering Manager,77550.0,94900.0,0.817
+OD10019,Engineering,4,Engineering Manager,77810.0,94900.0,0.82
+OD10170,Engineering,3,Senior QA Engineer,62330.0,75900.0,0.821
+OD11852,Sales & Marketing,4,Sales Manager,68990.0,84000.0,0.821
+OD11722,Customer Support,1,Associate Service Desk Agent,24390.0,29700.0,0.821
+OD10208,Engineering,3,Senior Software Engineer,71740.0,87300.0,0.822
+OD11471,Customer Support,3,Senior Service Desk Agent,34840.0,42400.0,0.822
+OD12704,Engineering,2,QA Engineer,48830.0,59300.0,0.823
+OD10412,Engineering,1,Associate Software Engineer,38130.0,46300.0,0.824
+OD10905,Data & AI,3,Senior Data Scientist,76140.0,92400.0,0.824
+OD10289,Engineering,1,Associate DevOps Engineer,35100.0,42600.0,0.824
+OD10306,Engineering,2,QA Engineer,48920.0,59300.0,0.825
+OD11738,Customer Support,3,Senior Service Desk Agent,35000.0,42400.0,0.825
+OD11526,Customer Support,3,Senior Support Analyst,40220.0,48700.0,0.826
+OD10039,Engineering,4,Engineering Manager,78420.0,94900.0,0.826
+OD11205,Delivery,4,Delivery Manager,71020.0,85800.0,0.828
+OD11436,Customer Support,4,Support Team Lead,43800.0,52900.0,0.828
+OD10878,Data & AI,3,Senior Data Scientist,61230.0,73900.0,0.829
+OD12105,Corporate Services,2,Office Coordinator,41420.0,49900.0,0.83
+OD11543,Customer Support,1,Associate Service Desk Agent,24690.0,29700.0,0.831
+OD12100,Corporate Services,2,HR Advisor,36050.0,43400.0,0.831
+OD11853,Sales & Marketing,4,Sales Manager,60720.0,73000.0,0.832
+OD12088,Corporate Services,4,Operations Manager,66460.0,79800.0,0.833
+OD11101,Product & Design,3,Senior Product Manager,64580.0,77400.0,0.834
+OD12262,Engineering,1,Associate QA Engineer,38610.0,46300.0,0.834
+OD11183,Product & Design,3,Senior UX Designer,59470.0,71200.0,0.835
+OD12748,Engineering,3,Senior Software Engineer,72930.0,87300.0,0.835
+OD11569,Customer Support,2,Support Analyst,27630.0,33100.0,0.835
+OD10182,Engineering,2,Software Engineer,49500.0,59300.0,0.835
+OD12112,Corporate Services,3,Senior Office Coordinator,46420.0,55500.0,0.836
+OD11548,Customer Support,1,Associate Service Desk Agent,21560.0,25800.0,0.836
+OD11522,Customer Support,2,Service Desk Agent,27690.0,33100.0,0.837
+OD11291,Delivery,3,Senior Business Analyst,57400.0,68600.0,0.837
+OD10665,Engineering,2,Software Engineer,49660.0,59300.0,0.837
+OD12173,Corporate Services,1,Associate HR Advisor,32630.0,38900.0,0.839
+OD11197,Delivery,4,Delivery Manager,71970.0,85800.0,0.839
+OD11671,Customer Support,2,Service Desk Agent,27780.0,33100.0,0.839
+OD11441,Customer Support,4,Support Team Lead,51090.0,60900.0,0.839
+OD10741,Engineering,2,DevOps Engineer,57390.0,68200.0,0.841
+OD10056,Engineering,4,Engineering Manager,79780.0,94900.0,0.841
+OD13218,Product & Design,2,UX Designer,50960.0,60500.0,0.842
+OD11375,Delivery,1,Associate Business Analyst,32460.0,38500.0,0.843
+OD11217,Delivery,2,Business Analyst,41560.0,49300.0,0.843
+OD12120,Corporate Services,1,Associate Finance Analyst,28490.0,33800.0,0.843
+OD11577,Customer Support,1,Associate Support Analyst,21780.0,25800.0,0.844
+OD11653,Customer Support,3,Senior Support Analyst,35780.0,42400.0,0.844
+OD11378,Delivery,3,Senior Project Manager,57940.0,68600.0,0.845
+OD10038,Engineering,4,Engineering Manager,92300.0,109200.0,0.845
+OD11002,Data & AI,1,Associate Data Engineer,47580.0,56300.0,0.845
+OD12836,Sales & Marketing,3,Senior Account Executive,56810.0,67200.0,0.845
+OD12435,Delivery,1,Associate Project Manager,32520.0,38500.0,0.845
+OD11065,Product & Design,2,Product Manager,51200.0,60500.0,0.846
+OD10595,Engineering,3,Senior Software Engineer,64200.0,75900.0,0.846
+OD10244,Engineering,3,Senior DevOps Engineer,59160.0,69900.0,0.846
+OD10187,Engineering,1,Associate DevOps Engineer,36040.0,42600.0,0.846
+OD11131,Product & Design,2,UX Designer,51240.0,60500.0,0.847
+OD13414,Sales & Marketing,4,Sales Manager,61800.0,73000.0,0.847
+OD10006,Engineering,4,Engineering Manager,80390.0,94900.0,0.847
+OD10656,Engineering,2,Software Engineer,46230.0,54600.0,0.847
+OD12592,Engineering,1,Associate Software Engineer,45040.0,53200.0,0.847
+OD10578,Engineering,1,Associate QA Engineer,39280.0,46300.0,0.848
+OD10076,Engineering,4,Engineering Manager,74050.0,87300.0,0.848
+OD12245,Corporate Services,2,HR Advisor,36790.0,43400.0,0.848
+OD11449,Customer Support,4,Support Team Lead,51650.0,60900.0,0.848
+OD10887,Data & AI,2,Data Analyst,53270.0,62800.0,0.848
+OD13030,Delivery,2,Business Analyst,52370.0,61700.0,0.849
+OD10031,Engineering,4,Engineering Manager,92950.0,109200.0,0.851
+OD13289,Delivery,1,Associate Project Manager,40950.0,48100.0,0.851
+OD11402,Delivery,2,Project Manager,45620.0,53600.0,0.851
+OD12221,Corporate Services,3,Senior HR Advisor,47240.0,55500.0,0.851
+OD10037,Engineering,4,Engineering Manager,92950.0,109200.0,0.851
+OD11528,Customer Support,3,Senior Support Analyst,36120.0,42400.0,0.852
+OD11012,Product & Design,4,Product Lead,82560.0,96800.0,0.853
+OD12278,Data & AI,3,Senior Data Scientist,78780.0,92400.0,0.853
+OD12873,Product & Design,2,UX Designer,59270.0,69500.0,0.853
+OD13819,Engineering,1,Associate Software Engineer,39550.0,46300.0,0.854
+OD10636,Engineering,3,Senior Software Engineer,74520.0,87300.0,0.854
+OD11385,Delivery,2,Project Manager,52730.0,61700.0,0.855
+OD11477,Customer Support,1,Associate Support Analyst,25460.0,29700.0,0.857
+OD11015,Product & Design,4,Product Lead,95370.0,111300.0,0.857
+OD11206,Delivery,4,Delivery Manager,84600.0,98700.0,0.857
+OD10420,Engineering,2,Software Engineer,46820.0,54600.0,0.858
+OD10928,Data & AI,2,Data Analyst,61920.0,72200.0,0.858
+OD11204,Delivery,4,Delivery Manager,73640.0,85800.0,0.858
+OD13667,Customer Support,4,Support Team Lead,45370.0,52900.0,0.858
+OD12102,Corporate Services,1,Associate Finance Analyst,29040.0,33800.0,0.859
+OD10605,Engineering,3,Senior DevOps Engineer,65180.0,75900.0,0.859
+OD10398,Engineering,3,Senior DevOps Engineer,75120.0,87300.0,0.86
+OD11787,Customer Support,2,Support Analyst,28460.0,33100.0,0.86
+OD12247,Corporate Services,3,Senior Office Coordinator,47760.0,55500.0,0.861
+OD13090,Customer Support,1,Associate Support Analyst,25570.0,29700.0,0.861
+OD12207,Corporate Services,3,Senior Office Coordinator,47790.0,55500.0,0.861
+OD10157,Engineering,3,Senior DevOps Engineer,65370.0,75900.0,0.861
+OD11302,Delivery,1,Associate Project Manager,36050.0,41800.0,0.862
+OD12965,Engineering,2,Software Engineer,58780.0,68200.0,0.862
+OD13494,Engineering,2,Software Engineer,51100.0,59300.0,0.862
+OD11430,Customer Support,4,Support Team Lead,52500.0,60900.0,0.862
+OD11193,Delivery,4,Delivery Manager,74080.0,85800.0,0.863
+OD10761,Engineering,2,DevOps Engineer,51230.0,59300.0,0.864
+OD11254,Delivery,3,Senior Project Manager,68140.0,78900.0,0.864
+OD12210,Corporate Services,3,Senior Office Coordinator,55100.0,63800.0,0.864
+OD10044,Engineering,4,Engineering Manager,75470.0,87300.0,0.864
+OD10224,Engineering,2,QA Engineer,51260.0,59300.0,0.864
+OD11367,Delivery,2,Project Manager,46290.0,53600.0,0.864
+OD12340,Data & AI,1,Associate Data Analyst,42260.0,48900.0,0.864
+OD12098,Corporate Services,4,Operations Manager,59930.0,69400.0,0.864
+OD11440,Customer Support,4,Support Team Lead,52600.0,60900.0,0.864
+OD13350,Sales & Marketing,1,Associate Account Executive,30800.0,35600.0,0.865
+OD11626,Customer Support,1,Associate Service Desk Agent,25690.0,29700.0,0.865
+OD13067,Engineering,2,DevOps Engineer,59060.0,68200.0,0.866
+OD11381,Delivery,1,Associate Business Analyst,41680.0,48100.0,0.867
+OD10700,Engineering,1,Associate Software Engineer,46140.0,53200.0,0.867
+OD12941,Sales & Marketing,1,Associate Account Executive,30860.0,35600.0,0.867
+OD10601,Engineering,1,Associate QA Engineer,36980.0,42600.0,0.868
+OD13167,Data & AI,1,Associate Data Scientist,48850.0,56300.0,0.868
+OD13647,Customer Support,2,Service Desk Agent,33070.0,38100.0,0.868
+OD10068,Engineering,4,Engineering Manager,94900.0,109200.0,0.869
+OD11557,Customer Support,3,Senior Support Analyst,33890.0,39000.0,0.869
+OD11804,Customer Support,3,Senior Support Analyst,36840.0,42400.0,0.869
+OD12091,Corporate Services,4,Operations Manager,69370.0,79800.0,0.869
+OD10824,Data & AI,4,Data Manager,87280.0,100400.0,0.869
+OD11903,Sales & Marketing,3,Senior Account Executive,50740.0,58400.0,0.869
+OD10015,Engineering,4,Engineering Manager,82470.0,94900.0,0.869
+OD11209,Delivery,4,Delivery Manager,85840.0,98700.0,0.87
+OD11859,Sales & Marketing,4,Sales Manager,63500.0,73000.0,0.87
+OD13574,Engineering,2,QA Engineer,59320.0,68200.0,0.87
+OD10018,Engineering,4,Engineering Manager,75980.0,87300.0,0.87
+OD11588,Customer Support,2,Support Analyst,28810.0,33100.0,0.87
+OD12190,Corporate Services,2,Office Coordinator,37820.0,43400.0,0.871
+OD10944,Data & AI,2,Data Analyst,54680.0,62800.0,0.871
+OD10125,Engineering,3,Senior DevOps Engineer,76000.0,87300.0,0.871
+OD13605,Engineering,3,Senior QA Engineer,66210.0,75900.0,0.872
+OD11021,Product & Design,4,Product Lead,84400.0,96800.0,0.872
+OD10962,Data & AI,3,Senior Data Analyst,69990.0,80300.0,0.872
+OD13434,Product & Design,2,Product Manager,52730.0,60500.0,0.872
+OD10880,Data & AI,2,Data Analyst,50300.0,57700.0,0.872
+OD12101,Corporate Services,3,Senior Office Coordinator,44560.0,51100.0,0.872
+OD13754,Engineering,2,Software Engineer,59460.0,68200.0,0.872
+OD11356,Delivery,3,Senior Project Manager,68820.0,78900.0,0.872
+OD12030,Sales & Marketing,3,Senior Marketing Specialist,50990.0,58400.0,0.873
+OD11100,Product & Design,2,Product Manager,60640.0,69500.0,0.873
+OD12769,Product & Design,2,Product Manager,60670.0,69500.0,0.873
+OD12096,Corporate Services,4,Operations Manager,60640.0,69400.0,0.874
+OD11566,Customer Support,2,Support Analyst,28920.0,33100.0,0.874
+OD12069,Sales & Marketing,2,Account Executive,45900.0,52500.0,0.874
+OD10696,Engineering,2,Software Engineer,51880.0,59300.0,0.875
+OD11353,Delivery,3,Senior Project Manager,60010.0,68600.0,0.875
+OD11704,Customer Support,2,Support Analyst,28970.0,33100.0,0.875
+OD13450,Customer Support,2,Support Analyst,33340.0,38100.0,0.875
+OD13077,Data & AI,2,Data Analyst,50480.0,57700.0,0.875
+OD10936,Data & AI,1,Associate Data Scientist,49330.0,56300.0,0.876
+OD11655,Customer Support,2,Service Desk Agent,28980.0,33100.0,0.876
+OD11261,Delivery,2,Project Manager,54030.0,61700.0,0.876
+OD10607,Engineering,2,QA Engineer,59840.0,68200.0,0.877
+OD10408,Engineering,2,Software Engineer,59840.0,68200.0,0.877
+OD11946,Sales & Marketing,1,Associate Account Executive,35880.0,40900.0,0.877
+OD11073,Product & Design,1,Associate UX Designer,41390.0,47200.0,0.877
+OD13018,Engineering,2,DevOps Engineer,59820.0,68200.0,0.877
+OD11510,Customer Support,1,Associate Support Analyst,26060.0,29700.0,0.877
+OD11038,Product & Design,2,Product Manager,60960.0,69500.0,0.877
+OD12082,Corporate Services,4,Operations Manager,60870.0,69400.0,0.877
+OD10291,Engineering,2,DevOps Engineer,52040.0,59300.0,0.878
+OD10740,Engineering,3,Senior DevOps Engineer,76670.0,87300.0,0.878
+OD11392,Delivery,2,Project Manager,47070.0,53600.0,0.878
+OD10273,Engineering,3,Senior Software Engineer,66730.0,75900.0,0.879
+OD11942,Sales & Marketing,3,Senior Account Executive,51330.0,58400.0,0.879
+OD11886,Sales & Marketing,2,Marketing Specialist,40100.0,45600.0,0.879
+OD11622,Customer Support,2,Support Analyst,29110.0,33100.0,0.879
+OD11431,Customer Support,4,Support Team Lead,53560.0,60900.0,0.879
+OD13788,Product & Design,1,Associate UX Designer,47650.0,54200.0,0.879
+OD11354,Delivery,2,Business Analyst,54320.0,61700.0,0.88
+OD11751,Customer Support,2,Service Desk Agent,33520.0,38100.0,0.88
+OD12218,Corporate Services,2,HR Advisor,35100.0,39900.0,0.88
+OD10693,Engineering,1,Associate DevOps Engineer,46790.0,53200.0,0.88
+OD12263,Engineering,1,Associate DevOps Engineer,40730.0,46300.0,0.88
+OD11844,Sales & Marketing,4,Sales Manager,59150.0,67200.0,0.88
+OD13741,Sales & Marketing,2,Account Executive,40150.0,45600.0,0.88
+OD12156,Corporate Services,2,Finance Analyst,38200.0,43400.0,0.88
+OD13410,Customer Support,2,Support Analyst,29130.0,33100.0,0.88
+OD11579,Customer Support,3,Senior Service Desk Agent,37360.0,42400.0,0.881
+OD11904,Sales & Marketing,2,Account Executive,46240.0,52500.0,0.881
+OD10141,Engineering,3,Senior Software Engineer,66900.0,75900.0,0.881
+OD11152,Product & Design,1,Associate UX Designer,41600.0,47200.0,0.881
+OD12932,Customer Support,2,Service Desk Agent,33560.0,38100.0,0.881
+OD12313,Product & Design,1,Associate Product Manager,41560.0,47200.0,0.881
+OD13733,Customer Support,2,Support Analyst,29200.0,33100.0,0.882
+OD11620,Customer Support,3,Senior Support Analyst,42930.0,48700.0,0.882
+OD13300,Sales & Marketing,1,Associate Marketing Specialist,31410.0,35600.0,0.882
+OD11276,Delivery,2,Project Manager,47270.0,53600.0,0.882
+OD10070,Engineering,4,Engineering Manager,77000.0,87300.0,0.882
+OD11460,Customer Support,4,Support Team Lead,42980.0,48700.0,0.883
+OD11846,Sales & Marketing,4,Sales Manager,59350.0,67200.0,0.883
+OD11463,Customer Support,2,Support Analyst,33630.0,38100.0,0.883
+OD12640,Engineering,2,Software Engineer,52370.0,59300.0,0.883
+OD12320,Corporate Services,1,Associate Finance Analyst,34350.0,38900.0,0.883
+OD12131,Corporate Services,3,Senior Finance Analyst,56310.0,63800.0,0.883
+OD11878,Sales & Marketing,2,Marketing Specialist,40260.0,45600.0,0.883
+OD11194,Delivery,4,Delivery Manager,75830.0,85800.0,0.884
+OD11833,Customer Support,2,Support Analyst,29260.0,33100.0,0.884
+OD12615,Product & Design,1,Associate Product Manager,47930.0,54200.0,0.884
+OD12039,Sales & Marketing,1,Associate Account Executive,31510.0,35600.0,0.885
+OD12018,Sales & Marketing,1,Associate Marketing Specialist,31520.0,35600.0,0.885
+OD10203,Engineering,2,QA Engineer,60330.0,68200.0,0.885
+OD12602,Engineering,2,QA Engineer,48340.0,54600.0,0.885
+OD11242,Delivery,3,Senior Business Analyst,60790.0,68600.0,0.886
+OD11909,Sales & Marketing,3,Senior Account Executive,51750.0,58400.0,0.886
+OD12141,Corporate Services,1,Associate Finance Analyst,29930.0,33800.0,0.886
+OD12310,Product & Design,2,UX Designer,53630.0,60500.0,0.886
+OD12062,Sales & Marketing,2,Marketing Specialist,40410.0,45600.0,0.886
+OD11845,Sales & Marketing,4,Sales Manager,64660.0,73000.0,0.886
+OD10550,Engineering,2,DevOps Engineer,60430.0,68200.0,0.886
+OD11949,Sales & Marketing,3,Senior Account Executive,59630.0,67200.0,0.887
+OD10111,Engineering,1,Associate DevOps Engineer,41070.0,46300.0,0.887
+OD10546,Engineering,3,Senior QA Engineer,67330.0,75900.0,0.887
+OD10602,Engineering,1,Associate Software Engineer,37800.0,42600.0,0.887
+OD11006,Data & AI,1,Associate Data Engineer,43380.0,48900.0,0.887
+OD10358,Engineering,1,Associate Software Engineer,47170.0,53200.0,0.887
+OD12645,Engineering,1,Associate DevOps Engineer,37780.0,42600.0,0.887
+OD12651,Engineering,2,QA Engineer,60520.0,68200.0,0.887
+OD10050,Engineering,4,Engineering Manager,96830.0,109200.0,0.887
+OD10251,Engineering,2,DevOps Engineer,52630.0,59300.0,0.888
+OD11444,Customer Support,4,Support Team Lead,54070.0,60900.0,0.888
+OD11312,Delivery,1,Associate Project Manager,37110.0,41800.0,0.888
+OD12107,Corporate Services,2,HR Advisor,38560.0,43400.0,0.888
+OD10061,Engineering,4,Engineering Manager,96940.0,109200.0,0.888
+OD11918,Sales & Marketing,1,Associate Account Executive,31610.0,35600.0,0.888
+OD13620,Product & Design,2,UX Designer,61770.0,69500.0,0.889
+OD11163,Product & Design,1,Associate Product Manager,41940.0,47200.0,0.889
+OD10335,Engineering,3,Senior DevOps Engineer,67450.0,75900.0,0.889
+OD11192,Delivery,4,Delivery Manager,87700.0,98700.0,0.889
+OD11062,Product & Design,2,UX Designer,53760.0,60500.0,0.889
+OD12781,Customer Support,2,Support Analyst,33860.0,38100.0,0.889
+OD11873,Sales & Marketing,3,Senior Marketing Specialist,47810.0,53700.0,0.89
+OD12294,Engineering,1,Associate Software Engineer,41230.0,46300.0,0.89
+OD10427,Engineering,2,DevOps Engineer,60730.0,68200.0,0.89
+OD11398,Delivery,3,Senior Business Analyst,70240.0,78900.0,0.89
+OD12154,Corporate Services,1,Associate Finance Analyst,30070.0,33800.0,0.89
+OD10042,Engineering,4,Engineering Manager,84470.0,94900.0,0.89
+OD10177,Engineering,3,Senior Software Engineer,77730.0,87300.0,0.89
+OD12660,Product & Design,1,Associate Product Manager,38630.0,43400.0,0.89
+OD12850,Engineering,2,Software Engineer,52760.0,59300.0,0.89
+OD10561,Engineering,3,Senior Software Engineer,67520.0,75900.0,0.89
+OD11713,Customer Support,2,Support Analyst,29460.0,33100.0,0.89
+OD10834,Data & AI,4,Data Manager,89450.0,100400.0,0.891
+OD10813,Engineering,1,Associate QA Engineer,47390.0,53200.0,0.891
+OD13240,Customer Support,1,Associate Service Desk Agent,26470.0,29700.0,0.891
+OD13823,Engineering,2,QA Engineer,52830.0,59300.0,0.891
+OD12828,Customer Support,1,Associate Support Analyst,26470.0,29700.0,0.891
+OD12355,Customer Support,2,Support Analyst,33990.0,38100.0,0.892
+OD10476,Engineering,1,Associate DevOps Engineer,41320.0,46300.0,0.892
+OD12892,Corporate Services,1,Associate Finance Analyst,30150.0,33800.0,0.892
+OD13480,Engineering,3,Senior Software Engineer,67730.0,75900.0,0.892
+OD13284,Product & Design,1,Associate Product Manager,48340.0,54200.0,0.892
+OD13457,Engineering,2,QA Engineer,48750.0,54600.0,0.893
+OD12124,Corporate Services,3,Senior Office Coordinator,45610.0,51100.0,0.893
+OD11556,Customer Support,1,Associate Service Desk Agent,23050.0,25800.0,0.893
+OD12911,Engineering,3,Senior DevOps Engineer,77950.0,87300.0,0.893
+OD12866,Engineering,1,Associate DevOps Engineer,41360.0,46300.0,0.893
+OD11099,Product & Design,3,Senior UX Designer,69080.0,77400.0,0.893
+OD11068,Product & Design,3,Senior UX Designer,79440.0,89000.0,0.893
+OD13758,Engineering,2,QA Engineer,61060.0,68200.0,0.895
+OD12229,Corporate Services,3,Senior Office Coordinator,57080.0,63800.0,0.895
+OD12188,Corporate Services,3,Senior Office Coordinator,57100.0,63800.0,0.895
+OD11260,Delivery,2,Project Manager,44110.0,49300.0,0.895
+OD11023,Product & Design,4,Product Lead,99630.0,111300.0,0.895
+OD10168,Engineering,1,Associate Software Engineer,47600.0,53200.0,0.895
+OD10094,Engineering,2,Software Engineer,53060.0,59300.0,0.895
+OD10829,Data & AI,4,Data Manager,89840.0,100400.0,0.895
+OD12108,Corporate Services,2,HR Advisor,44730.0,49900.0,0.896
+OD11097,Product & Design,2,UX Designer,49810.0,55600.0,0.896
+OD11355,Delivery,3,Senior Project Manager,56560.0,63100.0,0.896
+OD12653,Engineering,2,DevOps Engineer,61130.0,68200.0,0.896
+OD10010,Engineering,4,Engineering Manager,85050.0,94900.0,0.896
+OD10840,Data & AI,3,Senior Data Scientist,82800.0,92400.0,0.896
+OD13501,Engineering,1,Associate Software Engineer,47660.0,53200.0,0.896
+OD12880,Customer Support,1,Associate Support Analyst,23140.0,25800.0,0.897
+OD11486,Customer Support,2,Service Desk Agent,27260.0,30400.0,0.897
+OD11905,Sales & Marketing,2,Account Executive,40920.0,45600.0,0.897
+OD10531,Engineering,3,Senior QA Engineer,78300.0,87300.0,0.897
+OD13252,Engineering,1,Associate Software Engineer,41510.0,46300.0,0.897
+OD10893,Data & AI,2,Data Analyst,56320.0,62800.0,0.897
+OD11754,Customer Support,2,Service Desk Agent,29680.0,33100.0,0.897
+OD12240,Corporate Services,2,Finance Analyst,35800.0,39900.0,0.897
+OD12956,Engineering,3,Senior DevOps Engineer,68120.0,75900.0,0.897
+OD11139,Product & Design,3,Senior UX Designer,79900.0,89000.0,0.898
+OD10003,Engineering,4,Engineering Manager,78430.0,87300.0,0.898
+OD13186,Sales & Marketing,2,Account Executive,40950.0,45600.0,0.898
+OD10765,Engineering,2,QA Engineer,61230.0,68200.0,0.898
+OD13843,Delivery,1,Associate Business Analyst,43210.0,48100.0,0.898
+OD12353,Customer Support,1,Associate Support Analyst,23180.0,25800.0,0.898
+OD12525,Delivery,2,Business Analyst,44260.0,49300.0,0.898
+OD11682,Customer Support,2,Service Desk Agent,29710.0,33100.0,0.898
+OD10310,Engineering,2,QA Engineer,53250.0,59300.0,0.898
+OD11020,Product & Design,4,Product Lead,86980.0,96800.0,0.899
+OD11361,Delivery,1,Associate Project Manager,37590.0,41800.0,0.899
+OD11307,Delivery,2,Business Analyst,48160.0,53600.0,0.899
+OD12590,Engineering,3,Senior QA Engineer,68200.0,75900.0,0.899
+OD10613,Engineering,2,Software Engineer,49070.0,54600.0,0.899

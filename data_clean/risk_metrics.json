@@ -1,0 +1,41 @@
+{
+  "chosen_model": "Logistic regression",
+  "test": {
+    "train": "snapshots Jan-Dec 2023",
+    "scored": "Dec 2024",
+    "outcome": "resigned in 2025",
+    "people": 2439,
+    "Logistic regression": {
+      "auc": 0.583,
+      "brier": 0.1477,
+      "base_rate_pct": 18.2,
+      "top_decile_precision_pct": 25.9,
+      "top_decile_capture_pct": 14.2,
+      "top_decile_lift": 1.43
+    },
+    "Gradient boosting": {
+      "auc": 0.585,
+      "brier": 0.153,
+      "base_rate_pct": 18.2,
+      "top_decile_precision_pct": 26.7,
+      "top_decile_capture_pct": 14.7,
+      "top_decile_lift": 1.47
+    },
+    "True formula (ceiling)": {
+      "auc": 0.619,
+      "brier": 0.1472,
+      "base_rate_pct": 18.2,
+      "top_decile_precision_pct": 29.6,
+      "top_decile_capture_pct": 16.3,
+      "top_decile_lift": 1.63
+    }
+  },
+  "current": {
+    "scored_at": "Dec 2025",
+    "people": 2399,
+    "high_risk": 247,
+    "expected_resignations_next_12m": 455.0,
+    "high_risk_regrettable": 36,
+    "high_risk_cut": 0.296
+  }
+}

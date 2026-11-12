@@ -1,0 +1,7 @@
+driver,label,attributable_resignations,share_of_resignations_pct,true_attributable,att_2023,att_2024,att_2025,rank,true_rank
+below_band,Paid under 90 % of band midpoint,231.1,17.6,195.7,83.5,73.5,74.1,1,1
+promotion_stalled,3+ years without promotion (levels 1-3),204.1,15.5,173.4,53.8,62.1,88.2,2,3
+overtime_high,Overtime > 20 h a month (3-month average),143.5,10.9,181.1,26.9,33.8,82.9,3,2
+first_year,First year in the job,123.4,9.4,96.0,38.8,45.0,39.6,4,5
+rto_mandate,Moved remote to hybrid (Sep 2024 mandate),46.4,3.5,46.0,0.0,11.7,34.7,5,6
+low_engagement,Last survey engagement under 2.9,13.7,1.0,148.4,2.7,4.5,6.6,6,4

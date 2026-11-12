@@ -1,0 +1,253 @@
+month_date,department,budget_fte
+2023-01-01,Engineering,825
+2023-01-01,Data & AI,191
+2023-01-01,Product & Design,181
+2023-01-01,Delivery,231
+2023-01-01,Customer Support,423
+2023-01-01,Sales & Marketing,242
+2023-01-01,Corporate Services,181
+2023-02-01,Engineering,831
+2023-02-01,Data & AI,192
+2023-02-01,Product & Design,182
+2023-02-01,Delivery,233
+2023-02-01,Customer Support,425
+2023-02-01,Sales & Marketing,243
+2023-02-01,Corporate Services,182
+2023-03-01,Engineering,836
+2023-03-01,Data & AI,194
+2023-03-01,Product & Design,183
+2023-03-01,Delivery,234
+2023-03-01,Customer Support,428
+2023-03-01,Sales & Marketing,245
+2023-03-01,Corporate Services,183
+2023-04-01,Engineering,841
+2023-04-01,Data & AI,195
+2023-04-01,Product & Design,185
+2023-04-01,Delivery,236
+2023-04-01,Customer Support,431
+2023-04-01,Sales & Marketing,246
+2023-04-01,Corporate Services,185
+2023-05-01,Engineering,847
+2023-05-01,Data & AI,196
+2023-05-01,Product & Design,186
+2023-05-01,Delivery,237
+2023-05-01,Customer Support,434
+2023-05-01,Sales & Marketing,248
+2023-05-01,Corporate Services,186
+2023-06-01,Engineering,852
+2023-06-01,Data & AI,197
+2023-06-01,Product & Design,187
+2023-06-01,Delivery,239
+2023-06-01,Customer Support,436
+2023-06-01,Sales & Marketing,249
+2023-06-01,Corporate Services,187
+2023-07-01,Engineering,858
+2023-07-01,Data & AI,199
+2023-07-01,Product & Design,188
+2023-07-01,Delivery,241
+2023-07-01,Customer Support,439
+2023-07-01,Sales & Marketing,251
+2023-07-01,Corporate Services,188
+2023-08-01,Engineering,863
+2023-08-01,Data & AI,200
+2023-08-01,Product & Design,189
+2023-08-01,Delivery,242
+2023-08-01,Customer Support,442
+2023-08-01,Sales & Marketing,253
+2023-08-01,Corporate Services,189
+2023-09-01,Engineering,869
+2023-09-01,Data & AI,201
+2023-09-01,Product & Design,191
+2023-09-01,Delivery,244
+2023-09-01,Customer Support,445
+2023-09-01,Sales & Marketing,254
+2023-09-01,Corporate Services,191
+2023-10-01,Engineering,874
+2023-10-01,Data & AI,203
+2023-10-01,Product & Design,192
+2023-10-01,Delivery,245
+2023-10-01,Customer Support,448
+2023-10-01,Sales & Marketing,256
+2023-10-01,Corporate Services,192
+2023-11-01,Engineering,880
+2023-11-01,Data & AI,204
+2023-11-01,Product & Design,193
+2023-11-01,Delivery,247
+2023-11-01,Customer Support,451
+2023-11-01,Sales & Marketing,258
+2023-11-01,Corporate Services,193
+2023-12-01,Engineering,886
+2023-12-01,Data & AI,205
+2023-12-01,Product & Design,194
+2023-12-01,Delivery,248
+2023-12-01,Customer Support,454
+2023-12-01,Sales & Marketing,259
+2023-12-01,Corporate Services,194
+2024-01-01,Engineering,889
+2024-01-01,Data & AI,206
+2024-01-01,Product & Design,195
+2024-01-01,Delivery,249
+2024-01-01,Customer Support,455
+2024-01-01,Sales & Marketing,260
+2024-01-01,Corporate Services,195
+2024-02-01,Engineering,893
+2024-02-01,Data & AI,207
+2024-02-01,Product & Design,196
+2024-02-01,Delivery,250
+2024-02-01,Customer Support,457
+2024-02-01,Sales & Marketing,261
+2024-02-01,Corporate Services,196
+2024-03-01,Engineering,896
+2024-03-01,Data & AI,208
+2024-03-01,Product & Design,197
+2024-03-01,Delivery,251
+2024-03-01,Customer Support,459
+2024-03-01,Sales & Marketing,262
+2024-03-01,Corporate Services,197
+2024-04-01,Engineering,900
+2024-04-01,Data & AI,209
+2024-04-01,Product & Design,198
+2024-04-01,Delivery,252
+2024-04-01,Customer Support,461
+2024-04-01,Sales & Marketing,263
+2024-04-01,Corporate Services,198
+2024-05-01,Engineering,904
+2024-05-01,Data & AI,209
+2024-05-01,Product & Design,198
+2024-05-01,Delivery,254
+2024-05-01,Customer Support,463
+2024-05-01,Sales & Marketing,265
+2024-05-01,Corporate Services,198
+2024-06-01,Engineering,907
+2024-06-01,Data & AI,210
+2024-06-01,Product & Design,199
+2024-06-01,Delivery,255
+2024-06-01,Customer Support,465
+2024-06-01,Sales & Marketing,266
+2024-06-01,Corporate Services,199
+2024-07-01,Engineering,911
+2024-07-01,Data & AI,211
+2024-07-01,Product & Design,200
+2024-07-01,Delivery,256
+2024-07-01,Customer Support,467
+2024-07-01,Sales & Marketing,267
+2024-07-01,Corporate Services,200
+2024-08-01,Engineering,915
+2024-08-01,Data & AI,212
+2024-08-01,Product & Design,201
+2024-08-01,Delivery,257
+2024-08-01,Customer Support,469
+2024-08-01,Sales & Marketing,268
+2024-08-01,Corporate Services,201
+2024-09-01,Engineering,919
+2024-09-01,Data & AI,213
+2024-09-01,Product & Design,202
+2024-09-01,Delivery,258
+2024-09-01,Customer Support,471
+2024-09-01,Sales & Marketing,269
+2024-09-01,Corporate Services,202
+2024-10-01,Engineering,922
+2024-10-01,Data & AI,214
+2024-10-01,Product & Design,202
+2024-10-01,Delivery,259
+2024-10-01,Customer Support,472
+2024-10-01,Sales & Marketing,270
+2024-10-01,Corporate Services,202
+2024-11-01,Engineering,926
+2024-11-01,Data & AI,215
+2024-11-01,Product & Design,203
+2024-11-01,Delivery,260
+2024-11-01,Customer Support,474
+2024-11-01,Sales & Marketing,271
+2024-11-01,Corporate Services,203
+2024-12-01,Engineering,930
+2024-12-01,Data & AI,215
+2024-12-01,Product & Design,204
+2024-12-01,Delivery,261
+2024-12-01,Customer Support,476
+2024-12-01,Sales & Marketing,272
+2024-12-01,Corporate Services,204
+2025-01-01,Engineering,930
+2025-01-01,Data & AI,215
+2025-01-01,Product & Design,204
+2025-01-01,Delivery,261
+2025-01-01,Customer Support,476
+2025-01-01,Sales & Marketing,272
+2025-01-01,Corporate Services,204
+2025-02-01,Engineering,930
+2025-02-01,Data & AI,215
+2025-02-01,Product & Design,204
+2025-02-01,Delivery,261
+2025-02-01,Customer Support,476
+2025-02-01,Sales & Marketing,272
+2025-02-01,Corporate Services,204
+2025-03-01,Engineering,930
+2025-03-01,Data & AI,215
+2025-03-01,Product & Design,204
+2025-03-01,Delivery,261
+2025-03-01,Customer Support,476
+2025-03-01,Sales & Marketing,247
+2025-03-01,Corporate Services,204
+2025-04-01,Engineering,930
+2025-04-01,Data & AI,215
+2025-04-01,Product & Design,204
+2025-04-01,Delivery,261
+2025-04-01,Customer Support,476
+2025-04-01,Sales & Marketing,247
+2025-04-01,Corporate Services,204
+2025-05-01,Engineering,930
+2025-05-01,Data & AI,215
+2025-05-01,Product & Design,204
+2025-05-01,Delivery,261
+2025-05-01,Customer Support,476
+2025-05-01,Sales & Marketing,247
+2025-05-01,Corporate Services,204
+2025-06-01,Engineering,930
+2025-06-01,Data & AI,215
+2025-06-01,Product & Design,204
+2025-06-01,Delivery,261
+2025-06-01,Customer Support,476
+2025-06-01,Sales & Marketing,247
+2025-06-01,Corporate Services,204
+2025-07-01,Engineering,930
+2025-07-01,Data & AI,215
+2025-07-01,Product & Design,204
+2025-07-01,Delivery,261
+2025-07-01,Customer Support,476
+2025-07-01,Sales & Marketing,247
+2025-07-01,Corporate Services,204
+2025-08-01,Engineering,930
+2025-08-01,Data & AI,215
+2025-08-01,Product & Design,204
+2025-08-01,Delivery,261
+2025-08-01,Customer Support,476
+2025-08-01,Sales & Marketing,247
+2025-08-01,Corporate Services,204
+2025-09-01,Engineering,930
+2025-09-01,Data & AI,215
+2025-09-01,Product & Design,204
+2025-09-01,Delivery,261
+2025-09-01,Customer Support,476
+2025-09-01,Sales & Marketing,247
+2025-09-01,Corporate Services,204
+2025-10-01,Engineering,930
+2025-10-01,Data & AI,215
+2025-10-01,Product & Design,204
+2025-10-01,Delivery,261
+2025-10-01,Customer Support,476
+2025-10-01,Sales & Marketing,247
+2025-10-01,Corporate Services,204
+2025-11-01,Engineering,930
+2025-11-01,Data & AI,215
+2025-11-01,Product & Design,204
+2025-11-01,Delivery,261
+2025-11-01,Customer Support,476
+2025-11-01,Sales & Marketing,247
+2025-11-01,Corporate Services,204
+2025-12-01,Engineering,930
+2025-12-01,Data & AI,215
+2025-12-01,Product & Design,204
+2025-12-01,Delivery,261
+2025-12-01,Customer Support,476
+2025-12-01,Sales & Marketing,247
+2025-12-01,Corporate Services,204

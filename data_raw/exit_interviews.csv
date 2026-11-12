@@ -1,0 +1,903 @@
+employee_id,interview_date,primary_reason,would_return,comment
+OD10109,2023-02-23,Pay,Maybe,The new offer is significantly higher.
+OD10142,2023-01-29,Pay,Maybe,My salary has fallen behind the market.
+OD10179,2023-02-05,Pay,No,The new offer is significantly higher.
+OD10239,2023-02-06,Better opportunity,No,A great opportunity came up elsewhere.
+OD10265,2023-02-20,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10330,2023-02-15,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10353,2023-02-19,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10407,2023-02-23,Career progression,No,Promotion kept being pushed back.
+OD10450,2023-02-04,Pay,Maybe,The new offer is significantly higher.
+OD10586,2023-01-28,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10640,2023-02-15,Personal / relocation,No,Family reasons.
+OD10757,2023-02-02,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10771,2023-02-03,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10788,2023-02-10,Role not as expected,No,Not the right fit for me.
+OD10812,2023-02-09,Pay,Yes,The new offer is significantly higher.
+OD10990,2023-02-07,Role not as expected,Maybe,The job was different from what was described.
+OD11058,2023-02-12,Personal / relocation,Yes,Family reasons.
+OD11403,2023-01-29,Pay,No,Pay did not keep up with my responsibilities.
+OD11523,2023-02-21,Better opportunity,No,A great opportunity came up elsewhere.
+OD11810,2023-02-09,Better opportunity,No,A great opportunity came up elsewhere.
+OD11882,2023-02-07,Better opportunity,No,I was offered a role I could not turn down.
+OD11974,2023-02-16,Role not as expected,Yes,Not the right fit for me.
+OD12159,2023-02-16,Personal / relocation,Yes,Moving to another city.
+OD12181,2023-02-16,Career progression,Yes,I could not see a path to the next level.
+OD12230,2023-02-18,Further study,Yes,Going back to university.
+OD10091,2023-03-22,Personal / relocation,Maybe,Personal circumstances changed.
+OD10139,2023-03-04,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10165,2023-03-14,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10200,2023-03-15,Personal / relocation,Yes,Family reasons.
+OD10204,2023-02-27,Role not as expected,Maybe,The job was different from what was described.
+OD10256,2023-03-20,Further study,Maybe,Starting a full-time course.
+OD10329,2023-03-26,Pay,Yes,Pay did not keep up with my responsibilities.
+OD10357,2023-02-27,Career progression,Maybe,I could not see a path to the next level.
+OD10402,2023-03-24,Workload / burnout,Yes,I need a better work-life balance.
+OD10497,2023-03-11,Role not as expected,Yes,Not the right fit for me.
+OD10519,2023-03-22,Pay,Yes,My salary has fallen behind the market.
+OD10545,2023-02-28,Further study,Maybe,Starting a full-time course.
+OD10549,2023-03-17,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10606,2023-03-15,Manager relationship,No,I did not get the support I needed from my manager.
+OD10644,2023-02-27,Pay,Maybe,My salary has fallen behind the market.
+OD10759,2023-03-06,Better opportunity,No,I was offered a role I could not turn down.
+OD10768,2023-03-07,Pay,Yes,Pay did not keep up with my responsibilities.
+OD10800,2023-02-25,Pay,Maybe,My salary has fallen behind the market.
+OD10803,2023-02-27,Personal / relocation,Maybe,Moving to another city.
+OD10808,2023-03-08,Better opportunity,No,I was offered a role I could not turn down.
+OD10817,2023-02-27,Career progression,Yes,Promotion kept being pushed back.
+OD10820,2023-02-27,Personal / relocation,No,Family reasons.
+OD10864,2023-03-06,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10910,2023-03-05,Career progression,Yes,I could not see a path to the next level.
+OD11046,2023-03-15,Better opportunity,No,Moving to a bigger role at another company.
+OD11266,2023-03-07,Personal / relocation,Maybe,Personal circumstances changed.
+OD11287,2023-03-21,Pay,Yes,The new offer is significantly higher.
+OD11342,2023-03-06,Pay,Yes,Pay did not keep up with my responsibilities.
+OD11564,2023-03-07,Further study,Maybe,Starting a full-time course.
+OD12201,2023-03-04,Further study,No,Starting a full-time course.
+OD12204,2023-03-09,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10034,2023-04-06,Pay,No,Pay did not keep up with my responsibilities.
+OD10052,2023-03-27,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10173,2023-04-15,Pay,Maybe,The new offer is significantly higher.
+OD10238,2023-04-25,Career progression,Yes,Looking for more growth.
+OD10246,2023-03-28,Pay,Yes,The new offer is significantly higher.
+OD10337,2023-04-25,Personal / relocation,Yes,Personal circumstances changed.
+OD10453,2023-03-26,Personal / relocation,No,Personal circumstances changed.
+OD10651,2023-04-07,Career progression,Yes,I could not see a path to the next level.
+OD10935,2023-04-18,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD11029,2023-04-05,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11249,2023-03-29,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11484,2023-04-25,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11545,2023-03-30,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11563,2023-03-29,Career progression,Yes,I could not see a path to the next level.
+OD11744,2023-04-17,Pay,No,The new offer is significantly higher.
+OD11982,2023-03-27,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12016,2023-03-28,Role not as expected,Maybe,The job was different from what was described.
+OD12050,2023-04-09,Pay,No,My salary has fallen behind the market.
+OD12083,2023-04-27,Better opportunity,No,Moving to a bigger role at another company.
+OD12286,2023-04-11,Better opportunity,No,A great opportunity came up elsewhere.
+OD12289,2023-04-17,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10086,2023-05-27,Further study,Yes,Going back to university.
+OD10147,2023-04-29,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10232,2023-05-19,Personal / relocation,Maybe,Personal circumstances changed.
+OD10267,2023-05-13,Career progression,Maybe,Looking for more growth.
+OD10282,2023-05-09,Manager relationship,No,I did not get the support I needed from my manager.
+OD10294,2023-05-06,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10322,2023-05-02,Better opportunity,No,Moving to a bigger role at another company.
+OD10323,2023-05-09,Workload / burnout,No,The workload has been unsustainable for months.
+OD10405,2023-05-02,Personal / relocation,Maybe,Moving to another city.
+OD10425,2023-04-28,Better opportunity,No,A great opportunity came up elsewhere.
+OD10587,2023-05-04,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD10674,2023-05-11,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10719,2023-05-17,Pay,Yes,The new offer is significantly higher.
+OD10731,2023-05-18,Career progression,No,Promotion kept being pushed back.
+OD10747,2023-05-01,Personal / relocation,Yes,Moving to another city.
+OD10867,2023-05-19,Personal / relocation,Yes,Family reasons.
+OD10876,2023-05-08,Personal / relocation,Yes,Moving to another city.
+OD10933,2023-05-12,Further study,Yes,Going back to university.
+OD11114,2023-05-22,Career progression,No,Looking for more growth.
+OD11327,2023-05-11,Further study,Yes,Going back to university.
+OD11499,2023-05-16,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11697,2023-05-20,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD11715,2023-05-18,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11723,2023-05-22,Pay,Yes,My salary has fallen behind the market.
+OD12045,2023-05-19,Pay,No,Pay did not keep up with my responsibilities.
+OD12118,2023-05-02,Personal / relocation,No,Moving to another city.
+OD12135,2023-05-17,Manager relationship,Maybe,I did not get the support I needed from my manager.
+OD12274,2023-05-08,Better opportunity,No,A great opportunity came up elsewhere.
+OD10269,2023-06-09,Pay,Maybe,My salary has fallen behind the market.
+OD10381,2023-05-28,Career progression,Maybe,Promotion kept being pushed back.
+OD10882,2023-06-09,Personal / relocation,No,Moving to another city.
+OD11244,2023-06-17,Personal / relocation,Maybe,Personal circumstances changed.
+OD11289,2023-06-18,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11347,2023-06-15,Better opportunity,No,Moving to a bigger role at another company.
+OD11769,2023-06-06,Pay,No,My salary has fallen behind the market.
+OD12002,2023-06-19,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12032,2023-06-25,Better opportunity,No,A great opportunity came up elsewhere.
+OD12070,2023-06-16,Career progression,Yes,Promotion kept being pushed back.
+OD12224,2023-06-07,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12268,2023-06-04,Workload / burnout,No,The workload has been unsustainable for months.
+OD12372,2023-06-24,Better opportunity,Yes,I was offered a role I could not turn down.
+OD12397,2023-06-19,Better opportunity,No,I was offered a role I could not turn down.
+OD10055,2023-06-30,Better opportunity,No,A great opportunity came up elsewhere.
+OD10211,2023-07-15,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10247,2023-07-23,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10296,2023-07-19,Role not as expected,Maybe,The job was different from what was described.
+OD10428,2023-07-28,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10863,2023-06-26,Workload / burnout,Maybe,I need a better work-life balance.
+OD10868,2023-07-02,Career progression,No,Promotion kept being pushed back.
+OD11045,2023-07-16,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11372,2023-07-11,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11481,2023-07-23,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11491,2023-07-08,Better opportunity,No,Moving to a bigger role at another company.
+OD11568,2023-06-30,Better opportunity,No,I was offered a role I could not turn down.
+OD11607,2023-07-27,Pay,Maybe,My salary has fallen behind the market.
+OD11610,2023-07-22,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11740,2023-07-14,Better opportunity,No,I was offered a role I could not turn down.
+OD11783,2023-07-14,Role not as expected,No,Not the right fit for me.
+OD11884,2023-07-19,Pay,Maybe,My salary has fallen behind the market.
+OD11933,2023-07-14,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11985,2023-07-21,Workload / burnout,No,Too many late nights covering open roles.
+OD12074,2023-07-18,Pay,Yes,The new offer is significantly higher.
+OD12192,2023-07-08,Career progression,No,Looking for more growth.
+OD10036,2023-08-06,Pay,Maybe,My salary has fallen behind the market.
+OD10107,2023-07-28,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10319,2023-08-21,Career progression,No,Looking for more growth.
+OD10364,2023-08-15,Personal / relocation,Yes,Family reasons.
+OD10505,2023-08-01,Career progression,Maybe,Promotion kept being pushed back.
+OD10555,2023-07-28,Better opportunity,No,I was offered a role I could not turn down.
+OD10637,2023-08-14,Career progression,No,I could not see a path to the next level.
+OD10762,2023-08-04,Better opportunity,No,I was offered a role I could not turn down.
+OD10797,2023-07-31,Better opportunity,No,A great opportunity came up elsewhere.
+OD10798,2023-08-14,Personal / relocation,Yes,Family reasons.
+OD10961,2023-08-16,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11022,2023-08-13,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11026,2023-07-31,Pay,Maybe,My salary has fallen behind the market.
+OD11094,2023-08-12,Better opportunity,No,Moving to a bigger role at another company.
+OD11282,2023-08-13,Better opportunity,No,A great opportunity came up elsewhere.
+OD11693,2023-08-05,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11724,2023-08-05,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD11792,2023-08-17,Pay,Maybe,My salary has fallen behind the market.
+OD11950,2023-08-09,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12049,2023-07-30,Personal / relocation,Yes,Family reasons.
+OD12054,2023-08-21,Pay,Yes,The new offer is significantly higher.
+OD12093,2023-08-11,Pay,Maybe,The new offer is significantly higher.
+OD12184,2023-08-25,Career progression,Yes,I could not see a path to the next level.
+OD12198,2023-08-11,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12199,2023-08-09,Further study,No,Starting a full-time course.
+OD12349,2023-08-25,Role not as expected,Yes,The job was different from what was described.
+OD12374,2023-08-14,Career progression,Maybe,Looking for more growth.
+OD12376,2023-08-12,Better opportunity,No,Moving to a bigger role at another company.
+OD10030,2023-09-05,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD10198,2023-09-14,Workload / burnout,Maybe,I need a better work-life balance.
+OD10235,2023-09-17,Better opportunity,No,A great opportunity came up elsewhere.
+OD10314,2023-09-17,Further study,Maybe,Going back to university.
+OD10351,2023-09-23,Personal / relocation,Maybe,Family reasons.
+OD10401,2023-09-13,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10496,2023-09-21,Career progression,No,I could not see a path to the next level.
+OD10624,2023-09-14,Career progression,No,Looking for more growth.
+OD10815,2023-09-26,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10907,2023-09-24,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10959,2023-09-07,Pay,No,Pay did not keep up with my responsibilities.
+OD11052,2023-09-08,Personal / relocation,Yes,Personal circumstances changed.
+OD11077,2023-09-19,Career progression,Maybe,Looking for more growth.
+OD11632,2023-09-17,Personal / relocation,Maybe,Family reasons.
+OD11683,2023-09-01,Pay,No,Pay did not keep up with my responsibilities.
+OD11867,2023-09-22,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12008,2023-09-14,Better opportunity,No,I was offered a role I could not turn down.
+OD12285,2023-08-29,Pay,Yes,My salary has fallen behind the market.
+OD12290,2023-08-29,Personal / relocation,No,Moving to another city.
+OD12315,2023-09-03,Pay,Yes,The new offer is significantly higher.
+OD12414,2023-09-21,Workload / burnout,Yes,I need a better work-life balance.
+OD12491,2023-09-03,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12516,2023-09-04,Manager relationship,No,Communication with my line manager was difficult.
+OD10171,2023-10-19,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10217,2023-10-21,Pay,Maybe,The new offer is significantly higher.
+OD10374,2023-10-15,Workload / burnout,No,Too many late nights covering open roles.
+OD10410,2023-10-11,Personal / relocation,No,Personal circumstances changed.
+OD10460,2023-10-14,Pay,Yes,The new offer is significantly higher.
+OD10489,2023-10-20,Further study,No,Going back to university.
+OD10643,2023-09-28,Pay,Maybe,My salary has fallen behind the market.
+OD10793,2023-10-19,Better opportunity,No,A great opportunity came up elsewhere.
+OD10848,2023-10-04,Better opportunity,Yes,I was offered a role I could not turn down.
+OD11096,2023-10-03,Pay,No,My salary has fallen behind the market.
+OD11263,2023-10-22,Personal / relocation,Yes,Family reasons.
+OD11600,2023-10-05,Pay,No,The new offer is significantly higher.
+OD12059,2023-09-24,Pay,Yes,Pay did not keep up with my responsibilities.
+OD12167,2023-10-17,Pay,No,Pay did not keep up with my responsibilities.
+OD12303,2023-10-23,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12375,2023-10-04,Role not as expected,Yes,Not the right fit for me.
+OD12434,2023-10-03,Manager relationship,No,I did not get the support I needed from my manager.
+OD12442,2023-10-04,Role not as expected,No,The job was different from what was described.
+OD12458,2023-10-28,Role not as expected,No,Not the right fit for me.
+OD12466,2023-10-21,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12467,2023-09-28,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10021,2023-11-14,Personal / relocation,No,Moving to another city.
+OD10215,2023-10-26,Workload / burnout,Yes,Too many late nights covering open roles.
+OD10333,2023-10-24,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10419,2023-11-01,Career progression,No,I could not see a path to the next level.
+OD10517,2023-10-30,Pay,No,Pay did not keep up with my responsibilities.
+OD10551,2023-11-23,Personal / relocation,No,Family reasons.
+OD10569,2023-11-03,Pay,No,My salary has fallen behind the market.
+OD10722,2023-11-09,Career progression,Maybe,I could not see a path to the next level.
+OD11122,2023-10-31,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11181,2023-10-29,Personal / relocation,No,Moving to another city.
+OD11504,2023-11-04,Personal / relocation,Yes,Family reasons.
+OD11656,2023-11-18,Better opportunity,Yes,I was offered a role I could not turn down.
+OD11672,2023-11-02,Better opportunity,No,I was offered a role I could not turn down.
+OD11720,2023-11-22,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11784,2023-11-01,Further study,Maybe,Going back to university.
+OD11822,2023-11-21,Pay,Yes,Pay did not keep up with my responsibilities.
+OD11826,2023-10-28,Pay,Maybe,My salary has fallen behind the market.
+OD11880,2023-11-16,Pay,Maybe,The new offer is significantly higher.
+OD12301,2023-11-10,Workload / burnout,No,Too many late nights covering open roles.
+OD12443,2023-11-24,Role not as expected,Yes,Not the right fit for me.
+OD12496,2023-11-07,Role not as expected,Maybe,The job was different from what was described.
+OD12544,2023-10-30,Pay,Yes,The new offer is significantly higher.
+OD12550,2023-11-01,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12552,2023-11-15,Career progression,Maybe,I could not see a path to the next level.
+OD12613,2023-11-22,Personal / relocation,No,Personal circumstances changed.
+OD10184,2023-12-08,Pay,No,My salary has fallen behind the market.
+OD10250,2023-11-25,Further study,Yes,Starting a full-time course.
+OD10285,2023-12-01,Pay,Yes,My salary has fallen behind the market.
+OD10312,2023-12-19,Better opportunity,No,A great opportunity came up elsewhere.
+OD10475,2023-11-24,Pay,No,My salary has fallen behind the market.
+OD10603,2023-12-13,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10717,2023-12-05,Personal / relocation,No,Personal circumstances changed.
+OD10730,2023-12-11,Career progression,Maybe,Promotion kept being pushed back.
+OD10772,2023-12-23,Workload / burnout,Yes,I need a better work-life balance.
+OD10823,2023-12-22,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10849,2023-12-10,Better opportunity,No,I was offered a role I could not turn down.
+OD10906,2023-12-01,Further study,Maybe,Starting a full-time course.
+OD10923,2023-12-03,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10945,2023-12-25,Pay,No,Pay did not keep up with my responsibilities.
+OD11587,2023-12-15,Pay,Yes,Pay did not keep up with my responsibilities.
+OD11631,2023-12-14,Better opportunity,Yes,Moving to a bigger role at another company.
+OD11636,2023-12-17,Pay,No,Pay did not keep up with my responsibilities.
+OD11643,2023-12-23,Personal / relocation,No,Family reasons.
+OD11665,2023-12-06,Better opportunity,Yes,Moving to a bigger role at another company.
+OD11799,2023-12-04,Workload / burnout,Yes,I need a better work-life balance.
+OD12052,2023-11-29,Pay,No,The new offer is significantly higher.
+OD12089,2023-12-21,Personal / relocation,No,Personal circumstances changed.
+OD12164,2023-12-01,Career progression,No,Promotion kept being pushed back.
+OD12412,2023-12-12,Better opportunity,No,A great opportunity came up elsewhere.
+OD12556,2023-12-19,Pay,Yes,Pay did not keep up with my responsibilities.
+OD12622,2023-12-22,Personal / relocation,Maybe,Moving to another city.
+OD12669,2023-12-17,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD10158,2024-01-15,Personal / relocation,Maybe,Family reasons.
+OD10178,2024-01-19,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10506,2024-01-04,Pay,No,My salary has fallen behind the market.
+OD10529,2024-01-06,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD10594,2024-01-01,Better opportunity,No,I was offered a role I could not turn down.
+OD10708,2024-01-12,Personal / relocation,Yes,Family reasons.
+OD10734,2024-01-23,Better opportunity,No,A great opportunity came up elsewhere.
+OD10914,2024-01-16,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10950,2023-12-31,Pay,Maybe,The new offer is significantly higher.
+OD11001,2024-01-30,Pay,Maybe,My salary has fallen behind the market.
+OD11081,2024-01-09,Pay,Yes,My salary has fallen behind the market.
+OD11151,2024-01-19,Pay,Yes,Pay did not keep up with my responsibilities.
+OD11225,2024-01-21,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11323,2024-01-06,Better opportunity,No,Moving to a bigger role at another company.
+OD11673,2023-12-31,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11736,2024-01-01,Personal / relocation,Maybe,Family reasons.
+OD12145,2024-01-05,Career progression,Maybe,Promotion kept being pushed back.
+OD12338,2024-01-09,Personal / relocation,Yes,Moving to another city.
+OD12489,2024-01-06,Role not as expected,No,The job was different from what was described.
+OD12553,2024-01-12,Workload / burnout,No,I need a better work-life balance.
+OD12644,2024-01-20,Role not as expected,No,Not the right fit for me.
+OD10071,2024-02-09,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10126,2024-02-16,Personal / relocation,Yes,Family reasons.
+OD10189,2024-02-21,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD10375,2024-02-03,Workload / burnout,Maybe,I need a better work-life balance.
+OD10395,2024-02-10,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD10479,2024-02-08,Pay,No,My salary has fallen behind the market.
+OD10790,2024-02-08,Better opportunity,No,I was offered a role I could not turn down.
+OD10891,2024-02-25,Workload / burnout,No,Too many late nights covering open roles.
+OD10904,2024-02-12,Personal / relocation,Maybe,Family reasons.
+OD11035,2024-02-07,Manager relationship,No,I did not get the support I needed from my manager.
+OD11257,2024-02-04,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11268,2024-01-25,Personal / relocation,No,Family reasons.
+OD12040,2024-02-26,Pay,Yes,The new offer is significantly higher.
+OD12078,2024-02-11,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12419,2024-02-06,Role not as expected,No,The job was different from what was described.
+OD12426,2024-02-21,Personal / relocation,No,Family reasons.
+OD12533,2024-02-08,Pay,No,Pay did not keep up with my responsibilities.
+OD12563,2024-02-13,Role not as expected,Maybe,The job was different from what was described.
+OD12624,2024-02-03,Role not as expected,No,Not the right fit for me.
+OD12696,2024-02-20,Role not as expected,Maybe,Not the right fit for me.
+OD10058,2024-03-01,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10103,2024-03-22,Pay,Yes,My salary has fallen behind the market.
+OD10113,2024-03-25,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD10328,2024-02-21,Better opportunity,No,Moving to a bigger role at another company.
+OD10426,2024-03-20,Better opportunity,No,A great opportunity came up elsewhere.
+OD10524,2024-03-14,Career progression,Maybe,Promotion kept being pushed back.
+OD10564,2024-03-26,Career progression,Yes,Looking for more growth.
+OD10568,2024-03-09,Career progression,Maybe,Looking for more growth.
+OD10861,2024-02-24,Better opportunity,No,Moving to a bigger role at another company.
+OD10869,2024-03-11,Better opportunity,Yes,I was offered a role I could not turn down.
+OD11116,2024-03-22,Personal / relocation,Yes,Moving to another city.
+OD11371,2024-03-11,Pay,No,The new offer is significantly higher.
+OD11394,2024-03-20,Career progression,Maybe,Looking for more growth.
+OD11425,2024-03-18,Workload / burnout,Yes,Too many late nights covering open roles.
+OD11505,2024-02-29,Career progression,Yes,Looking for more growth.
+OD11551,2024-03-06,Pay,Yes,The new offer is significantly higher.
+OD11677,2024-03-02,Pay,Yes,My salary has fallen behind the market.
+OD11735,2024-03-22,Career progression,Yes,I could not see a path to the next level.
+OD11827,2024-03-10,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11913,2024-03-07,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12558,2024-03-24,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12575,2024-03-01,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD12578,2024-02-25,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12702,2024-03-10,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12779,2024-02-28,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10415,2024-04-13,Personal / relocation,Yes,Family reasons.
+OD10451,2024-04-18,Pay,Yes,The new offer is significantly higher.
+OD10608,2024-03-31,Better opportunity,No,I was offered a role I could not turn down.
+OD10753,2024-03-26,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10901,2024-04-23,Pay,Yes,The new offer is significantly higher.
+OD11147,2024-04-01,Career progression,No,I could not see a path to the next level.
+OD11286,2024-03-28,Career progression,Yes,Promotion kept being pushed back.
+OD11416,2024-03-29,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11541,2024-04-10,Career progression,No,I could not see a path to the next level.
+OD11686,2024-04-02,Pay,Yes,The new offer is significantly higher.
+OD11698,2024-04-04,Manager relationship,No,Communication with my line manager was difficult.
+OD11719,2024-04-19,Better opportunity,Yes,I was offered a role I could not turn down.
+OD11750,2024-04-21,Pay,No,My salary has fallen behind the market.
+OD11756,2024-04-13,Pay,No,Pay did not keep up with my responsibilities.
+OD11817,2024-03-26,Career progression,Maybe,I could not see a path to the next level.
+OD11969,2024-04-17,Pay,Maybe,My salary has fallen behind the market.
+OD12029,2024-04-17,Personal / relocation,No,Family reasons.
+OD12136,2024-04-21,Pay,No,Pay did not keep up with my responsibilities.
+OD12270,2024-03-26,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12464,2024-04-14,Role not as expected,Maybe,Not the right fit for me.
+OD12726,2024-03-31,Role not as expected,Yes,Not the right fit for me.
+OD12816,2024-04-13,Role not as expected,Yes,The job was different from what was described.
+OD12863,2024-04-04,Pay,Yes,My salary has fallen behind the market.
+OD10276,2024-05-20,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10454,2024-04-29,Pay,Yes,The new offer is significantly higher.
+OD10584,2024-05-25,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10732,2024-05-05,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10943,2024-05-20,Better opportunity,No,I was offered a role I could not turn down.
+OD11037,2024-05-01,Pay,No,Pay did not keep up with my responsibilities.
+OD11153,2024-05-01,Workload / burnout,No,I need a better work-life balance.
+OD11272,2024-05-02,Workload / burnout,Yes,I need a better work-life balance.
+OD11274,2024-05-18,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11412,2024-05-08,Workload / burnout,No,Too many late nights covering open roles.
+OD11582,2024-05-22,Better opportunity,No,Moving to a bigger role at another company.
+OD11684,2024-05-15,Personal / relocation,Yes,Moving to another city.
+OD11749,2024-05-26,Career progression,No,I could not see a path to the next level.
+OD11891,2024-05-09,Pay,No,The new offer is significantly higher.
+OD12127,2024-04-28,Pay,No,My salary has fallen behind the market.
+OD12413,2024-05-03,Personal / relocation,Maybe,Personal circumstances changed.
+OD12447,2024-05-09,Career progression,Maybe,I could not see a path to the next level.
+OD12519,2024-05-17,Pay,No,The new offer is significantly higher.
+OD12616,2024-05-04,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12639,2024-05-18,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12641,2024-05-01,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12658,2024-05-04,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12762,2024-05-29,Role not as expected,Yes,The job was different from what was described.
+OD12821,2024-05-10,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12834,2024-05-23,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10057,2024-06-11,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10130,2024-06-02,Personal / relocation,No,Family reasons.
+OD10225,2024-06-24,Career progression,No,Promotion kept being pushed back.
+OD10386,2024-06-18,Pay,Yes,My salary has fallen behind the market.
+OD10676,2024-06-07,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10783,2024-06-11,Pay,No,Pay did not keep up with my responsibilities.
+OD10847,2024-06-15,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10885,2024-06-18,Pay,No,My salary has fallen behind the market.
+OD10979,2024-06-12,Further study,Yes,Starting a full-time course.
+OD11066,2024-06-09,Better opportunity,No,Moving to a bigger role at another company.
+OD11074,2024-06-14,Pay,Maybe,The new offer is significantly higher.
+OD11075,2024-06-18,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11232,2024-06-22,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11344,2024-05-25,Career progression,Maybe,I could not see a path to the next level.
+OD11364,2024-06-23,Better opportunity,No,A great opportunity came up elsewhere.
+OD11629,2024-05-29,Personal / relocation,Maybe,Family reasons.
+OD12033,2024-06-22,Pay,No,Pay did not keep up with my responsibilities.
+OD12090,2024-06-15,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12147,2024-05-31,Pay,Maybe,The new offer is significantly higher.
+OD12585,2024-06-09,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12668,2024-06-10,Workload / burnout,Yes,The workload has been unsustainable for months.
+OD12837,2024-06-02,Manager relationship,Yes,I did not get the support I needed from my manager.
+OD12855,2024-06-06,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12893,2024-06-06,Personal / relocation,Maybe,Personal circumstances changed.
+OD12936,2024-06-21,Workload / burnout,Yes,I need a better work-life balance.
+OD10032,2024-07-17,Pay,No,The new offer is significantly higher.
+OD10166,2024-06-25,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10286,2024-07-24,Better opportunity,No,Moving to a bigger role at another company.
+OD10339,2024-07-15,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD10373,2024-06-26,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD10464,2024-06-30,Career progression,No,Looking for more growth.
+OD10548,2024-07-05,Pay,Yes,The new offer is significantly higher.
+OD10738,2024-07-04,Pay,Yes,My salary has fallen behind the market.
+OD10746,2024-07-20,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10763,2024-07-15,Career progression,No,Promotion kept being pushed back.
+OD10816,2024-07-08,Pay,No,The new offer is significantly higher.
+OD10836,2024-06-29,Pay,Yes,My salary has fallen behind the market.
+OD10850,2024-07-08,Workload / burnout,No,I need a better work-life balance.
+OD10916,2024-07-15,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10920,2024-07-10,Pay,Maybe,My salary has fallen behind the market.
+OD10930,2024-07-17,Career progression,Yes,Promotion kept being pushed back.
+OD11146,2024-07-28,Career progression,Yes,Looking for more growth.
+OD11297,2024-07-25,Workload / burnout,No,Too many late nights covering open roles.
+OD11467,2024-07-14,Personal / relocation,Maybe,Moving to another city.
+OD11483,2024-07-06,Personal / relocation,No,Moving to another city.
+OD11624,2024-07-06,Personal / relocation,Maybe,Family reasons.
+OD11646,2024-07-20,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11737,2024-07-27,Pay,No,My salary has fallen behind the market.
+OD11980,2024-07-14,Personal / relocation,No,Moving to another city.
+OD11997,2024-07-10,Career progression,Maybe,Looking for more growth.
+OD12073,2024-07-27,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD12217,2024-07-10,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12396,2024-07-10,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12567,2024-07-24,Role not as expected,No,Not the right fit for me.
+OD12577,2024-06-28,Workload / burnout,Yes,Too many late nights covering open roles.
+OD12599,2024-07-28,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12655,2024-07-12,Role not as expected,Maybe,The job was different from what was described.
+OD12663,2024-07-19,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12723,2024-07-09,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12753,2024-07-14,Personal / relocation,No,Family reasons.
+OD12802,2024-07-11,Manager relationship,No,I did not get the support I needed from my manager.
+OD12901,2024-06-30,Better opportunity,No,A great opportunity came up elsewhere.
+OD13025,2024-07-18,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10009,2024-07-29,Pay,Yes,Pay did not keep up with my responsibilities.
+OD10040,2024-07-30,Pay,Yes,My salary has fallen behind the market.
+OD10280,2024-08-06,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10621,2024-08-01,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD10692,2024-08-23,Personal / relocation,Yes,Family reasons.
+OD10701,2024-08-06,Career progression,No,Promotion kept being pushed back.
+OD10707,2024-07-31,Pay,Yes,The new offer is significantly higher.
+OD10782,2024-07-30,Further study,Yes,Going back to university.
+OD10953,2024-08-28,Pay,Yes,My salary has fallen behind the market.
+OD11061,2024-07-26,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11219,2024-08-19,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD11271,2024-08-22,Better opportunity,Yes,I was offered a role I could not turn down.
+OD11275,2024-08-25,Workload / burnout,Yes,I need a better work-life balance.
+OD11298,2024-08-17,Personal / relocation,Maybe,Personal circumstances changed.
+OD11485,2024-08-17,Further study,Maybe,Starting a full-time course.
+OD11712,2024-08-13,Personal / relocation,Yes,Moving to another city.
+OD11714,2024-08-21,Career progression,Yes,Looking for more growth.
+OD12036,2024-08-15,Better opportunity,No,I was offered a role I could not turn down.
+OD12406,2024-08-13,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12469,2024-08-13,Manager relationship,Yes,I did not get the support I needed from my manager.
+OD12628,2024-08-11,Personal / relocation,Yes,Moving to another city.
+OD12728,2024-08-10,Role not as expected,Maybe,The job was different from what was described.
+OD12902,2024-08-10,Pay,No,Pay did not keep up with my responsibilities.
+OD12994,2024-08-01,Role not as expected,Yes,Not the right fit for me.
+OD10027,2024-09-16,Pay,Yes,My salary has fallen behind the market.
+OD10258,2024-09-22,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10341,2024-08-31,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10439,2024-09-06,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD10443,2024-09-22,Career progression,Maybe,I could not see a path to the next level.
+OD10639,2024-09-10,Pay,No,My salary has fallen behind the market.
+OD10688,2024-09-12,Pay,Yes,The new offer is significantly higher.
+OD10720,2024-09-10,Pay,Maybe,The new offer is significantly higher.
+OD10996,2024-09-16,Personal / relocation,Yes,Personal circumstances changed.
+OD11083,2024-09-19,Career progression,No,I could not see a path to the next level.
+OD11111,2024-09-12,Pay,Maybe,My salary has fallen behind the market.
+OD11177,2024-09-10,Pay,No,The new offer is significantly higher.
+OD11222,2024-09-08,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11348,2024-09-18,Workload / burnout,No,The workload has been unsustainable for months.
+OD11405,2024-09-29,Pay,Yes,The new offer is significantly higher.
+OD11702,2024-09-08,Pay,Maybe,My salary has fallen behind the market.
+OD11951,2024-09-04,Pay,Yes,My salary has fallen behind the market.
+OD11952,2024-09-18,Better opportunity,No,A great opportunity came up elsewhere.
+OD12200,2024-09-09,Pay,No,Pay did not keep up with my responsibilities.
+OD12350,2024-09-26,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12368,2024-09-10,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12571,2024-09-12,Career progression,Yes,Promotion kept being pushed back.
+OD12603,2024-09-25,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12635,2024-09-12,Personal / relocation,Maybe,Moving to another city.
+OD12703,2024-09-20,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12733,2024-09-29,Better opportunity,No,I was offered a role I could not turn down.
+OD12826,2024-09-21,Better opportunity,No,I was offered a role I could not turn down.
+OD12851,2024-09-12,Better opportunity,No,A great opportunity came up elsewhere.
+OD12890,2024-09-10,Better opportunity,Yes,I was offered a role I could not turn down.
+OD12944,2024-09-18,Pay,Maybe,My salary has fallen behind the market.
+OD12992,2024-09-15,Better opportunity,No,Moving to a bigger role at another company.
+OD10022,2024-10-26,Pay,Yes,My salary has fallen behind the market.
+OD10131,2024-10-01,Pay,Yes,The new offer is significantly higher.
+OD10145,2024-09-30,Pay,No,My salary has fallen behind the market.
+OD10216,2024-10-06,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10223,2024-10-10,Pay,Yes,The new offer is significantly higher.
+OD10459,2024-10-07,Better opportunity,No,Moving to a bigger role at another company.
+OD10530,2024-10-07,Career progression,Yes,Promotion kept being pushed back.
+OD10760,2024-10-23,Workload / burnout,Yes,I need a better work-life balance.
+OD10784,2024-10-24,Better opportunity,Yes,Moving to a bigger role at another company.
+OD11138,2024-10-16,Pay,Yes,The new offer is significantly higher.
+OD11238,2024-10-18,Personal / relocation,Yes,Family reasons.
+OD11500,2024-09-27,Pay,Maybe,The new offer is significantly higher.
+OD11553,2024-10-14,Pay,Yes,The new offer is significantly higher.
+OD11574,2024-10-07,Career progression,No,Promotion kept being pushed back.
+OD11748,2024-09-24,Workload / burnout,Yes,The workload has been unsustainable for months.
+OD12360,2024-10-20,Pay,No,Pay did not keep up with my responsibilities.
+OD12451,2024-10-01,Better opportunity,No,A great opportunity came up elsewhere.
+OD12715,2024-10-04,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12824,2024-09-28,Better opportunity,No,Moving to a bigger role at another company.
+OD12931,2024-10-15,Workload / burnout,Yes,The workload has been unsustainable for months.
+OD13041,2024-10-03,Personal / relocation,Maybe,Personal circumstances changed.
+OD13059,2024-10-17,Role not as expected,No,The job was different from what was described.
+OD10087,2024-11-02,Better opportunity,No,A great opportunity came up elsewhere.
+OD10114,2024-11-14,Better opportunity,No,A great opportunity came up elsewhere.
+OD10283,2024-11-03,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD10521,2024-11-15,Flexibility / remote work,Maybe,The office policy no longer works for me.
+OD10716,2024-11-03,Better opportunity,No,I was offered a role I could not turn down.
+OD10723,2024-11-05,Pay,Maybe,The new offer is significantly higher.
+OD11213,2024-11-11,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11319,2024-11-16,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD11446,2024-11-06,Workload / burnout,No,Too many late nights covering open roles.
+OD11469,2024-11-08,Better opportunity,No,I was offered a role I could not turn down.
+OD11717,2024-11-17,Better opportunity,Yes,Moving to a bigger role at another company.
+OD11920,2024-11-05,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12132,2024-11-11,Better opportunity,No,Moving to a bigger role at another company.
+OD12267,2024-11-09,Better opportunity,No,Moving to a bigger role at another company.
+OD12276,2024-11-12,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12341,2024-11-13,Better opportunity,No,Moving to a bigger role at another company.
+OD12527,2024-10-26,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12671,2024-10-23,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12729,2024-11-21,Better opportunity,No,A great opportunity came up elsewhere.
+OD12792,2024-10-24,Flexibility / remote work,No,The office policy no longer works for me.
+OD12803,2024-11-24,Personal / relocation,Yes,Personal circumstances changed.
+OD12896,2024-11-13,Better opportunity,Yes,I was offered a role I could not turn down.
+OD12980,2024-11-24,Workload / burnout,Yes,I need a better work-life balance.
+OD13031,2024-11-03,Manager relationship,Yes,I did not get the support I needed from my manager.
+OD13039,2024-11-25,Better opportunity,No,Moving to a bigger role at another company.
+OD13074,2024-11-07,Personal / relocation,Maybe,Family reasons.
+OD13148,2024-11-17,Flexibility / remote work,Yes,The office policy no longer works for me.
+OD13233,2024-11-01,Personal / relocation,No,Moving to another city.
+OD10013,2024-12-05,Pay,Yes,Pay did not keep up with my responsibilities.
+OD10325,2024-12-13,Flexibility / remote work,Yes,The commute after the office change was too much.
+OD10385,2024-12-15,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD10534,2024-12-13,Career progression,No,Promotion kept being pushed back.
+OD10809,2024-12-13,Flexibility / remote work,Yes,The office policy no longer works for me.
+OD10851,2024-12-09,Pay,Maybe,My salary has fallen behind the market.
+OD11051,2024-12-22,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11200,2024-11-29,Flexibility / remote work,Maybe,I want to keep working remotely.
+OD11442,2024-12-13,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11654,2024-12-20,Pay,Yes,Pay did not keep up with my responsibilities.
+OD11752,2024-12-14,Pay,Maybe,My salary has fallen behind the market.
+OD11967,2024-12-02,Workload / burnout,No,Too many late nights covering open roles.
+OD12243,2024-11-28,Pay,Maybe,My salary has fallen behind the market.
+OD12614,2024-11-28,Flexibility / remote work,No,The commute after the office change was too much.
+OD12831,2024-12-09,Career progression,No,I could not see a path to the next level.
+OD12856,2024-12-14,Personal / relocation,Yes,Family reasons.
+OD12858,2024-11-29,Flexibility / remote work,Yes,The office policy no longer works for me.
+OD12984,2024-12-26,Manager relationship,Maybe,Communication with my line manager was difficult.
+OD12996,2024-12-06,Career progression,No,Looking for more growth.
+OD13013,2024-12-13,Role not as expected,Yes,Not the right fit for me.
+OD13112,2024-12-19,Flexibility / remote work,Maybe,I want to keep working remotely.
+OD10315,2025-01-11,Career progression,Maybe,I could not see a path to the next level.
+OD10491,2025-01-20,Better opportunity,No,A great opportunity came up elsewhere.
+OD10528,2025-01-14,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10591,2024-12-31,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10596,2025-01-18,Further study,No,Going back to university.
+OD10837,2025-01-03,Pay,Maybe,The new offer is significantly higher.
+OD10859,2024-12-30,Pay,Yes,The new offer is significantly higher.
+OD11050,2025-01-17,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD11366,2025-01-23,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11535,2025-01-06,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12043,2025-01-06,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD12067,2025-01-15,Flexibility / remote work,No,The office policy no longer works for me.
+OD12246,2025-01-07,Pay,No,My salary has fallen behind the market.
+OD12681,2025-01-19,Pay,No,My salary has fallen behind the market.
+OD12742,2025-01-26,Role not as expected,Maybe,The job was different from what was described.
+OD12887,2025-01-13,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD13097,2024-12-26,Manager relationship,Maybe,Communication with my line manager was difficult.
+OD13108,2025-01-07,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD13114,2025-01-07,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD13115,2025-01-06,Pay,Maybe,The new offer is significantly higher.
+OD13279,2024-12-30,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD13282,2025-01-03,Role not as expected,Yes,The job was different from what was described.
+OD10663,2025-02-22,Better opportunity,No,Moving to a bigger role at another company.
+OD10860,2025-02-23,Career progression,No,Looking for more growth.
+OD10926,2025-02-22,Career progression,Maybe,Looking for more growth.
+OD10937,2025-02-02,Career progression,Maybe,Looking for more growth.
+OD10954,2025-02-20,Pay,Yes,My salary has fallen behind the market.
+OD11157,2025-02-03,Better opportunity,No,I was offered a role I could not turn down.
+OD11189,2025-02-08,Pay,Maybe,My salary has fallen behind the market.
+OD11652,2025-02-21,Career progression,Yes,Promotion kept being pushed back.
+OD11726,2025-02-15,Better opportunity,No,A great opportunity came up elsewhere.
+OD11753,2025-02-22,Career progression,Maybe,I could not see a path to the next level.
+OD11857,2025-02-13,Personal / relocation,Yes,Personal circumstances changed.
+OD11893,2025-02-17,Career progression,Maybe,Promotion kept being pushed back.
+OD12014,2025-02-09,Better opportunity,No,Moving to a bigger role at another company.
+OD12117,2025-01-31,Personal / relocation,Maybe,Family reasons.
+OD12146,2025-02-13,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12607,2025-02-11,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12739,2025-02-14,Better opportunity,No,I was offered a role I could not turn down.
+OD12912,2025-02-03,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12998,2025-01-28,Better opportunity,No,A great opportunity came up elsewhere.
+OD13028,2025-02-08,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD13113,2025-02-20,Better opportunity,No,A great opportunity came up elsewhere.
+OD13207,2025-02-19,Role not as expected,Maybe,The job was different from what was described.
+OD13331,2025-02-07,Role not as expected,Yes,The job was different from what was described.
+OD10327,2025-02-28,Pay,Yes,My salary has fallen behind the market.
+OD10520,2025-02-28,Career progression,No,Promotion kept being pushed back.
+OD10537,2025-03-10,Better opportunity,Yes,I was offered a role I could not turn down.
+OD10659,2025-03-18,Flexibility / remote work,Yes,I want to keep working remotely.
+OD10781,2025-02-28,Flexibility / remote work,Yes,The office policy no longer works for me.
+OD10814,2025-03-13,Career progression,Maybe,I could not see a path to the next level.
+OD10942,2025-03-09,Career progression,No,I could not see a path to the next level.
+OD10978,2025-03-06,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11056,2025-03-23,Pay,Yes,The new offer is significantly higher.
+OD11057,2025-03-13,Career progression,No,I could not see a path to the next level.
+OD11235,2025-03-09,Pay,No,My salary has fallen behind the market.
+OD11567,2025-03-14,Career progression,No,Promotion kept being pushed back.
+OD11589,2025-03-29,Better opportunity,No,A great opportunity came up elsewhere.
+OD11771,2025-03-06,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11934,2025-02-28,Personal / relocation,No,Personal circumstances changed.
+OD12023,2025-03-06,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD12056,2025-03-20,Career progression,Yes,I could not see a path to the next level.
+OD12080,2025-03-05,Better opportunity,No,A great opportunity came up elsewhere.
+OD12169,2025-03-06,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12352,2025-03-15,Personal / relocation,Maybe,Moving to another city.
+OD12688,2025-02-23,Personal / relocation,Yes,Personal circumstances changed.
+OD12699,2025-03-13,Personal / relocation,No,Personal circumstances changed.
+OD13066,2025-03-12,Role not as expected,Yes,The job was different from what was described.
+OD13078,2025-03-10,Better opportunity,No,Moving to a bigger role at another company.
+OD13193,2025-03-03,Career progression,Yes,I could not see a path to the next level.
+OD13203,2025-03-12,Career progression,No,I could not see a path to the next level.
+OD13220,2025-02-28,Personal / relocation,Maybe,Moving to another city.
+OD10093,2025-04-16,Better opportunity,No,Moving to a bigger role at another company.
+OD10144,2025-04-02,Career progression,No,Looking for more growth.
+OD10482,2025-04-20,Pay,Maybe,The new offer is significantly higher.
+OD10899,2025-04-24,Better opportunity,No,I was offered a role I could not turn down.
+OD11186,2025-04-01,Better opportunity,Yes,I was offered a role I could not turn down.
+OD11433,2025-03-31,Workload / burnout,Maybe,I need a better work-life balance.
+OD11514,2025-04-07,Career progression,Maybe,I could not see a path to the next level.
+OD11515,2025-04-01,Workload / burnout,Yes,Too many late nights covering open roles.
+OD11538,2025-03-27,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11580,2025-03-29,Pay,Yes,Pay did not keep up with my responsibilities.
+OD11593,2025-04-22,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11617,2025-04-20,Personal / relocation,No,Moving to another city.
+OD11960,2025-04-09,Career progression,Maybe,I could not see a path to the next level.
+OD12031,2025-04-09,Pay,Yes,Pay did not keep up with my responsibilities.
+OD12055,2025-04-04,Pay,No,Pay did not keep up with my responsibilities.
+OD12079,2025-04-06,Pay,Yes,Pay did not keep up with my responsibilities.
+OD12130,2025-04-03,Manager relationship,No,I did not get the support I needed from my manager.
+OD12191,2025-04-14,Pay,Yes,Pay did not keep up with my responsibilities.
+OD12508,2025-04-11,Flexibility / remote work,Maybe,The office policy no longer works for me.
+OD12649,2025-04-03,Pay,Maybe,The new offer is significantly higher.
+OD12782,2025-04-23,Personal / relocation,Maybe,Family reasons.
+OD12945,2025-04-18,Personal / relocation,No,Family reasons.
+OD12970,2025-04-20,Workload / burnout,Yes,Too many late nights covering open roles.
+OD13012,2025-04-24,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD13029,2025-04-05,Better opportunity,Yes,Moving to a bigger role at another company.
+OD13200,2025-04-26,Pay,Yes,My salary has fallen behind the market.
+OD13263,2025-04-02,Role not as expected,Yes,Not the right fit for me.
+OD13303,2025-04-13,Manager relationship,Yes,Communication with my line manager was difficult.
+OD10134,2025-05-24,Career progression,Maybe,I could not see a path to the next level.
+OD10356,2025-05-28,Career progression,Maybe,Promotion kept being pushed back.
+OD10552,2025-05-12,Pay,Yes,My salary has fallen behind the market.
+OD10657,2025-05-13,Pay,Yes,Pay did not keep up with my responsibilities.
+OD10685,2025-05-09,Workload / burnout,No,Too many late nights covering open roles.
+OD10735,2025-05-05,Pay,Yes,Pay did not keep up with my responsibilities.
+OD11277,2025-05-07,Better opportunity,Yes,I was offered a role I could not turn down.
+OD11328,2025-05-18,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11408,2025-04-30,Better opportunity,Yes,Moving to a bigger role at another company.
+OD11645,2025-05-23,Career progression,Maybe,I could not see a path to the next level.
+OD11775,2025-05-05,Pay,Yes,My salary has fallen behind the market.
+OD11958,2025-05-13,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12048,2025-05-15,Career progression,Yes,I could not see a path to the next level.
+OD12475,2025-05-25,Flexibility / remote work,Yes,I want to keep working remotely.
+OD12736,2025-05-22,Personal / relocation,Maybe,Moving to another city.
+OD12759,2025-05-06,Better opportunity,No,A great opportunity came up elsewhere.
+OD12854,2025-05-06,Personal / relocation,Maybe,Moving to another city.
+OD12898,2025-05-14,Personal / relocation,No,Family reasons.
+OD13010,2025-05-05,Pay,No,My salary has fallen behind the market.
+OD13032,2025-05-25,Career progression,Maybe,I could not see a path to the next level.
+OD13111,2025-05-12,Better opportunity,No,A great opportunity came up elsewhere.
+OD13131,2025-05-17,Better opportunity,Yes,Moving to a bigger role at another company.
+OD13206,2025-05-19,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD10492,2025-06-11,Better opportunity,No,A great opportunity came up elsewhere.
+OD10540,2025-06-08,Workload / burnout,Maybe,I need a better work-life balance.
+OD10776,2025-05-31,Pay,No,The new offer is significantly higher.
+OD10777,2025-06-08,Pay,Maybe,My salary has fallen behind the market.
+OD10792,2025-06-23,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10973,2025-06-16,Better opportunity,No,A great opportunity came up elsewhere.
+OD11034,2025-06-19,Further study,Yes,Starting a full-time course.
+OD11092,2025-06-07,Personal / relocation,No,Moving to another city.
+OD11155,2025-06-09,Flexibility / remote work,No,I want to keep working remotely.
+OD11162,2025-06-10,Career progression,Yes,Looking for more growth.
+OD11284,2025-06-09,Personal / relocation,Maybe,Moving to another city.
+OD11606,2025-06-25,Workload / burnout,No,I need a better work-life balance.
+OD11613,2025-06-02,Personal / relocation,Yes,Moving to another city.
+OD11762,2025-06-16,Workload / burnout,Maybe,I need a better work-life balance.
+OD11908,2025-06-12,Career progression,Yes,Promotion kept being pushed back.
+OD11977,2025-06-03,Personal / relocation,No,Moving to another city.
+OD12068,2025-06-06,Better opportunity,No,Moving to a bigger role at another company.
+OD12151,2025-06-05,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12158,2025-06-23,Pay,No,Pay did not keep up with my responsibilities.
+OD12306,2025-06-07,Pay,No,My salary has fallen behind the market.
+OD12510,2025-06-05,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD12643,2025-06-20,Flexibility / remote work,No,I want to keep working remotely.
+OD12670,2025-06-29,Further study,No,Going back to university.
+OD12738,2025-06-03,Better opportunity,No,I was offered a role I could not turn down.
+OD12787,2025-06-24,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD12807,2025-05-31,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD13017,2025-06-10,Pay,Maybe,My salary has fallen behind the market.
+OD13068,2025-06-23,Career progression,No,Looking for more growth.
+OD13106,2025-05-29,Role not as expected,Yes,Not the right fit for me.
+OD13162,2025-06-13,Workload / burnout,Yes,Too many late nights covering open roles.
+OD10277,2025-06-25,Workload / burnout,Yes,The workload has been unsustainable for months.
+OD10290,2025-06-28,Better opportunity,No,A great opportunity came up elsewhere.
+OD10436,2025-07-12,Pay,Maybe,My salary has fallen behind the market.
+OD10503,2025-07-18,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD10698,2025-07-08,Workload / burnout,Yes,I need a better work-life balance.
+OD10883,2025-07-02,Workload / burnout,No,I need a better work-life balance.
+OD10925,2025-07-03,Pay,Maybe,My salary has fallen behind the market.
+OD10947,2025-07-13,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD11126,2025-07-08,Better opportunity,No,A great opportunity came up elsewhere.
+OD11173,2025-07-11,Better opportunity,No,Moving to a bigger role at another company.
+OD11267,2025-07-10,Better opportunity,No,A great opportunity came up elsewhere.
+OD11360,2025-06-29,Pay,Yes,My salary has fallen behind the market.
+OD11384,2025-07-01,Workload / burnout,Yes,The workload has been unsustainable for months.
+OD11542,2025-07-02,Career progression,Maybe,I could not see a path to the next level.
+OD11692,2025-07-09,Manager relationship,No,I did not get the support I needed from my manager.
+OD11939,2025-07-15,Pay,Yes,My salary has fallen behind the market.
+OD11983,2025-07-10,Career progression,Maybe,Looking for more growth.
+OD12128,2025-07-27,Career progression,Yes,Looking for more growth.
+OD12295,2025-07-22,Better opportunity,No,A great opportunity came up elsewhere.
+OD12476,2025-07-21,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12961,2025-07-22,Better opportunity,No,Moving to a bigger role at another company.
+OD13152,2025-07-15,Better opportunity,No,A great opportunity came up elsewhere.
+OD13223,2025-07-06,Pay,Maybe,My salary has fallen behind the market.
+OD13357,2025-07-22,Better opportunity,No,A great opportunity came up elsewhere.
+OD13440,2025-07-06,Personal / relocation,Yes,Moving to another city.
+OD10117,2025-07-27,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10316,2025-08-12,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD10360,2025-08-10,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10409,2025-08-13,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10474,2025-07-29,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD10623,2025-08-13,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD10635,2025-08-14,Career progression,Yes,Looking for more growth.
+OD10641,2025-08-19,Pay,Yes,The new offer is significantly higher.
+OD10660,2025-08-05,Workload / burnout,No,The workload has been unsustainable for months.
+OD10677,2025-08-12,Pay,Maybe,The new offer is significantly higher.
+OD10982,2025-07-26,Flexibility / remote work,Yes,I want to keep working remotely.
+OD11136,2025-08-01,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11278,2025-07-28,Workload / burnout,Yes,I need a better work-life balance.
+OD11456,2025-08-03,Personal / relocation,Yes,Family reasons.
+OD11575,2025-07-28,Workload / burnout,No,The workload has been unsustainable for months.
+OD11619,2025-08-03,Workload / burnout,No,Too many late nights covering open roles.
+OD11743,2025-08-03,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD11797,2025-08-23,Pay,Yes,My salary has fallen behind the market.
+OD12006,2025-08-21,Further study,Maybe,Starting a full-time course.
+OD12481,2025-08-04,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12740,2025-08-10,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD12750,2025-08-08,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD12791,2025-07-31,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12815,2025-08-14,Personal / relocation,Yes,Family reasons.
+OD12852,2025-08-09,Personal / relocation,No,Personal circumstances changed.
+OD12876,2025-08-04,Pay,No,The new offer is significantly higher.
+OD12916,2025-08-24,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12949,2025-08-14,Personal / relocation,Maybe,Personal circumstances changed.
+OD12990,2025-08-25,Workload / burnout,No,The workload has been unsustainable for months.
+OD13002,2025-08-14,Career progression,No,I could not see a path to the next level.
+OD13053,2025-08-18,Better opportunity,No,I was offered a role I could not turn down.
+OD13154,2025-08-22,Better opportunity,No,Moving to a bigger role at another company.
+OD13258,2025-08-17,Better opportunity,No,I was offered a role I could not turn down.
+OD13291,2025-08-09,Role not as expected,Maybe,Not the right fit for me.
+OD13308,2025-08-09,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD13380,2025-08-08,Personal / relocation,Maybe,Moving to another city.
+OD13387,2025-08-04,Workload / burnout,Yes,I need a better work-life balance.
+OD13451,2025-08-15,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10115,2025-09-22,Better opportunity,No,A great opportunity came up elsewhere.
+OD10135,2025-09-18,Workload / burnout,No,Too many late nights covering open roles.
+OD10320,2025-09-12,Workload / burnout,Maybe,I need a better work-life balance.
+OD10321,2025-09-14,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD10523,2025-09-19,Pay,Maybe,The new offer is significantly higher.
+OD10590,2025-09-07,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10932,2025-09-13,Pay,Yes,My salary has fallen behind the market.
+OD11005,2025-09-23,Workload / burnout,Yes,Too many late nights covering open roles.
+OD11281,2025-09-12,Workload / burnout,No,I need a better work-life balance.
+OD11326,2025-09-11,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD11397,2025-09-05,Pay,Yes,The new offer is significantly higher.
+OD11509,2025-09-08,Better opportunity,No,Moving to a bigger role at another company.
+OD11601,2025-08-30,Pay,No,Pay did not keep up with my responsibilities.
+OD11633,2025-08-27,Workload / burnout,Yes,I need a better work-life balance.
+OD11760,2025-09-07,Pay,No,The new offer is significantly higher.
+OD11766,2025-09-02,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD11802,2025-09-26,Workload / burnout,Yes,Too many late nights covering open roles.
+OD11860,2025-09-19,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11927,2025-09-17,Career progression,Yes,I could not see a path to the next level.
+OD11964,2025-08-30,Pay,No,Pay did not keep up with my responsibilities.
+OD12138,2025-09-24,Better opportunity,Yes,I was offered a role I could not turn down.
+OD12337,2025-09-19,Workload / burnout,No,Too many late nights covering open roles.
+OD12370,2025-09-21,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12591,2025-09-10,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12610,2025-09-15,Better opportunity,No,Moving to a bigger role at another company.
+OD12647,2025-09-22,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD12772,2025-09-23,Flexibility / remote work,Yes,The commute after the office change was too much.
+OD13226,2025-09-02,Better opportunity,No,Moving to a bigger role at another company.
+OD13253,2025-09-15,Better opportunity,Maybe,I was offered a role I could not turn down.
+OD13277,2025-09-07,Personal / relocation,No,Moving to another city.
+OD13285,2025-08-26,Better opportunity,Yes,Moving to a bigger role at another company.
+OD13312,2025-09-15,Better opportunity,No,A great opportunity came up elsewhere.
+OD13335,2025-09-04,Better opportunity,No,I was offered a role I could not turn down.
+OD13339,2025-09-14,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD13475,2025-09-25,Role not as expected,Yes,Not the right fit for me.
+OD10137,2025-10-17,Flexibility / remote work,Maybe,The office policy no longer works for me.
+OD10500,2025-10-24,Workload / burnout,Yes,The workload has been unsustainable for months.
+OD10508,2025-10-16,Workload / burnout,No,The workload has been unsustainable for months.
+OD10570,2025-10-20,Workload / burnout,No,Too many late nights covering open roles.
+OD10572,2025-10-08,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10592,2025-10-22,Pay,No,My salary has fallen behind the market.
+OD10609,2025-10-06,Better opportunity,Yes,Moving to a bigger role at another company.
+OD10611,2025-10-26,Flexibility / remote work,Yes,The office policy no longer works for me.
+OD10626,2025-09-30,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD10754,2025-10-19,Pay,Maybe,The new offer is significantly higher.
+OD10889,2025-10-06,Career progression,Maybe,Looking for more growth.
+OD10894,2025-10-21,Better opportunity,No,I was offered a role I could not turn down.
+OD11110,2025-10-01,Workload / burnout,Yes,I need a better work-life balance.
+OD11199,2025-10-18,Pay,Maybe,My salary has fallen behind the market.
+OD11239,2025-10-27,Flexibility / remote work,Yes,The commute after the office change was too much.
+OD11343,2025-10-02,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11379,2025-10-22,Career progression,Yes,I could not see a path to the next level.
+OD11586,2025-10-13,Better opportunity,No,Moving to a bigger role at another company.
+OD11598,2025-10-20,Career progression,No,Looking for more growth.
+OD11794,2025-10-03,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD11855,2025-10-04,Further study,Maybe,Going back to university.
+OD12027,2025-10-19,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD12034,2025-10-25,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12318,2025-10-10,Better opportunity,Yes,A great opportunity came up elsewhere.
+OD12427,2025-10-23,Further study,Maybe,Starting a full-time course.
+OD12730,2025-09-28,Personal / relocation,No,Moving to another city.
+OD12822,2025-10-13,Better opportunity,No,Moving to a bigger role at another company.
+OD13117,2025-09-27,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD13201,2025-09-28,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD13272,2025-10-17,Role not as expected,No,Not the right fit for me.
+OD13498,2025-10-16,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD13504,2025-09-29,Manager relationship,Yes,Communication with my line manager was difficult.
+OD13611,2025-09-26,Role not as expected,No,The job was different from what was described.
+OD10083,2025-11-05,Career progression,No,Looking for more growth.
+OD10095,2025-10-28,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10186,2025-11-14,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD10228,2025-11-02,Workload / burnout,Yes,Too many late nights covering open roles.
+OD10507,2025-11-15,Better opportunity,No,Moving to a bigger role at another company.
+OD10972,2025-11-22,Career progression,Maybe,Promotion kept being pushed back.
+OD11334,2025-10-29,Pay,Yes,My salary has fallen behind the market.
+OD11362,2025-11-08,Personal / relocation,Yes,Moving to another city.
+OD11432,2025-11-02,Workload / burnout,Yes,I need a better work-life balance.
+OD11573,2025-10-30,Pay,No,Pay did not keep up with my responsibilities.
+OD11690,2025-11-11,Better opportunity,No,I was offered a role I could not turn down.
+OD11718,2025-11-27,Workload / burnout,Maybe,The workload has been unsustainable for months.
+OD11759,2025-11-07,Career progression,Maybe,I could not see a path to the next level.
+OD11788,2025-11-12,Career progression,Yes,Looking for more growth.
+OD11837,2025-11-04,Workload / burnout,No,Too many late nights covering open roles.
+OD11889,2025-11-20,Pay,Yes,My salary has fallen behind the market.
+OD12330,2025-11-09,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12500,2025-11-17,Pay,Maybe,My salary has fallen behind the market.
+OD12507,2025-11-07,Personal / relocation,Yes,Personal circumstances changed.
+OD12676,2025-11-29,Flexibility / remote work,Yes,The office policy no longer works for me.
+OD12827,2025-11-14,Manager relationship,Yes,Communication with my line manager was difficult.
+OD12867,2025-11-18,Workload / burnout,Yes,Too many late nights covering open roles.
+OD13133,2025-11-14,Workload / burnout,Yes,Too many late nights covering open roles.
+OD13395,2025-10-29,Role not as expected,No,The job was different from what was described.
+OD13531,2025-11-21,Manager relationship,Maybe,I did not get the support I needed from my manager.
+OD13634,2025-11-03,Role not as expected,No,Not the right fit for me.
+OD13686,2025-11-17,Personal / relocation,Yes,Family reasons.
+OD10116,2025-12-25,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD10618,2025-12-02,Pay,Yes,My salary has fallen behind the market.
+OD10631,2025-12-19,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD10853,2025-12-07,Career progression,No,Looking for more growth.
+OD11010,2025-12-12,Pay,Yes,The new offer is significantly higher.
+OD11226,2025-12-26,Pay,Yes,My salary has fallen behind the market.
+OD11317,2025-11-27,Pay,Maybe,Pay did not keep up with my responsibilities.
+OD11609,2025-12-23,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11688,2025-12-07,Better opportunity,Maybe,A great opportunity came up elsewhere.
+OD11729,2025-12-19,Workload / burnout,Maybe,Too many late nights covering open roles.
+OD12170,2025-11-24,Better opportunity,No,A great opportunity came up elsewhere.
+OD12339,2025-12-12,Better opportunity,No,Moving to a bigger role at another company.
+OD12532,2025-12-21,Flexibility / remote work,Maybe,The office policy no longer works for me.
+OD12623,2025-12-26,Better opportunity,Maybe,Moving to a bigger role at another company.
+OD12770,2025-12-16,Personal / relocation,Yes,Personal circumstances changed.
+OD12914,2025-12-26,Better opportunity,Yes,Moving to a bigger role at another company.
+OD12953,2025-12-02,Flexibility / remote work,Yes,The commute after the office change was too much.
+OD13091,2025-12-14,Personal / relocation,Maybe,Family reasons.
+OD13375,2025-12-14,Role not as expected,Yes,Not the right fit for me.
+OD13446,2025-12-17,Manager relationship,Yes,I did not get the support I needed from my manager.
+OD13465,2025-12-14,Better opportunity,Yes,I was offered a role I could not turn down.
+OD13540,2025-12-01,Workload / burnout,No,I need a better work-life balance.
+OD13552,2025-11-29,Role not as expected,Maybe,The job was different from what was described.
+OD13567,2025-12-04,Better opportunity,Maybe,I was offered a role I could not turn down.

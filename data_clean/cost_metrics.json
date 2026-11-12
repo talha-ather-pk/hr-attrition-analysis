@@ -1,0 +1,30 @@
+{
+  "cost_per_resignation_2025": 26578.0,
+  "turnover_cost_2025_m": 12.78,
+  "turnover_cost_3y_m": 33.16,
+  "turnover_cost_pct_payroll_2025": 9.6,
+  "freeze_salary_saved": 3257394.0,
+  "freeze_extra_overtime_paid": 3513883.0,
+  "freeze_resignation_cost": 1167358.0,
+  "freeze_net_saving": -1423847.0,
+  "recommended": [
+    "Staff to budget (no freeze)",
+    "Hybrid exceptions",
+    "Pay correction",
+    "Fix manager hot spots"
+  ],
+  "recommended_annual_cost": 1066147.0,
+  "recommended_avoided_resignations": 142.0,
+  "recommended_net_benefit": 2723048.0,
+  "promotion_salary_base": 10814990.0,
+  "overtime_value_at_1x": 2811106.0,
+  "hotspot_managers": 12,
+  "avg_headcount_2025": 2429.4166666666665,
+  "avg_cost_share_of_salary": {
+    "Associate": 0.368,
+    "Professional": 0.45,
+    "Senior": 0.604,
+    "Manager": 0.685,
+    "Head": 0.922
+  }
+}

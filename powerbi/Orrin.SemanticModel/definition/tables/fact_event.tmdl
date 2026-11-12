@@ -1,0 +1,94 @@
+table fact_event
+	lineageTag: bf3ae560-b592-5a0e-be8e-4cdf67c32418
+
+	column employee_id
+		dataType: string
+		isHidden
+		lineageTag: 0fc596e3-21fe-54b0-b2fc-fb3bd8595703
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = User
+
+	column effective_date
+		dataType: dateTime
+		formatString: dd mmm yyyy
+		lineageTag: b764c3d9-911f-554c-90e4-1decf8c75ed1
+		summarizeBy: none
+		sourceColumn: effective_date
+
+		annotation SummarizationSetBy = User
+
+	column event_type
+		dataType: string
+		lineageTag: 9974ba8c-ad6c-579f-8372-b6db1f13c105
+		summarizeBy: none
+		sourceColumn: event_type
+
+		annotation SummarizationSetBy = User
+
+	column department
+		dataType: string
+		isHidden
+		lineageTag: bcac927d-a79a-5b28-8632-ad15c1b89c0b
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = User
+
+	column job_title
+		dataType: string
+		lineageTag: e5c99483-0d95-57b3-b2f9-164bc686f571
+		summarizeBy: none
+		sourceColumn: job_title
+
+		annotation SummarizationSetBy = User
+
+	column level
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d5751870-4c81-56a2-8ab8-396765865ef9
+		summarizeBy: none
+		sourceColumn: level
+
+		annotation SummarizationSetBy = User
+
+	column work_mode
+		dataType: string
+		lineageTag: 7cae3a5e-a1b3-53a4-bc51-7c9db5579ecd
+		summarizeBy: none
+		sourceColumn: work_mode
+
+		annotation SummarizationSetBy = User
+
+	column annual_salary
+		dataType: double
+		isHidden
+		lineageTag: 616352e1-59d5-5943-a283-6a8521271528
+		summarizeBy: none
+		sourceColumn: annual_salary
+
+		annotation SummarizationSetBy = User
+
+	column manager
+		dataType: string
+		lineageTag: 80e9007e-93e7-50c2-8dc3-80728243ebd2
+		summarizeBy: none
+		sourceColumn: manager
+
+		annotation SummarizationSetBy = User
+
+	partition fact_event = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Binary.Decompress(File.Contents(DataFolder & "fact_event.csv.gz"), Compression.GZip), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"employee_id", "effective_date", "event_type", "department", "job_title", "level", "work_mode", "annual_salary", "manager"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"employee_id", type text}, {"effective_date", type date}, {"event_type", type text}, {"department", type text}, {"job_title", type text}, {"level", Int64.Type}, {"work_mode", type text}, {"annual_salary", type number}, {"manager", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

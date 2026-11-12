@@ -1,0 +1,63 @@
+table dim_month
+	lineageTag: faed4ba8-81c6-5d47-bc5a-9206dda9c35c
+
+	column month_date
+		dataType: dateTime
+		isKey
+		formatString: mmm yyyy
+		lineageTag: ded11dc5-ffbc-51a0-8c1a-c29edbab960d
+		summarizeBy: none
+		sourceColumn: month_date
+
+		annotation SummarizationSetBy = User
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 04aa5dcd-36e3-5c0b-a14e-434aa6448bd3
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = User
+
+	column quarter
+		dataType: string
+		lineageTag: 7f1f683e-2b78-5f23-9fa9-6f95c5c73063
+		summarizeBy: none
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = User
+
+	column period
+		dataType: string
+		sortByColumn: period_order
+		lineageTag: ed8f8bca-e30d-5136-ac2c-3c48c1c01700
+		summarizeBy: none
+		sourceColumn: period
+
+		annotation SummarizationSetBy = User
+
+	column period_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 43ae8510-6342-5d9c-ae27-83eea7b2d2a1
+		summarizeBy: none
+		sourceColumn: period_order
+
+		annotation SummarizationSetBy = User
+
+	partition dim_month = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "dim_month.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"month_date", "year", "quarter", "period"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"month_date", type date}, {"year", Int64.Type}, {"quarter", type text}, {"period", type text}}, "en-US"),
+				    Ord_period_order = Table.AddColumn(Typed, "period_order", each if [period] = null then null else List.PositionOf({"Before the freeze", "Freeze (Jan-Jun 2025)", "After the freeze"}, [period]) + 1, Int64.Type)
+				in
+				    Ord_period_order
+
+	annotation PBI_ResultType = Table

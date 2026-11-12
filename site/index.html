@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR attrition analysis: Orrin Digital</title>
+<meta name="description" content="People analytics on synthetic data for a UK software company: what drives resignations (checked against a known truth), the cost of a hiring freeze, manager hot spots, a flight-risk score tested out of time, a retention business case in Excel and a Power BI dashboard.">
+<style>
+:root{--bg:#f6f4fa;--surface:#ffffff;--border:#e4e0f0;--text:#1f1b33;--text-2:#4f4a68;--muted:#6b6785;--pos:#3b2f80;--accent:#f2795b;--good:#2e9e7a;--bad:#c8364b}
+@media (prefers-color-scheme: dark){:root{--bg:#14112a;--surface:#1d1940;--border:#332d5e;--text:#f1eff9;--text-2:#cdc8e6;--muted:#a49fc2;--pos:#b3a9f2;--accent:#f59a82;--good:#5cc4a1;--bad:#ec7a8b} figure img{background:#fff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1040px;margin:0 auto;padding:48px 24px 72px}
+.eyebrow{font-size:13px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;margin:0 0 8px}
+h1{font-size:34px;line-height:1.15;margin:0 0 12px;letter-spacing:-.01em}
+h2{font-size:22px;margin:48px 0 6px}
+.lede{color:var(--text-2);max-width:780px;margin:0 0 18px;font-size:16.5px}
+.sub{color:var(--text-2);margin:0 0 16px;max-width:800px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0 0 28px}
+.tags li{font-size:12.5px;color:var(--text-2);border:1px solid var(--border);border-radius:999px;padding:3px 10px;background:var(--surface)}
+.note{font-size:13.5px;color:var(--text-2);background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:10px 14px;max-width:800px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:24px 0 8px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--pos);border-radius:10px;padding:14px 16px}
+.kpi.bad{border-left-color:var(--bad)} .kpi.good{border-left-color:var(--good)} .kpi.risk{border-left-color:var(--accent)}
+.kpi .l{font-size:12.5px;color:var(--muted)}
+.kpi .v{font-size:26px;font-weight:650;margin-top:2px;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:12.5px;color:var(--text-2)}
+ol.findings{padding-left:22px;max-width:860px}
+ol.findings li{margin:0 0 10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.grid2{grid-template-columns:1fr} h1{font-size:28px} main{padding:32px 16px 56px}}
+figure{margin:0 0 16px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
+figure img{width:100%;height:auto;display:block;border-radius:4px}
+figcaption{font-size:12.5px;color:var(--muted);margin-top:6px}
+.tablewrap{overflow-x:auto;margin-bottom:16px}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+th,td{padding:8px 12px;border-bottom:1px solid var(--border);text-align:right}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12.5px;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+.hi td{font-weight:650}
+.neg{color:var(--bad)}
+footer{margin-top:56px;color:var(--muted);font-size:13px;border-top:1px solid var(--border);padding-top:16px}
+a{color:var(--pos)}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">People analytics · Python · SQL · Excel · Power BI</p>
+  <h1>Why people leave a 2,400-person software company, and what it is worth to fix</h1>
+  <p class="lede">Orrin Digital lost one in five people in 2025. I cleaned the HRIS export into SQLite, rebuilt headcount month by month from the effective-dated job history, measured attrition properly, modelled what drives resignations and checked it against the known truth, found the managers who lose people fastest, scored flight risk and tested it on a year the model never saw, and costed five retention options in a live Excel business case and a Power BI dashboard.</p>
+  <ul class="tags"><li>Python · pandas · statsmodels · scikit-learn</li><li>SQL (SQLite)</li><li>Discrete-time survival model</li><li>Flight risk · out-of-time test</li><li>Cost of turnover · ROI</li><li>Excel business case</li><li>Power BI · DAX</li></ul>
+  <p class="note"><b>Synthetic data.</b> 3,864 people over Jan 2023 – Dec 2025 from a documented month-by-month workforce simulation. Resignations follow a known model, and the HRIS export has the mess real ones have (spelling variants, two date formats, monthly salaries, test records, rehires under new ids), so every fix and every estimate is checked against the truth.</p>
+
+  <div class="kpis">
+    <div class="kpi bad"><div class="l">Voluntary attrition 2025</div><div class="v">19.8%</div><div class="d">481 resignations · 17.3% in 2023</div></div>
+    <div class="kpi bad"><div class="l">Cost of resignations 2025</div><div class="v">£12.8M</div><div class="d">9.6% of payroll · £26.6k each</div></div>
+    <div class="kpi"><div class="l">Top three drivers found</div><div class="v">3 of 3</div><div class="d">same as the known truth</div></div>
+    <div class="kpi risk"><div class="l">High flight risk today</div><div class="v">247</div><div class="d">36 of them rated 4-5</div></div>
+    <div class="kpi good"><div class="l">Retention package</div><div class="v">£2.7M</div><div class="d">net a year · £1.1M cost · ~142 fewer leavers</div></div>
+  </div>
+
+  <h2>Findings</h2>
+  <ol class="findings">
+    <li><b>Pay drift, stalled careers and workload drive resignations.</b> Paid under 90% of band midpoint: odds of resigning ×2.14 (231 resignations over three years). Three years without a promotion: ×1.75 (204). Overtime above 20 hours a month: ×2.21 (144). The model finds the same top three as the generator's truth, and 11 of 12 true effects sit inside its 95% intervals.</li>
+    <li><b>The 2025 hiring freeze cost more than it saved.</b> Vacancies went from 2.2% to 6.5%, staff on heavy overtime from 6.5% to 37%, and resignations followed. It saved £3.26M of salaries but cost £3.51M of overtime and £1.17M of resignations.</li>
+    <li><b>Exit interviews hide the real reasons.</b> "Better opportunity" is the top stated reason, but a third of those leavers had waited 3+ years for a promotion and over a quarter were paid under band. Only 20 people named their manager.</li>
+    <li><b>Twelve managers lose people far faster than their teams' risk explains</b> (83 extra resignations in three years). Eleven of them are truly poor managers in the generator, found from outcomes alone.</li>
+    <li><b>The return-to-office mandate</b> pushed 30% of the people it moved out within a year, against 17-18% for everyone else.</li>
+    <li><b>The engagement survey is too weak to steer by</b>, but people who stop answering it resign 26% more often.</li>
+  </ol>
+  <figure><img src="img/chart_drivers.png" alt="Resignations each driver caused, model against the known truth" loading="lazy"></figure>
+  <figure><img src="img/chart_bands.png" alt="Resignation rate by pay position, overtime and time since promotion" loading="lazy"></figure>
+  <figure><img src="img/chart_freeze.png" alt="Vacancies, overtime and resignations by month around the hiring freeze" loading="lazy"></figure>
+
+  <h2>Managers and flight risk</h2>
+  <p class="sub">Each manager's resignations against what the model expects for the people in that team. The flight-risk score was trained on 2023 – 24, scored in Dec 2024 and checked against who actually resigned in 2025: the top 10% of scores held 14% of leavers, against 16% for the generator's own formula. Individual resignations are partly random, so the list is for starting conversations, not for decisions.</p>
+  <div class="grid2">
+    <figure><img src="img/chart_managers.png" alt="Actual against expected resignations for each line manager" loading="lazy"></figure>
+    <figure><img src="img/chart_risk.png" alt="Predicted and actual resignation rate by risk decile in the 2025 test" loading="lazy"></figure>
+  </div>
+
+  <h2>The business case</h2>
+  <p class="sub">Resignations avoided = resignations among the people affected × the share the driver causes ((OR − 1) / OR) × the share of the problem an option removes. A resignation costs 37% of salary for an associate and up to 92% for a head of department (recruitment, vacancy cover, ramp-up, team time).</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Option</th><th>Resignations avoided a year</th><th>Annual cost</th><th>Net benefit a year</th></tr></thead>
+    <tbody>
+      <tr><td>Staff to approved headcount (no freeze)</td><td>45</td><td>−£0.26M</td><td>£1.42M</td></tr>
+      <tr><td>Hybrid exceptions for people moved off remote</td><td>18</td><td>£0</td><td>£0.53M</td></tr>
+      <tr><td>Lift everyone under 90% of band midpoint to 90%</td><td>64</td><td>£1.25M</td><td>£0.48M</td></tr>
+      <tr><td>Coaching or re-assignment for 12 hot-spot managers</td><td>14</td><td>£0.07M</td><td>£0.30M</td></tr>
+      <tr><td>Promote stalled top performers (10% rise)</td><td>18</td><td>£1.24M</td><td class="neg">−£0.69M</td></tr>
+      <tr class="hi"><td>Recommended package (first four)</td><td>142</td><td>£1.07M</td><td>£2.72M</td></tr>
+    </tbody>
+  </table></div>
+  <figure><img src="img/chart_scenarios.png" alt="Net benefit a year by retention option" loading="lazy"></figure>
+
+  <h2>Excel retention business case</h2>
+  <p class="sub">Every number is a live formula. The cost of a resignation by level, on-costs, overtime premium and target pay position are blue inputs; each option has a "share of the problem removed" lever; the pay-gap list and the High-band flight-risk list sit on their own sheets. Recalculated in Excel with 0 errors and matched to the Python results.</p>
+  <figure><img src="img/excel_summary.png" alt="Excel business case summary sheet" loading="lazy"></figure>
+  <figure><img src="img/excel_scenarios.png" alt="Excel business case scenarios sheet" loading="lazy"></figure>
+
+  <h2>Power BI dashboard</h2>
+  <div class="grid2">
+    <figure><img src="img/dashboard_overview.png" alt="Power BI Overview page" loading="lazy"><figcaption>Overview</figcaption></figure>
+    <figure><img src="img/dashboard_drivers.png" alt="Power BI Drivers page" loading="lazy"><figcaption>Drivers</figcaption></figure>
+    <figure><img src="img/dashboard_workload.png" alt="Power BI Workload page" loading="lazy"><figcaption>Workload and the hiring freeze</figcaption></figure>
+    <figure><img src="img/dashboard_managers.png" alt="Power BI Managers page" loading="lazy"><figcaption>Manager hot spots</figcaption></figure>
+    <figure><img src="img/dashboard_risk.png" alt="Power BI Flight Risk page" loading="lazy"><figcaption>Flight risk</figcaption></figure>
+    <figure><img src="img/dashboard_case.png" alt="Power BI Business Case page" loading="lazy"><figcaption>Business case</figcaption></figure>
+    <figure><img src="img/dashboard_dq.png" alt="Power BI Data Quality page" loading="lazy"><figcaption>Data quality</figcaption></figure>
+    <figure><img src="img/dashboard_employee.png" alt="Power BI Employee Detail drill-through page" loading="lazy"><figcaption>Employee Detail drill-through</figcaption></figure>
+  </div>
+
+  <footer>Talha Ather · Data analyst · ACCA student · SQL, Python, Excel, Power BI, people analytics · <a href="https://github.com/talha-ather-pk/hr-attrition-analysis">Source code on GitHub</a> · <a href="https://www.upwork.com/freelancers/~01da74f8f9f4611503">Hire me on Upwork</a></footer>
+</main>
+</body>
+</html>

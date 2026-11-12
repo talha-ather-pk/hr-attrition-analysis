@@ -1,0 +1,33 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DataFolder", "_Measures", "dim_month", "dim_department", "dim_location", "dim_employee", "fact_employee_month", "fact_budget", "fact_risk", "fact_event", "fact_exit", "driver_odds", "driver_attributable", "manager_hotspots", "risk_deciles", "scenarios", "cost_by_year", "cost_assumptions", "freeze_month", "dq_log", "findings"]
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+ref table _Measures
+ref table dim_month
+ref table dim_department
+ref table dim_location
+ref table dim_employee
+ref table fact_employee_month
+ref table fact_budget
+ref table fact_risk
+ref table fact_event
+ref table fact_exit
+ref table driver_odds
+ref table driver_attributable
+ref table manager_hotspots
+ref table risk_deciles
+ref table scenarios
+ref table cost_by_year
+ref table cost_assumptions
+ref table freeze_month
+ref table dq_log
+ref table findings

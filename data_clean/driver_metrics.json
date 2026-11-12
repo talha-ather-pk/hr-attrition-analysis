@@ -1,0 +1,25 @@
+{
+  "person_months_at_risk": 84281,
+  "resignations": 1313,
+  "pseudo_r2": 0.035,
+  "truth_inside_95ci": "11 of 12",
+  "top_three_model": [
+    "below_band",
+    "promotion_stalled",
+    "overtime_high"
+  ],
+  "top_three_truth": [
+    "below_band",
+    "overtime_high",
+    "promotion_stalled"
+  ],
+  "manager_hotspots": {
+    "managers_scored": 257,
+    "hotspots_flagged": 12,
+    "true_bad_managers_scored": 27,
+    "flagged_and_truly_bad": 11,
+    "precision": 0.92,
+    "recall": 0.41,
+    "excess_resignations_in_hotspots": 83.3
+  }
+}

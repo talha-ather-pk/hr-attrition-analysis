@@ -1,0 +1,55 @@
+relationship aeea8da2-a405-56f8-a414-7ecb0087340a
+	fromColumn: fact_employee_month.employee_id
+	toColumn: dim_employee.employee_id
+
+relationship 4d36fc1b-e30e-5c6c-ae86-ab4d27462a5b
+	fromColumn: fact_employee_month.month_date
+	toColumn: dim_month.month_date
+
+relationship 5432b111-5677-5bce-be56-b0c9a504cd4d
+	fromColumn: fact_employee_month.department
+	toColumn: dim_department.department
+
+relationship 95af096d-6efd-5a1d-9f05-e4f78c661054
+	fromColumn: fact_employee_month.location
+	toColumn: dim_location.location
+
+relationship 08d9c7e2-3575-5c0b-a56b-7d13608708da
+	fromColumn: fact_budget.month_date
+	toColumn: dim_month.month_date
+
+relationship 5ac4cbad-097c-526b-a2cd-9f1dda270eed
+	fromColumn: fact_budget.department
+	toColumn: dim_department.department
+
+relationship 065f1256-bfc1-56d5-948d-2a1b20d3cbcc
+	fromColumn: fact_risk.employee_id
+	toColumn: dim_employee.employee_id
+
+relationship 3ccb17e5-a726-5487-ac3b-f5ce36a8e5ce
+	fromColumn: fact_risk.department
+	toColumn: dim_department.department
+
+relationship d214b6df-2e70-57b3-94e3-1238cd49ec31
+	fromColumn: fact_risk.location
+	toColumn: dim_location.location
+
+relationship 6899d289-4262-57d7-9cdf-8b8df1088218
+	fromColumn: fact_event.employee_id
+	toColumn: dim_employee.employee_id
+
+relationship 1b8daa8a-dfdc-543a-9720-952479930029
+	fromColumn: fact_exit.interview_month
+	toColumn: dim_month.month_date
+
+relationship 3d26e109-bfbe-5c1f-bfdf-2f5297a41308
+	fromColumn: fact_exit.department
+	toColumn: dim_department.department
+
+relationship 10831d22-d543-56c5-b3f6-cc8007dde408
+	fromColumn: manager_hotspots.department
+	toColumn: dim_department.department
+
+relationship 36de28c0-de04-55ee-9134-7f977ca6b522
+	fromColumn: freeze_month.month_date
+	toColumn: dim_month.month_date

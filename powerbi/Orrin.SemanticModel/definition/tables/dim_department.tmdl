@@ -1,0 +1,36 @@
+table dim_department
+	lineageTag: 84dd7fab-2382-5261-820b-470b55c17fb5
+
+	column department
+		dataType: string
+		isKey
+		sortByColumn: dept_order
+		lineageTag: eafe324c-30a4-5455-83c2-1d54c0546ac6
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = User
+
+	column dept_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7354ce67-aa84-5df2-bb54-1ef41d7a9d67
+		summarizeBy: none
+		sourceColumn: dept_order
+
+		annotation SummarizationSetBy = User
+
+	partition dim_department = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "dim_department.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"department", "dept_order"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"department", type text}, {"dept_order", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

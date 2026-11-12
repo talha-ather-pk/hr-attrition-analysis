@@ -1,0 +1,464 @@
+table fact_employee_month
+	lineageTag: 7a66cd33-644c-50b2-9305-19a00acc3292
+
+	column employee_id
+		dataType: string
+		isHidden
+		lineageTag: edd84a2b-59fb-5336-b8ab-ae1522081318
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = User
+
+	column month_date
+		dataType: dateTime
+		isHidden
+		formatString: dd mmm yyyy
+		lineageTag: 21f74410-6883-57d2-b7a2-cd5c3522e543
+		summarizeBy: none
+		sourceColumn: month_date
+
+		annotation SummarizationSetBy = User
+
+	column department
+		dataType: string
+		isHidden
+		lineageTag: 563e9ce0-99d9-531a-8ce4-3dca3f254e47
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = User
+
+	column job_title
+		dataType: string
+		isHidden
+		lineageTag: 9d6da327-7ee7-54f0-aa60-5b9a7391f3cb
+		summarizeBy: none
+		sourceColumn: job_title
+
+		annotation SummarizationSetBy = User
+
+	column level
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e25c1be2-5abd-528b-99f2-c3d5c97ceded
+		summarizeBy: none
+		sourceColumn: level
+
+		annotation SummarizationSetBy = User
+
+	column level_name
+		dataType: string
+		lineageTag: f8dd6700-a67f-50a1-8d7c-65e344589403
+		summarizeBy: none
+		sourceColumn: level_name
+
+		annotation SummarizationSetBy = User
+
+	column location
+		dataType: string
+		isHidden
+		lineageTag: e90262fc-8c80-5ced-838c-ed96e1f272ba
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = User
+
+	column work_mode
+		dataType: string
+		lineageTag: 471abb6a-b1ae-5326-9b55-84c6c78bc739
+		summarizeBy: none
+		sourceColumn: work_mode
+
+		annotation SummarizationSetBy = User
+
+	column manager_id
+		dataType: string
+		isHidden
+		lineageTag: aa9415f1-7244-5867-b3e8-6af5d2245bb6
+		summarizeBy: none
+		sourceColumn: manager_id
+
+		annotation SummarizationSetBy = User
+
+	column annual_salary
+		dataType: double
+		isHidden
+		lineageTag: d75f3bb5-9cf2-506b-8cca-df05c061b99c
+		summarizeBy: none
+		sourceColumn: annual_salary
+
+		annotation SummarizationSetBy = User
+
+	column band_mid
+		dataType: double
+		isHidden
+		lineageTag: c5481ea9-2c61-5487-b732-07ce1b10d3b5
+		summarizeBy: none
+		sourceColumn: band_mid
+
+		annotation SummarizationSetBy = User
+
+	column compa_ratio
+		dataType: double
+		isHidden
+		lineageTag: e20b77b9-6bfc-55ff-97a0-efe6b4df4138
+		summarizeBy: none
+		sourceColumn: compa_ratio
+
+		annotation SummarizationSetBy = User
+
+	column overtime_hours
+		dataType: double
+		isHidden
+		lineageTag: 29ff0f87-8e11-533d-94eb-c0318413d2c3
+		summarizeBy: none
+		sourceColumn: overtime_hours
+
+		annotation SummarizationSetBy = User
+
+	column overtime_3m
+		dataType: double
+		isHidden
+		lineageTag: 718ba97c-9099-5262-84dd-e028622df41d
+		summarizeBy: none
+		sourceColumn: overtime_3m
+
+		annotation SummarizationSetBy = User
+
+	column months_since_promotion
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 10a50606-9a8e-5108-9af1-581690910500
+		summarizeBy: none
+		sourceColumn: months_since_promotion
+
+		annotation SummarizationSetBy = User
+
+	column tenure_months
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1f7a1d0b-cd4c-5287-ac3c-d25413b62d78
+		summarizeBy: none
+		sourceColumn: tenure_months
+
+		annotation SummarizationSetBy = User
+
+	column age
+		dataType: double
+		isHidden
+		lineageTag: 326f868a-d0ea-5108-b530-e721cfbcfefa
+		summarizeBy: none
+		sourceColumn: age
+
+		annotation SummarizationSetBy = User
+
+	column last_rating
+		dataType: double
+		isHidden
+		lineageTag: 009e9812-b862-5d09-adbd-42ac963d8d31
+		summarizeBy: none
+		sourceColumn: last_rating
+
+		annotation SummarizationSetBy = User
+
+	column engagement
+		dataType: double
+		isHidden
+		lineageTag: 23bea5f6-2bab-5199-8885-0416896d7e4b
+		summarizeBy: none
+		sourceColumn: engagement
+
+		annotation SummarizationSetBy = User
+
+	column workload
+		dataType: double
+		isHidden
+		lineageTag: b3ed6621-02be-560a-87bb-b1700d73d3cd
+		summarizeBy: none
+		sourceColumn: workload
+
+		annotation SummarizationSetBy = User
+
+	column manager_support
+		dataType: double
+		isHidden
+		lineageTag: fea2b412-3ffc-5775-bff3-c57467fcfefa
+		summarizeBy: none
+		sourceColumn: manager_support
+
+		annotation SummarizationSetBy = User
+
+	column growth
+		dataType: double
+		isHidden
+		lineageTag: e522fe5e-9587-5b5d-8eea-b9def14e68b9
+		summarizeBy: none
+		sourceColumn: growth
+
+		annotation SummarizationSetBy = User
+
+	column absence_days
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 48ffc8f6-ecc9-581f-a6ec-c1929c557630
+		summarizeBy: none
+		sourceColumn: absence_days
+
+		annotation SummarizationSetBy = User
+
+	column rto_affected
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0295fef2-9d9f-5ec2-999d-0709980a6d2c
+		summarizeBy: none
+		sourceColumn: rto_affected
+
+		annotation SummarizationSetBy = User
+
+	column at_risk
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 394cfaac-0b0a-5814-b5e2-d4493a7f1f88
+		summarizeBy: none
+		sourceColumn: at_risk
+
+		annotation SummarizationSetBy = User
+
+	column resigned
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 924053d5-10ca-5c06-8e78-b37a4631894b
+		summarizeBy: none
+		sourceColumn: resigned
+
+		annotation SummarizationSetBy = User
+
+	column terminated
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 439c8fea-5c84-505e-98ad-b46ecd8796eb
+		summarizeBy: none
+		sourceColumn: terminated
+
+		annotation SummarizationSetBy = User
+
+	column termination_type
+		dataType: string
+		isHidden
+		lineageTag: 38d6fba5-b97c-5f95-bcf4-8599f67ebded
+		summarizeBy: none
+		sourceColumn: termination_type
+
+		annotation SummarizationSetBy = User
+
+	column involuntary
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 14e213ef-bd26-5fdc-a7c0-5803e3287f9e
+		summarizeBy: none
+		sourceColumn: involuntary
+
+		annotation SummarizationSetBy = User
+
+	column regrettable
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3bbb1ef8-ff16-51fb-a7f8-44b369f2322b
+		summarizeBy: none
+		sourceColumn: regrettable
+
+		annotation SummarizationSetBy = User
+
+	column is_hire
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8905f459-3444-5881-b108-b6cc787461ee
+		summarizeBy: none
+		sourceColumn: is_hire
+
+		annotation SummarizationSetBy = User
+
+	column resignation_cost
+		dataType: double
+		isHidden
+		lineageTag: a9cdf4d1-3aa8-5a64-a59e-e31025634868
+		summarizeBy: none
+		sourceColumn: resignation_cost
+
+		annotation SummarizationSetBy = User
+
+	column ot_high
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ca87b749-bee3-5db8-b3ba-f777d158fc18
+		summarizeBy: none
+		sourceColumn: ot_high
+
+		annotation SummarizationSetBy = User
+
+	column below_band
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f278790f-d7f2-5496-98fb-fda4953f6a55
+		summarizeBy: none
+		sourceColumn: below_band
+
+		annotation SummarizationSetBy = User
+
+	column promotion_stalled
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4a935898-07ea-55fe-9f7d-1919059d1b60
+		summarizeBy: none
+		sourceColumn: promotion_stalled
+
+		annotation SummarizationSetBy = User
+
+	column low_engagement
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 131875ff-ad18-5a1b-9721-d76ed8ba01e4
+		summarizeBy: none
+		sourceColumn: low_engagement
+
+		annotation SummarizationSetBy = User
+
+	column first_year
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6eaa3ef0-9088-515a-af2e-95d4b4df545a
+		summarizeBy: none
+		sourceColumn: first_year
+
+		annotation SummarizationSetBy = User
+
+	column tenure_band
+		dataType: string
+		sortByColumn: tenure_order
+		lineageTag: 7906f5c7-b0f3-5841-a7a4-06b3acbe3302
+		summarizeBy: none
+		sourceColumn: tenure_band
+
+		annotation SummarizationSetBy = User
+
+	column compa_band
+		dataType: string
+		sortByColumn: compa_order
+		lineageTag: 39cf0bc1-3be4-5b3d-a446-643976c33784
+		summarizeBy: none
+		sourceColumn: compa_band
+
+		annotation SummarizationSetBy = User
+
+	column overtime_band
+		dataType: string
+		sortByColumn: ot_order
+		lineageTag: 43efd376-01c2-5a6a-a31a-6dc136f2b214
+		summarizeBy: none
+		sourceColumn: overtime_band
+
+		annotation SummarizationSetBy = User
+
+	column promo_band
+		dataType: string
+		sortByColumn: promo_order
+		lineageTag: 73b4ed1e-f786-5e72-bfd2-1f5e94400b51
+		summarizeBy: none
+		sourceColumn: promo_band
+
+		annotation SummarizationSetBy = User
+
+	column survey_status
+		dataType: string
+		sortByColumn: survey_order
+		lineageTag: 41ea32df-b8aa-59b7-903d-414f3de12781
+		summarizeBy: none
+		sourceColumn: survey_status
+
+		annotation SummarizationSetBy = User
+
+	column tenure_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f551b431-c7b9-5796-8a52-5417316a3035
+		summarizeBy: none
+		sourceColumn: tenure_order
+
+		annotation SummarizationSetBy = User
+
+	column compa_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: dc0fce92-737b-59d6-9f72-af009124ab54
+		summarizeBy: none
+		sourceColumn: compa_order
+
+		annotation SummarizationSetBy = User
+
+	column ot_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1e6c08d4-c08a-54eb-8e1b-3c8eb3a597bd
+		summarizeBy: none
+		sourceColumn: ot_order
+
+		annotation SummarizationSetBy = User
+
+	column promo_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f61c21f4-30e1-5069-99bb-fa302612b941
+		summarizeBy: none
+		sourceColumn: promo_order
+
+		annotation SummarizationSetBy = User
+
+	column survey_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b476f267-f39e-5464-a79f-728d951b67ba
+		summarizeBy: none
+		sourceColumn: survey_order
+
+		annotation SummarizationSetBy = User
+
+	partition fact_employee_month = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Binary.Decompress(File.Contents(DataFolder & "fact_employee_month.csv.gz"), Compression.GZip), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"employee_id", "month_date", "department", "job_title", "level", "level_name", "location", "work_mode", "manager_id", "annual_salary", "band_mid", "compa_ratio", "overtime_hours", "overtime_3m", "months_since_promotion", "tenure_months", "age", "last_rating", "engagement", "workload", "manager_support", "growth", "absence_days", "rto_affected", "at_risk", "resigned", "terminated", "termination_type", "involuntary", "regrettable", "is_hire", "resignation_cost", "ot_high", "below_band", "promotion_stalled", "low_engagement", "first_year", "tenure_band", "compa_band", "overtime_band", "promo_band", "survey_status"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"employee_id", type text}, {"month_date", type date}, {"department", type text}, {"job_title", type text}, {"level", Int64.Type}, {"level_name", type text}, {"location", type text}, {"work_mode", type text}, {"manager_id", type text}, {"annual_salary", type number}, {"band_mid", type number}, {"compa_ratio", type number}, {"overtime_hours", type number}, {"overtime_3m", type number}, {"months_since_promotion", Int64.Type}, {"tenure_months", Int64.Type}, {"age", type number}, {"last_rating", type number}, {"engagement", type number}, {"workload", type number}, {"manager_support", type number}, {"growth", type number}, {"absence_days", Int64.Type}, {"rto_affected", Int64.Type}, {"at_risk", Int64.Type}, {"resigned", Int64.Type}, {"terminated", Int64.Type}, {"termination_type", type text}, {"involuntary", Int64.Type}, {"regrettable", Int64.Type}, {"is_hire", Int64.Type}, {"resignation_cost", type number}, {"ot_high", Int64.Type}, {"below_band", Int64.Type}, {"promotion_stalled", Int64.Type}, {"low_engagement", Int64.Type}, {"first_year", Int64.Type}, {"tenure_band", type text}, {"compa_band", type text}, {"overtime_band", type text}, {"promo_band", type text}, {"survey_status", type text}}, "en-US"),
+				    Ord_tenure_order = Table.AddColumn(Typed, "tenure_order", each if [tenure_band] = null then null else List.PositionOf({"0-5 months", "6-11 months", "1-2 years", "2-5 years", "5-8 years", "8+ years"}, [tenure_band]) + 1, Int64.Type),
+				    Ord_compa_order = Table.AddColumn(Ord_tenure_order, "compa_order", each if [compa_band] = null then null else List.PositionOf({"Under 85%", "85-90%", "90-95%", "95-105%", "Over 105%"}, [compa_band]) + 1, Int64.Type),
+				    Ord_ot_order = Table.AddColumn(Ord_compa_order, "ot_order", each if [overtime_band] = null then null else List.PositionOf({"Under 10 h", "10-20 h", "20-30 h", "30 h +"}, [overtime_band]) + 1, Int64.Type),
+				    Ord_promo_order = Table.AddColumn(Ord_ot_order, "promo_order", each if [promo_band] = null then null else List.PositionOf({"Under 18 months", "18-35 months", "3-5 years", "5+ years"}, [promo_band]) + 1, Int64.Type),
+				    Ord_survey_order = Table.AddColumn(Ord_promo_order, "survey_order", each if [survey_status] = null then null else List.PositionOf({"Answered last quarter", "Stopped answering", "Never answered"}, [survey_status]) + 1, Int64.Type)
+				in
+				    Ord_survey_order
+
+	annotation PBI_ResultType = Table

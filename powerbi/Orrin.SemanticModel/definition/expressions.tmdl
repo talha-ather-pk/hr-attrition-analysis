@@ -1,0 +1,4 @@
+expression DataFolder = "C:\Users\DELL\upwork-profile\data-portfolio\data-portfolio\07-hr-attrition-analysis\data_clean\powerbi\" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: 67c403b8-6f04-5382-86e1-faa396fd8960
+
+	annotation PBI_ResultType = Text

@@ -1,0 +1,288 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "2f1f5c2cfbc358648f3a",
+  "position": {
+    "x": 24,
+    "y": 473,
+    "z": 6500,
+    "height": 231,
+    "width": 612,
+    "tabOrder": 6500
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_exit"
+                    }
+                  },
+                  "Property": "primary_reason"
+                }
+              },
+              "queryRef": "fact_exit.primary_reason",
+              "nativeQueryRef": "primary_reason",
+              "displayName": "Reason given in exit interview"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Exit Leavers"
+                }
+              },
+              "queryRef": "_Measures.Exit Leavers",
+              "nativeQueryRef": "Exit Leavers",
+              "displayName": "Leavers"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Exit Share"
+                }
+              },
+              "queryRef": "_Measures.Exit Share",
+              "nativeQueryRef": "Exit Share",
+              "displayName": "Share"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Exit Overtime %"
+                }
+              },
+              "queryRef": "_Measures.Exit Overtime %",
+              "nativeQueryRef": "Exit Overtime %",
+              "displayName": "On 20 h+ overtime"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Exit Below Band %"
+                }
+              },
+              "queryRef": "_Measures.Exit Below Band %",
+              "nativeQueryRef": "Exit Below Band %",
+              "displayName": "Under 90% of band"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Exit Stalled %"
+                }
+              },
+              "queryRef": "_Measures.Exit Stalled %",
+              "nativeQueryRef": "Exit Stalled %",
+              "displayName": "3+ yrs no promotion"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Exit Leavers"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "128.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_exit.primary_reason"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "84.0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Exit Leavers"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Exit Share"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Exit Overtime %"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Exit Below Band %"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "88.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Exit Stalled %"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'What leavers said vs what the data shows'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Better opportunity'' hides pay, promotion and workload · burnout is under-reported'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

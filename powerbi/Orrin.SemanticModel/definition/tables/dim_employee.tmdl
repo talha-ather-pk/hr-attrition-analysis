@@ -1,0 +1,134 @@
+table dim_employee
+	lineageTag: 991a462f-5169-5be5-ba45-57fe8c05b6d9
+
+	column employee_id
+		dataType: string
+		isKey
+		lineageTag: d3840de1-70e7-5117-9bbc-8bc88ae07f50
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = User
+
+	column name
+		dataType: string
+		lineageTag: 7115aae5-e034-5b22-9405-87a2ac612159
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = User
+
+	column employee_label
+		dataType: string
+		lineageTag: 23f45b7b-b219-5ba8-9e8a-4da4b80948da
+		summarizeBy: none
+		sourceColumn: employee_label
+
+		annotation SummarizationSetBy = User
+
+	column gender
+		dataType: string
+		lineageTag: fb95db87-1b15-5794-9562-4541e68cecfa
+		summarizeBy: none
+		sourceColumn: gender
+
+		annotation SummarizationSetBy = User
+
+	column hire_date
+		dataType: dateTime
+		formatString: dd mmm yyyy
+		lineageTag: 50cdc030-e82f-59a7-8f07-b03c5cbf535c
+		summarizeBy: none
+		sourceColumn: hire_date
+
+		annotation SummarizationSetBy = User
+
+	column termination_date
+		dataType: dateTime
+		formatString: dd mmm yyyy
+		lineageTag: 0e152b44-80b3-589f-9007-7b43fcd3ea3b
+		summarizeBy: none
+		sourceColumn: termination_date
+
+		annotation SummarizationSetBy = User
+
+	column termination_type
+		dataType: string
+		lineageTag: f5adfdfc-c4b8-5378-b3bd-b79b799d76ac
+		summarizeBy: none
+		sourceColumn: termination_type
+
+		annotation SummarizationSetBy = User
+
+	column employment_status
+		dataType: string
+		lineageTag: 90073aed-f534-52b6-b3fc-f62e6fab1d3c
+		summarizeBy: none
+		sourceColumn: employment_status
+
+		annotation SummarizationSetBy = User
+
+	column is_rehire
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 02c72800-a37a-5d48-aa4a-494b53d79b81
+		summarizeBy: none
+		sourceColumn: is_rehire
+
+		annotation SummarizationSetBy = User
+
+	column department
+		dataType: string
+		lineageTag: d6807a8b-b500-537d-8259-724d5475540e
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = User
+
+	column job_title
+		dataType: string
+		lineageTag: 36b7f2cb-6db5-5728-bdda-48213a625773
+		summarizeBy: none
+		sourceColumn: job_title
+
+		annotation SummarizationSetBy = User
+
+	column level
+		dataType: int64
+		formatString: 0
+		lineageTag: 7caa0360-835d-5dd7-828a-4225983f57e4
+		summarizeBy: none
+		sourceColumn: level
+
+		annotation SummarizationSetBy = User
+
+	column location
+		dataType: string
+		lineageTag: d53ffd41-21b9-5efe-8502-e845859f4a83
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = User
+
+	column manager
+		dataType: string
+		lineageTag: 3cf73039-e7fa-57ca-ac04-eb07ba1f5320
+		summarizeBy: none
+		sourceColumn: manager
+
+		annotation SummarizationSetBy = User
+
+	partition dim_employee = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "dim_employee.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"employee_id", "name", "employee_label", "gender", "hire_date", "termination_date", "termination_type", "employment_status", "is_rehire", "department", "job_title", "level", "location", "manager"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"employee_id", type text}, {"name", type text}, {"employee_label", type text}, {"gender", type text}, {"hire_date", type date}, {"termination_date", type date}, {"termination_type", type text}, {"employment_status", type text}, {"is_rehire", Int64.Type}, {"department", type text}, {"job_title", type text}, {"level", Int64.Type}, {"location", type text}, {"manager", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

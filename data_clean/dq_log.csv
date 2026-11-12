@@ -1,0 +1,23 @@
+step,table_name,issue,rows_affected,action,injected
+1,job_history,Rows received,14623,loaded,
+2,job_history,Exact duplicate rows (event posted twice),18,removed,18.0
+3,job_history,Department spelled several ways,584,mapped to the 7 official names,584.0
+4,employees,Rows received,3870,loaded,
+5,employees,Test / sandbox records,6,removed,6.0
+6,employees,Department spelled several ways,155,mapped to the 7 official names,155.0
+7,employees,Hire date as dd/mm/yyyy (rest ISO),580,parsed day-first,580.0
+8,employees,"Gender coded several ways (F, female, PNTS ...)",386,standardised,386.0
+9,employees,Salary keyed as a monthly figure,77,x12 (matches job history),77.0
+10,employees,Leaver still marked Active,9,set to Terminated,9.0
+11,employees,Manager id blank (job history has it),39,filled from job history,39.0
+12,employees,Rehired under a new id (same name + date of birth),59,linked to first id (22 already linked in HRIS),
+13,salary_bands,Rows received,700,loaded,
+14,performance_reviews,Rows received,9103,loaded,
+15,engagement_survey,Rows received,22595,loaded,
+16,timesheets,Rows received,82599,loaded,
+17,timesheets,Negative overtime (payroll reversal entries),165,set to missing,165.0
+18,absence,Rows received,36330,loaded,
+19,exit_interviews,Rows received,902,loaded,
+20,headcount_budget,Rows received,252,loaded,
+21,employee_month,Person-months built from effective-dated history,86293,one row per person per month,
+22,employee_month,Timesheet missing for the month (not heads),3442,overtime averaged over the months that exist,3442.0

@@ -1,0 +1,903 @@
+employee_id,interview_month,department,primary_reason,would_return,comment,on_high_overtime,below_band,promotion_stalled
+OD10109,2023-02-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,0
+OD10142,2023-01-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,1,1,1
+OD10179,2023-02-01,Engineering,Pay,No,The new offer is significantly higher.,0,1,1
+OD10239,2023-02-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,1,1
+OD10265,2023-02-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD10330,2023-02-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,1,1
+OD10353,2023-02-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,1,1
+OD10407,2023-02-01,Engineering,Career progression,No,Promotion kept being pushed back.,0,0,0
+OD10450,2023-02-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,0
+OD10586,2023-01-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD10640,2023-02-01,Engineering,Personal / relocation,No,Family reasons.,0,0,0
+OD10757,2023-02-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD10771,2023-02-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,0
+OD10788,2023-02-01,Engineering,Role not as expected,No,Not the right fit for me.,0,0,0
+OD10812,2023-02-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,0
+OD10990,2023-02-01,Data & AI,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD11058,2023-02-01,Product & Design,Personal / relocation,Yes,Family reasons.,0,0,0
+OD11403,2023-01-01,Delivery,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD11523,2023-02-01,Customer Support,Better opportunity,No,A great opportunity came up elsewhere.,0,1,0
+OD11810,2023-02-01,Customer Support,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD11882,2023-02-01,Sales & Marketing,Better opportunity,No,I was offered a role I could not turn down.,0,0,1
+OD11974,2023-02-01,Sales & Marketing,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD12159,2023-02-01,Corporate Services,Personal / relocation,Yes,Moving to another city.,0,0,0
+OD12181,2023-02-01,Corporate Services,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD12230,2023-02-01,Corporate Services,Further study,Yes,Going back to university.,0,0,0
+OD10091,2023-03-01,Engineering,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD10139,2023-03-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,0
+OD10165,2023-03-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,0
+OD10200,2023-03-01,Engineering,Personal / relocation,Yes,Family reasons.,0,0,0
+OD10204,2023-02-01,Engineering,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD10256,2023-03-01,Engineering,Further study,Maybe,Starting a full-time course.,0,0,0
+OD10329,2023-03-01,Engineering,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,0
+OD10357,2023-02-01,Engineering,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD10402,2023-03-01,Engineering,Workload / burnout,Yes,I need a better work-life balance.,1,0,0
+OD10497,2023-03-01,Engineering,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD10519,2023-03-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD10545,2023-02-01,Engineering,Further study,Maybe,Starting a full-time course.,0,0,0
+OD10549,2023-03-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,1
+OD10606,2023-03-01,Engineering,Manager relationship,No,I did not get the support I needed from my manager.,0,0,1
+OD10644,2023-02-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD10759,2023-03-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,1,1,0
+OD10768,2023-03-01,Engineering,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,1
+OD10800,2023-02-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD10803,2023-02-01,Engineering,Personal / relocation,Maybe,Moving to another city.,0,0,0
+OD10808,2023-03-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,0,1,0
+OD10817,2023-02-01,Engineering,Career progression,Yes,Promotion kept being pushed back.,0,0,1
+OD10820,2023-02-01,Engineering,Personal / relocation,No,Family reasons.,0,0,0
+OD10864,2023-03-01,Data & AI,Better opportunity,Yes,Moving to a bigger role at another company.,0,1,0
+OD10910,2023-03-01,Data & AI,Career progression,Yes,I could not see a path to the next level.,0,1,0
+OD11046,2023-03-01,Product & Design,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD11266,2023-03-01,Delivery,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD11287,2023-03-01,Delivery,Pay,Yes,The new offer is significantly higher.,0,1,0
+OD11342,2023-03-01,Delivery,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,1
+OD11564,2023-03-01,Customer Support,Further study,Maybe,Starting a full-time course.,0,0,0
+OD12201,2023-03-01,Corporate Services,Further study,No,Starting a full-time course.,0,0,0
+OD12204,2023-03-01,Corporate Services,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,1
+OD10034,2023-04-01,Engineering,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD10052,2023-03-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD10173,2023-04-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,0
+OD10238,2023-04-01,Engineering,Career progression,Yes,Looking for more growth.,0,0,1
+OD10246,2023-03-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,0
+OD10337,2023-04-01,Engineering,Personal / relocation,Yes,Personal circumstances changed.,0,0,1
+OD10453,2023-03-01,Engineering,Personal / relocation,No,Personal circumstances changed.,0,0,0
+OD10651,2023-04-01,Engineering,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD10935,2023-04-01,Data & AI,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD11029,2023-04-01,Product & Design,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD11249,2023-03-01,Delivery,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD11484,2023-04-01,Customer Support,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,1
+OD11545,2023-03-01,Customer Support,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD11563,2023-03-01,Customer Support,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD11744,2023-04-01,Customer Support,Pay,No,The new offer is significantly higher.,0,1,0
+OD11982,2023-03-01,Sales & Marketing,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD12016,2023-03-01,Sales & Marketing,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD12050,2023-04-01,Sales & Marketing,Pay,No,My salary has fallen behind the market.,1,0,0
+OD12083,2023-04-01,Corporate Services,Better opportunity,No,Moving to a bigger role at another company.,0,1,0
+OD12286,2023-04-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD12289,2023-04-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD10086,2023-05-01,Engineering,Further study,Yes,Going back to university.,0,0,0
+OD10147,2023-04-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD10232,2023-05-01,Engineering,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD10267,2023-05-01,Engineering,Career progression,Maybe,Looking for more growth.,0,1,1
+OD10282,2023-05-01,Engineering,Manager relationship,No,I did not get the support I needed from my manager.,0,0,1
+OD10294,2023-05-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD10322,2023-05-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD10323,2023-05-01,Engineering,Workload / burnout,No,The workload has been unsustainable for months.,1,0,1
+OD10405,2023-05-01,Engineering,Personal / relocation,Maybe,Moving to another city.,0,0,0
+OD10425,2023-04-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,1,1
+OD10587,2023-05-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,0,1,1
+OD10674,2023-05-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD10719,2023-05-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10731,2023-05-01,Engineering,Career progression,No,Promotion kept being pushed back.,0,0,0
+OD10747,2023-05-01,Engineering,Personal / relocation,Yes,Moving to another city.,0,0,0
+OD10867,2023-05-01,Data & AI,Personal / relocation,Yes,Family reasons.,0,0,0
+OD10876,2023-05-01,Data & AI,Personal / relocation,Yes,Moving to another city.,0,0,0
+OD10933,2023-05-01,Data & AI,Further study,Yes,Going back to university.,0,0,0
+OD11114,2023-05-01,Product & Design,Career progression,No,Looking for more growth.,0,0,1
+OD11327,2023-05-01,Delivery,Further study,Yes,Going back to university.,0,0,0
+OD11499,2023-05-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,1,1
+OD11697,2023-05-01,Customer Support,Workload / burnout,Maybe,Too many late nights covering open roles.,1,1,0
+OD11715,2023-05-01,Customer Support,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD11723,2023-05-01,Customer Support,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD12045,2023-05-01,Sales & Marketing,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD12118,2023-05-01,Corporate Services,Personal / relocation,No,Moving to another city.,0,0,1
+OD12135,2023-05-01,Corporate Services,Manager relationship,Maybe,I did not get the support I needed from my manager.,0,0,0
+OD12274,2023-05-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD10269,2023-06-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD10381,2023-05-01,Engineering,Career progression,Maybe,Promotion kept being pushed back.,0,0,1
+OD10882,2023-06-01,Data & AI,Personal / relocation,No,Moving to another city.,0,0,0
+OD11244,2023-06-01,Delivery,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD11289,2023-06-01,Delivery,Better opportunity,Maybe,Moving to a bigger role at another company.,0,1,1
+OD11347,2023-06-01,Delivery,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD11769,2023-06-01,Customer Support,Pay,No,My salary has fallen behind the market.,0,1,1
+OD12002,2023-06-01,Sales & Marketing,Better opportunity,Maybe,Moving to a bigger role at another company.,0,1,1
+OD12032,2023-06-01,Sales & Marketing,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD12070,2023-06-01,Sales & Marketing,Career progression,Yes,Promotion kept being pushed back.,0,0,1
+OD12224,2023-06-01,Corporate Services,Better opportunity,Yes,Moving to a bigger role at another company.,0,1,0
+OD12268,2023-06-01,Engineering,Workload / burnout,No,The workload has been unsustainable for months.,1,1,0
+OD12372,2023-06-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,0
+OD12397,2023-06-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD10055,2023-06-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD10211,2023-07-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,1,1,0
+OD10247,2023-07-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,1,0
+OD10296,2023-07-01,Engineering,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD10428,2023-07-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD10863,2023-06-01,Data & AI,Workload / burnout,Maybe,I need a better work-life balance.,1,0,0
+OD10868,2023-07-01,Data & AI,Career progression,No,Promotion kept being pushed back.,0,0,1
+OD11045,2023-07-01,Product & Design,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD11372,2023-07-01,Delivery,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD11481,2023-07-01,Customer Support,Better opportunity,Yes,A great opportunity came up elsewhere.,0,1,1
+OD11491,2023-07-01,Customer Support,Better opportunity,No,Moving to a bigger role at another company.,0,1,1
+OD11568,2023-06-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,1,1,0
+OD11607,2023-07-01,Customer Support,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD11610,2023-07-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,0
+OD11740,2023-07-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,0,0,1
+OD11783,2023-07-01,Customer Support,Role not as expected,No,Not the right fit for me.,0,0,0
+OD11884,2023-07-01,Sales & Marketing,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD11933,2023-07-01,Sales & Marketing,Better opportunity,Maybe,Moving to a bigger role at another company.,0,1,0
+OD11985,2023-07-01,Sales & Marketing,Workload / burnout,No,Too many late nights covering open roles.,1,0,0
+OD12074,2023-07-01,Sales & Marketing,Pay,Yes,The new offer is significantly higher.,0,1,0
+OD12192,2023-07-01,Corporate Services,Career progression,No,Looking for more growth.,0,0,1
+OD10036,2023-08-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD10107,2023-07-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,0
+OD10319,2023-08-01,Engineering,Career progression,No,Looking for more growth.,0,0,1
+OD10364,2023-08-01,Engineering,Personal / relocation,Yes,Family reasons.,0,0,0
+OD10505,2023-08-01,Engineering,Career progression,Maybe,Promotion kept being pushed back.,0,0,1
+OD10555,2023-07-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD10637,2023-08-01,Engineering,Career progression,No,I could not see a path to the next level.,0,0,1
+OD10762,2023-08-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,0,0,1
+OD10797,2023-07-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,1
+OD10798,2023-08-01,Engineering,Personal / relocation,Yes,Family reasons.,0,0,0
+OD10961,2023-08-01,Data & AI,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD11022,2023-08-01,Product & Design,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD11026,2023-07-01,Product & Design,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD11094,2023-08-01,Product & Design,Better opportunity,No,Moving to a bigger role at another company.,1,0,0
+OD11282,2023-08-01,Delivery,Better opportunity,No,A great opportunity came up elsewhere.,0,1,0
+OD11693,2023-08-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,1
+OD11724,2023-08-01,Customer Support,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,0
+OD11792,2023-08-01,Customer Support,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD11950,2023-08-01,Sales & Marketing,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD12049,2023-07-01,Sales & Marketing,Personal / relocation,Yes,Family reasons.,0,0,0
+OD12054,2023-08-01,Sales & Marketing,Pay,Yes,The new offer is significantly higher.,0,1,0
+OD12093,2023-08-01,Corporate Services,Pay,Maybe,The new offer is significantly higher.,0,1,0
+OD12184,2023-08-01,Corporate Services,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD12198,2023-08-01,Corporate Services,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD12199,2023-08-01,Corporate Services,Further study,No,Starting a full-time course.,0,0,0
+OD12349,2023-08-01,Customer Support,Role not as expected,Yes,The job was different from what was described.,0,0,0
+OD12374,2023-08-01,Engineering,Career progression,Maybe,Looking for more growth.,0,0,0
+OD12376,2023-08-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD10030,2023-09-01,Engineering,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD10198,2023-09-01,Engineering,Workload / burnout,Maybe,I need a better work-life balance.,1,0,1
+OD10235,2023-09-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD10314,2023-09-01,Engineering,Further study,Maybe,Going back to university.,0,0,0
+OD10351,2023-09-01,Engineering,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD10401,2023-09-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,1,0
+OD10496,2023-09-01,Engineering,Career progression,No,I could not see a path to the next level.,0,1,1
+OD10624,2023-09-01,Engineering,Career progression,No,Looking for more growth.,0,0,1
+OD10815,2023-09-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD10907,2023-09-01,Data & AI,Better opportunity,Maybe,Moving to a bigger role at another company.,0,1,0
+OD10959,2023-09-01,Data & AI,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD11052,2023-09-01,Product & Design,Personal / relocation,Yes,Personal circumstances changed.,1,0,0
+OD11077,2023-09-01,Product & Design,Career progression,Maybe,Looking for more growth.,0,0,1
+OD11632,2023-09-01,Customer Support,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD11683,2023-09-01,Customer Support,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD11867,2023-09-01,Sales & Marketing,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,1
+OD12008,2023-09-01,Sales & Marketing,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD12285,2023-08-01,Sales & Marketing,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD12290,2023-08-01,Engineering,Personal / relocation,No,Moving to another city.,0,0,0
+OD12315,2023-09-01,Delivery,Pay,Yes,The new offer is significantly higher.,0,1,0
+OD12414,2023-09-01,Engineering,Workload / burnout,Yes,I need a better work-life balance.,1,0,0
+OD12491,2023-09-01,Sales & Marketing,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD12516,2023-09-01,Engineering,Manager relationship,No,Communication with my line manager was difficult.,0,0,0
+OD10171,2023-10-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,1,1,1
+OD10217,2023-10-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,0
+OD10374,2023-10-01,Engineering,Workload / burnout,No,Too many late nights covering open roles.,1,0,0
+OD10410,2023-10-01,Engineering,Personal / relocation,No,Personal circumstances changed.,0,0,0
+OD10460,2023-10-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10489,2023-10-01,Engineering,Further study,No,Going back to university.,0,0,0
+OD10643,2023-09-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD10793,2023-10-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,1
+OD10848,2023-10-01,Data & AI,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,1
+OD11096,2023-10-01,Product & Design,Pay,No,My salary has fallen behind the market.,0,1,0
+OD11263,2023-10-01,Delivery,Personal / relocation,Yes,Family reasons.,1,0,0
+OD11600,2023-10-01,Customer Support,Pay,No,The new offer is significantly higher.,0,1,0
+OD12059,2023-09-01,Sales & Marketing,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,1
+OD12167,2023-10-01,Corporate Services,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD12303,2023-10-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,1,0
+OD12375,2023-10-01,Engineering,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD12434,2023-10-01,Delivery,Manager relationship,No,I did not get the support I needed from my manager.,0,0,0
+OD12442,2023-10-01,Customer Support,Role not as expected,No,The job was different from what was described.,0,0,0
+OD12458,2023-10-01,Engineering,Role not as expected,No,Not the right fit for me.,0,0,0
+OD12466,2023-10-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12467,2023-09-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD10021,2023-11-01,Engineering,Personal / relocation,No,Moving to another city.,0,0,0
+OD10215,2023-10-01,Engineering,Workload / burnout,Yes,Too many late nights covering open roles.,0,0,1
+OD10333,2023-10-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,1
+OD10419,2023-11-01,Engineering,Career progression,No,I could not see a path to the next level.,0,0,1
+OD10517,2023-10-01,Engineering,Pay,No,Pay did not keep up with my responsibilities.,1,0,0
+OD10551,2023-11-01,Engineering,Personal / relocation,No,Family reasons.,0,0,0
+OD10569,2023-11-01,Engineering,Pay,No,My salary has fallen behind the market.,0,1,0
+OD10722,2023-11-01,Engineering,Career progression,Maybe,I could not see a path to the next level.,0,1,0
+OD11122,2023-10-01,Product & Design,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD11181,2023-10-01,Product & Design,Personal / relocation,No,Moving to another city.,0,0,0
+OD11504,2023-11-01,Customer Support,Personal / relocation,Yes,Family reasons.,0,0,0
+OD11656,2023-11-01,Customer Support,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,0
+OD11672,2023-11-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,0,1,0
+OD11720,2023-11-01,Customer Support,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD11784,2023-11-01,Customer Support,Further study,Maybe,Going back to university.,0,0,0
+OD11822,2023-11-01,Customer Support,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,0
+OD11826,2023-10-01,Customer Support,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD11880,2023-11-01,Sales & Marketing,Pay,Maybe,The new offer is significantly higher.,0,1,1
+OD12301,2023-11-01,Engineering,Workload / burnout,No,Too many late nights covering open roles.,0,1,0
+OD12443,2023-11-01,Sales & Marketing,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD12496,2023-11-01,Corporate Services,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD12544,2023-10-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,0
+OD12550,2023-11-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12552,2023-11-01,Engineering,Career progression,Maybe,I could not see a path to the next level.,0,0,0
+OD12613,2023-11-01,Product & Design,Personal / relocation,No,Personal circumstances changed.,0,0,0
+OD10184,2023-12-01,Engineering,Pay,No,My salary has fallen behind the market.,0,1,0
+OD10250,2023-11-01,Engineering,Further study,Yes,Starting a full-time course.,0,0,0
+OD10285,2023-12-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD10312,2023-12-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD10475,2023-11-01,Engineering,Pay,No,My salary has fallen behind the market.,0,1,0
+OD10603,2023-12-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,1,1,1
+OD10717,2023-12-01,Engineering,Personal / relocation,No,Personal circumstances changed.,0,0,0
+OD10730,2023-12-01,Engineering,Career progression,Maybe,Promotion kept being pushed back.,0,0,1
+OD10772,2023-12-01,Engineering,Workload / burnout,Yes,I need a better work-life balance.,1,1,0
+OD10823,2023-12-01,Data & AI,Better opportunity,Maybe,Moving to a bigger role at another company.,0,1,0
+OD10849,2023-12-01,Data & AI,Better opportunity,No,I was offered a role I could not turn down.,1,0,1
+OD10906,2023-12-01,Data & AI,Further study,Maybe,Starting a full-time course.,0,0,0
+OD10923,2023-12-01,Data & AI,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,1
+OD10945,2023-12-01,Data & AI,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD11587,2023-12-01,Customer Support,Pay,Yes,Pay did not keep up with my responsibilities.,1,0,0
+OD11631,2023-12-01,Customer Support,Better opportunity,Yes,Moving to a bigger role at another company.,1,1,1
+OD11636,2023-12-01,Customer Support,Pay,No,Pay did not keep up with my responsibilities.,1,0,0
+OD11643,2023-12-01,Customer Support,Personal / relocation,No,Family reasons.,0,0,0
+OD11665,2023-12-01,Customer Support,Better opportunity,Yes,Moving to a bigger role at another company.,1,1,0
+OD11799,2023-12-01,Customer Support,Workload / burnout,Yes,I need a better work-life balance.,1,0,0
+OD12052,2023-11-01,Sales & Marketing,Pay,No,The new offer is significantly higher.,0,1,1
+OD12089,2023-12-01,Corporate Services,Personal / relocation,No,Personal circumstances changed.,0,0,0
+OD12164,2023-12-01,Corporate Services,Career progression,No,Promotion kept being pushed back.,0,0,1
+OD12412,2023-12-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD12556,2023-12-01,Engineering,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,0
+OD12622,2023-12-01,Customer Support,Personal / relocation,Maybe,Moving to another city.,0,0,0
+OD12669,2023-12-01,Customer Support,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,0,0
+OD10158,2024-01-01,Engineering,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD10178,2024-01-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD10506,2024-01-01,Engineering,Pay,No,My salary has fallen behind the market.,0,1,0
+OD10529,2024-01-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,1,0,1
+OD10594,2024-01-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD10708,2024-01-01,Engineering,Personal / relocation,Yes,Family reasons.,0,0,0
+OD10734,2024-01-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,1,1
+OD10914,2024-01-01,Data & AI,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,1,1
+OD10950,2023-12-01,Data & AI,Pay,Maybe,The new offer is significantly higher.,0,1,1
+OD11001,2024-01-01,Data & AI,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD11081,2024-01-01,Product & Design,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD11151,2024-01-01,Product & Design,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,0
+OD11225,2024-01-01,Delivery,Better opportunity,Yes,A great opportunity came up elsewhere.,1,0,0
+OD11323,2024-01-01,Delivery,Better opportunity,No,Moving to a bigger role at another company.,1,0,0
+OD11673,2023-12-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD11736,2024-01-01,Customer Support,Personal / relocation,Maybe,Family reasons.,1,1,1
+OD12145,2024-01-01,Corporate Services,Career progression,Maybe,Promotion kept being pushed back.,0,1,1
+OD12338,2024-01-01,Engineering,Personal / relocation,Yes,Moving to another city.,0,0,0
+OD12489,2024-01-01,Sales & Marketing,Role not as expected,No,The job was different from what was described.,0,0,0
+OD12553,2024-01-01,Engineering,Workload / burnout,No,I need a better work-life balance.,1,0,0
+OD12644,2024-01-01,Engineering,Role not as expected,No,Not the right fit for me.,0,0,0
+OD10071,2024-02-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,1,0
+OD10126,2024-02-01,Engineering,Personal / relocation,Yes,Family reasons.,1,1,0
+OD10189,2024-02-01,Engineering,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,1
+OD10375,2024-02-01,Engineering,Workload / burnout,Maybe,I need a better work-life balance.,1,0,1
+OD10395,2024-02-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD10479,2024-02-01,Engineering,Pay,No,My salary has fallen behind the market.,0,1,0
+OD10790,2024-02-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD10891,2024-02-01,Data & AI,Workload / burnout,No,Too many late nights covering open roles.,1,0,0
+OD10904,2024-02-01,Data & AI,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD11035,2024-02-01,Product & Design,Manager relationship,No,I did not get the support I needed from my manager.,0,0,0
+OD11257,2024-02-01,Delivery,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD11268,2024-01-01,Delivery,Personal / relocation,No,Family reasons.,0,0,0
+OD12040,2024-02-01,Sales & Marketing,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD12078,2024-02-01,Sales & Marketing,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12419,2024-02-01,Engineering,Role not as expected,No,The job was different from what was described.,0,0,0
+OD12426,2024-02-01,Data & AI,Personal / relocation,No,Family reasons.,0,0,0
+OD12533,2024-02-01,Sales & Marketing,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD12563,2024-02-01,Engineering,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD12624,2024-02-01,Customer Support,Role not as expected,No,Not the right fit for me.,0,0,0
+OD12696,2024-02-01,Engineering,Role not as expected,Maybe,Not the right fit for me.,0,0,0
+OD10058,2024-03-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,1,1,0
+OD10103,2024-03-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD10113,2024-03-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD10328,2024-02-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD10426,2024-03-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,1
+OD10524,2024-03-01,Engineering,Career progression,Maybe,Promotion kept being pushed back.,0,0,1
+OD10564,2024-03-01,Engineering,Career progression,Yes,Looking for more growth.,0,0,1
+OD10568,2024-03-01,Engineering,Career progression,Maybe,Looking for more growth.,0,0,1
+OD10861,2024-02-01,Data & AI,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD10869,2024-03-01,Data & AI,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,1
+OD11116,2024-03-01,Product & Design,Personal / relocation,Yes,Moving to another city.,0,0,1
+OD11371,2024-03-01,Delivery,Pay,No,The new offer is significantly higher.,0,1,1
+OD11394,2024-03-01,Delivery,Career progression,Maybe,Looking for more growth.,0,0,1
+OD11425,2024-03-01,Customer Support,Workload / burnout,Yes,Too many late nights covering open roles.,1,0,0
+OD11505,2024-02-01,Customer Support,Career progression,Yes,Looking for more growth.,0,0,1
+OD11551,2024-03-01,Customer Support,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11677,2024-03-01,Customer Support,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD11735,2024-03-01,Customer Support,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD11827,2024-03-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,1
+OD11913,2024-03-01,Sales & Marketing,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12558,2024-03-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12575,2024-03-01,Delivery,Workload / burnout,Maybe,Too many late nights covering open roles.,1,0,0
+OD12578,2024-02-01,Customer Support,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12702,2024-03-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,1,0,0
+OD12779,2024-02-01,Customer Support,Better opportunity,Yes,I was offered a role I could not turn down.,1,0,0
+OD10415,2024-04-01,Engineering,Personal / relocation,Yes,Family reasons.,0,0,0
+OD10451,2024-04-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10608,2024-03-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,0,1,0
+OD10753,2024-03-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,0
+OD10901,2024-04-01,Data & AI,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11147,2024-04-01,Product & Design,Career progression,No,I could not see a path to the next level.,0,0,1
+OD11286,2024-03-01,Delivery,Career progression,Yes,Promotion kept being pushed back.,0,0,1
+OD11416,2024-03-01,Delivery,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD11541,2024-04-01,Customer Support,Career progression,No,I could not see a path to the next level.,0,0,1
+OD11686,2024-04-01,Customer Support,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11698,2024-04-01,Customer Support,Manager relationship,No,Communication with my line manager was difficult.,0,0,0
+OD11719,2024-04-01,Customer Support,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,1
+OD11750,2024-04-01,Customer Support,Pay,No,My salary has fallen behind the market.,0,1,1
+OD11756,2024-04-01,Customer Support,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD11817,2024-03-01,Customer Support,Career progression,Maybe,I could not see a path to the next level.,0,0,0
+OD11969,2024-04-01,Sales & Marketing,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD12029,2024-04-01,Sales & Marketing,Personal / relocation,No,Family reasons.,0,0,0
+OD12136,2024-04-01,Corporate Services,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD12270,2024-03-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD12464,2024-04-01,Engineering,Role not as expected,Maybe,Not the right fit for me.,0,0,0
+OD12726,2024-03-01,Customer Support,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD12816,2024-04-01,Product & Design,Role not as expected,Yes,The job was different from what was described.,0,0,0
+OD12863,2024-04-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD10276,2024-05-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,1
+OD10454,2024-04-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10584,2024-05-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,0
+OD10732,2024-05-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,1
+OD10943,2024-05-01,Data & AI,Better opportunity,No,I was offered a role I could not turn down.,1,1,1
+OD11037,2024-05-01,Product & Design,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD11153,2024-05-01,Product & Design,Workload / burnout,No,I need a better work-life balance.,0,1,1
+OD11272,2024-05-01,Delivery,Workload / burnout,Yes,I need a better work-life balance.,1,1,1
+OD11274,2024-05-01,Delivery,Better opportunity,Maybe,Moving to a bigger role at another company.,1,0,0
+OD11412,2024-05-01,Delivery,Workload / burnout,No,Too many late nights covering open roles.,1,1,1
+OD11582,2024-05-01,Customer Support,Better opportunity,No,Moving to a bigger role at another company.,0,1,1
+OD11684,2024-05-01,Customer Support,Personal / relocation,Yes,Moving to another city.,1,1,0
+OD11749,2024-05-01,Customer Support,Career progression,No,I could not see a path to the next level.,0,0,1
+OD11891,2024-05-01,Sales & Marketing,Pay,No,The new offer is significantly higher.,0,1,0
+OD12127,2024-04-01,Corporate Services,Pay,No,My salary has fallen behind the market.,0,1,1
+OD12413,2024-05-01,Engineering,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD12447,2024-05-01,Corporate Services,Career progression,Maybe,I could not see a path to the next level.,0,0,0
+OD12519,2024-05-01,Product & Design,Pay,No,The new offer is significantly higher.,0,1,0
+OD12616,2024-05-01,Delivery,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD12639,2024-05-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12641,2024-05-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD12658,2024-05-01,Data & AI,Better opportunity,Maybe,Moving to a bigger role at another company.,0,1,0
+OD12762,2024-05-01,Engineering,Role not as expected,Yes,The job was different from what was described.,0,0,0
+OD12821,2024-05-01,Product & Design,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD12834,2024-05-01,Customer Support,Better opportunity,Yes,I was offered a role I could not turn down.,1,0,0
+OD10057,2024-06-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,1,0
+OD10130,2024-06-01,Engineering,Personal / relocation,No,Family reasons.,0,0,0
+OD10225,2024-06-01,Engineering,Career progression,No,Promotion kept being pushed back.,0,0,1
+OD10386,2024-06-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD10676,2024-06-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD10783,2024-06-01,Engineering,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD10847,2024-06-01,Data & AI,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,1
+OD10885,2024-06-01,Data & AI,Pay,No,My salary has fallen behind the market.,0,1,1
+OD10979,2024-06-01,Data & AI,Further study,Yes,Starting a full-time course.,0,0,0
+OD11066,2024-06-01,Product & Design,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD11074,2024-06-01,Product & Design,Pay,Maybe,The new offer is significantly higher.,0,1,1
+OD11075,2024-06-01,Product & Design,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,1,1
+OD11232,2024-06-01,Delivery,Better opportunity,Yes,A great opportunity came up elsewhere.,1,0,1
+OD11344,2024-05-01,Delivery,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD11364,2024-06-01,Delivery,Better opportunity,No,A great opportunity came up elsewhere.,0,1,1
+OD11629,2024-05-01,Customer Support,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD12033,2024-06-01,Sales & Marketing,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD12090,2024-06-01,Corporate Services,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD12147,2024-05-01,Corporate Services,Pay,Maybe,The new offer is significantly higher.,0,1,1
+OD12585,2024-06-01,Sales & Marketing,Better opportunity,Maybe,Moving to a bigger role at another company.,1,1,0
+OD12668,2024-06-01,Customer Support,Workload / burnout,Yes,The workload has been unsustainable for months.,1,0,0
+OD12837,2024-06-01,Sales & Marketing,Manager relationship,Yes,I did not get the support I needed from my manager.,0,0,0
+OD12855,2024-06-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12893,2024-06-01,Corporate Services,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD12936,2024-06-01,Customer Support,Workload / burnout,Yes,I need a better work-life balance.,1,0,0
+OD10032,2024-07-01,Engineering,Pay,No,The new offer is significantly higher.,0,1,0
+OD10166,2024-06-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD10286,2024-07-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD10339,2024-07-01,Engineering,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD10373,2024-06-01,Engineering,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD10464,2024-06-01,Engineering,Career progression,No,Looking for more growth.,0,0,1
+OD10548,2024-07-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10738,2024-07-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD10746,2024-07-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,1
+OD10763,2024-07-01,Engineering,Career progression,No,Promotion kept being pushed back.,0,0,0
+OD10816,2024-07-01,Engineering,Pay,No,The new offer is significantly higher.,0,1,1
+OD10836,2024-06-01,Data & AI,Pay,Yes,My salary has fallen behind the market.,1,0,0
+OD10850,2024-07-01,Data & AI,Workload / burnout,No,I need a better work-life balance.,1,1,0
+OD10916,2024-07-01,Data & AI,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,0
+OD10920,2024-07-01,Data & AI,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD10930,2024-07-01,Data & AI,Career progression,Yes,Promotion kept being pushed back.,0,0,1
+OD11146,2024-07-01,Product & Design,Career progression,Yes,Looking for more growth.,0,1,0
+OD11297,2024-07-01,Delivery,Workload / burnout,No,Too many late nights covering open roles.,1,0,0
+OD11467,2024-07-01,Customer Support,Personal / relocation,Maybe,Moving to another city.,0,0,0
+OD11483,2024-07-01,Customer Support,Personal / relocation,No,Moving to another city.,1,0,1
+OD11624,2024-07-01,Customer Support,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD11646,2024-07-01,Customer Support,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD11737,2024-07-01,Customer Support,Pay,No,My salary has fallen behind the market.,1,1,0
+OD11980,2024-07-01,Sales & Marketing,Personal / relocation,No,Moving to another city.,0,0,0
+OD11997,2024-07-01,Sales & Marketing,Career progression,Maybe,Looking for more growth.,0,1,1
+OD12073,2024-07-01,Sales & Marketing,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,1
+OD12217,2024-07-01,Corporate Services,Better opportunity,Yes,A great opportunity came up elsewhere.,0,1,1
+OD12396,2024-07-01,Customer Support,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12567,2024-07-01,Data & AI,Role not as expected,No,Not the right fit for me.,0,0,0
+OD12577,2024-06-01,Delivery,Workload / burnout,Yes,Too many late nights covering open roles.,1,0,0
+OD12599,2024-07-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD12655,2024-07-01,Engineering,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD12663,2024-07-01,Delivery,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD12723,2024-07-01,Customer Support,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12753,2024-07-01,Engineering,Personal / relocation,No,Family reasons.,0,0,0
+OD12802,2024-07-01,Engineering,Manager relationship,No,I did not get the support I needed from my manager.,0,0,0
+OD12901,2024-06-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD13025,2024-07-01,Data & AI,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,1,0
+OD10009,2024-07-01,Engineering,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,0
+OD10040,2024-07-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD10280,2024-08-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,1
+OD10621,2024-08-01,Engineering,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,1,0
+OD10692,2024-08-01,Engineering,Personal / relocation,Yes,Family reasons.,0,0,0
+OD10701,2024-08-01,Engineering,Career progression,No,Promotion kept being pushed back.,0,0,1
+OD10707,2024-07-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,0,1
+OD10782,2024-07-01,Engineering,Further study,Yes,Going back to university.,0,0,0
+OD10953,2024-08-01,Data & AI,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD11061,2024-07-01,Product & Design,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,0
+OD11219,2024-08-01,Delivery,Better opportunity,Maybe,I was offered a role I could not turn down.,1,1,0
+OD11271,2024-08-01,Delivery,Better opportunity,Yes,I was offered a role I could not turn down.,1,1,0
+OD11275,2024-08-01,Delivery,Workload / burnout,Yes,I need a better work-life balance.,1,0,1
+OD11298,2024-08-01,Delivery,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD11485,2024-08-01,Customer Support,Further study,Maybe,Starting a full-time course.,0,0,0
+OD11712,2024-08-01,Customer Support,Personal / relocation,Yes,Moving to another city.,0,0,0
+OD11714,2024-08-01,Customer Support,Career progression,Yes,Looking for more growth.,0,1,1
+OD12036,2024-08-01,Sales & Marketing,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD12406,2024-08-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,1,0
+OD12469,2024-08-01,Engineering,Manager relationship,Yes,I did not get the support I needed from my manager.,0,0,0
+OD12628,2024-08-01,Sales & Marketing,Personal / relocation,Yes,Moving to another city.,0,0,0
+OD12728,2024-08-01,Customer Support,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD12902,2024-08-01,Engineering,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD12994,2024-08-01,Customer Support,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD10027,2024-09-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD10258,2024-09-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,0
+OD10341,2024-08-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,0
+OD10439,2024-09-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD10443,2024-09-01,Engineering,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD10639,2024-09-01,Engineering,Pay,No,My salary has fallen behind the market.,0,1,0
+OD10688,2024-09-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10720,2024-09-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,0
+OD10996,2024-09-01,Data & AI,Personal / relocation,Yes,Personal circumstances changed.,0,0,0
+OD11083,2024-09-01,Product & Design,Career progression,No,I could not see a path to the next level.,0,0,1
+OD11111,2024-09-01,Product & Design,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD11177,2024-09-01,Product & Design,Pay,No,The new offer is significantly higher.,0,1,1
+OD11222,2024-09-01,Delivery,Better opportunity,Yes,A great opportunity came up elsewhere.,0,1,0
+OD11348,2024-09-01,Delivery,Workload / burnout,No,The workload has been unsustainable for months.,1,0,0
+OD11405,2024-09-01,Delivery,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11702,2024-09-01,Customer Support,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD11951,2024-09-01,Sales & Marketing,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD11952,2024-09-01,Sales & Marketing,Better opportunity,No,A great opportunity came up elsewhere.,0,1,1
+OD12200,2024-09-01,Corporate Services,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD12350,2024-09-01,Customer Support,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12368,2024-09-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12571,2024-09-01,Product & Design,Career progression,Yes,Promotion kept being pushed back.,0,0,0
+OD12603,2024-09-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD12635,2024-09-01,Engineering,Personal / relocation,Maybe,Moving to another city.,0,0,0
+OD12703,2024-09-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD12733,2024-09-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,1,0,0
+OD12826,2024-09-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,1,0,0
+OD12851,2024-09-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD12890,2024-09-01,Corporate Services,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,0
+OD12944,2024-09-01,Corporate Services,Pay,Maybe,My salary has fallen behind the market.,0,0,0
+OD12992,2024-09-01,Customer Support,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD10022,2024-10-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD10131,2024-10-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10145,2024-09-01,Engineering,Pay,No,My salary has fallen behind the market.,1,1,0
+OD10216,2024-10-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD10223,2024-10-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10459,2024-10-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD10530,2024-10-01,Engineering,Career progression,Yes,Promotion kept being pushed back.,0,1,1
+OD10760,2024-10-01,Engineering,Workload / burnout,Yes,I need a better work-life balance.,1,0,1
+OD10784,2024-10-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,1,0,0
+OD11138,2024-10-01,Product & Design,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11238,2024-10-01,Delivery,Personal / relocation,Yes,Family reasons.,0,0,0
+OD11500,2024-09-01,Customer Support,Pay,Maybe,The new offer is significantly higher.,0,1,1
+OD11553,2024-10-01,Customer Support,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11574,2024-10-01,Customer Support,Career progression,No,Promotion kept being pushed back.,0,1,1
+OD11748,2024-09-01,Customer Support,Workload / burnout,Yes,The workload has been unsustainable for months.,1,0,1
+OD12360,2024-10-01,Sales & Marketing,Pay,No,Pay did not keep up with my responsibilities.,0,1,0
+OD12451,2024-10-01,Corporate Services,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD12715,2024-10-01,Data & AI,Better opportunity,Yes,Moving to a bigger role at another company.,1,0,0
+OD12824,2024-09-01,Delivery,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD12931,2024-10-01,Customer Support,Workload / burnout,Yes,The workload has been unsustainable for months.,0,0,0
+OD13041,2024-10-01,Customer Support,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD13059,2024-10-01,Engineering,Role not as expected,No,The job was different from what was described.,0,0,0
+OD10087,2024-11-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,1
+OD10114,2024-11-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD10283,2024-11-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD10521,2024-11-01,Engineering,Flexibility / remote work,Maybe,The office policy no longer works for me.,0,0,1
+OD10716,2024-11-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,0,1,1
+OD10723,2024-11-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,1
+OD11213,2024-11-01,Delivery,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD11319,2024-11-01,Delivery,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD11446,2024-11-01,Customer Support,Workload / burnout,No,Too many late nights covering open roles.,1,0,0
+OD11469,2024-11-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,1,0,0
+OD11717,2024-11-01,Customer Support,Better opportunity,Yes,Moving to a bigger role at another company.,1,0,0
+OD11920,2024-11-01,Sales & Marketing,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12132,2024-11-01,Corporate Services,Better opportunity,No,Moving to a bigger role at another company.,0,0,1
+OD12267,2024-11-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,1,0
+OD12276,2024-11-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,0
+OD12341,2024-11-01,Data & AI,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD12527,2024-10-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD12671,2024-10-01,Customer Support,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD12729,2024-11-01,Customer Support,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD12792,2024-10-01,Engineering,Flexibility / remote work,No,The office policy no longer works for me.,0,0,0
+OD12803,2024-11-01,Engineering,Personal / relocation,Yes,Personal circumstances changed.,0,0,0
+OD12896,2024-11-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,0
+OD12980,2024-11-01,Delivery,Workload / burnout,Yes,I need a better work-life balance.,1,0,0
+OD13031,2024-11-01,Delivery,Manager relationship,Yes,I did not get the support I needed from my manager.,0,0,0
+OD13039,2024-11-01,Customer Support,Better opportunity,No,Moving to a bigger role at another company.,1,0,0
+OD13074,2024-11-01,Data & AI,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD13148,2024-11-01,Sales & Marketing,Flexibility / remote work,Yes,The office policy no longer works for me.,0,0,0
+OD13233,2024-11-01,Customer Support,Personal / relocation,No,Moving to another city.,0,0,0
+OD10013,2024-12-01,Engineering,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,0
+OD10325,2024-12-01,Engineering,Flexibility / remote work,Yes,The commute after the office change was too much.,0,0,0
+OD10385,2024-12-01,Engineering,Workload / burnout,Maybe,Too many late nights covering open roles.,1,0,0
+OD10534,2024-12-01,Engineering,Career progression,No,Promotion kept being pushed back.,0,0,1
+OD10809,2024-12-01,Engineering,Flexibility / remote work,Yes,The office policy no longer works for me.,0,0,1
+OD10851,2024-12-01,Data & AI,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD11051,2024-12-01,Product & Design,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD11200,2024-11-01,Delivery,Flexibility / remote work,Maybe,I want to keep working remotely.,0,0,0
+OD11442,2024-12-01,Customer Support,Pay,Maybe,Pay did not keep up with my responsibilities.,1,1,0
+OD11654,2024-12-01,Customer Support,Pay,Yes,Pay did not keep up with my responsibilities.,1,1,1
+OD11752,2024-12-01,Customer Support,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD11967,2024-12-01,Sales & Marketing,Workload / burnout,No,Too many late nights covering open roles.,1,1,1
+OD12243,2024-11-01,Corporate Services,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD12614,2024-11-01,Product & Design,Flexibility / remote work,No,The commute after the office change was too much.,0,0,0
+OD12831,2024-12-01,Customer Support,Career progression,No,I could not see a path to the next level.,0,0,0
+OD12856,2024-12-01,Engineering,Personal / relocation,Yes,Family reasons.,0,0,0
+OD12858,2024-11-01,Engineering,Flexibility / remote work,Yes,The office policy no longer works for me.,0,0,0
+OD12984,2024-12-01,Customer Support,Manager relationship,Maybe,Communication with my line manager was difficult.,0,0,0
+OD12996,2024-12-01,Sales & Marketing,Career progression,No,Looking for more growth.,0,0,0
+OD13013,2024-12-01,Engineering,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD13112,2024-12-01,Engineering,Flexibility / remote work,Maybe,I want to keep working remotely.,0,0,0
+OD10315,2025-01-01,Engineering,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD10491,2025-01-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,1,1
+OD10528,2025-01-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,1
+OD10591,2024-12-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,1
+OD10596,2025-01-01,Engineering,Further study,No,Going back to university.,0,0,0
+OD10837,2025-01-01,Data & AI,Pay,Maybe,The new offer is significantly higher.,0,1,0
+OD10859,2024-12-01,Data & AI,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11050,2025-01-01,Product & Design,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,1
+OD11366,2025-01-01,Delivery,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,1
+OD11535,2025-01-01,Customer Support,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,0
+OD12043,2025-01-01,Sales & Marketing,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,1
+OD12067,2025-01-01,Sales & Marketing,Flexibility / remote work,No,The office policy no longer works for me.,0,0,1
+OD12246,2025-01-01,Corporate Services,Pay,No,My salary has fallen behind the market.,0,1,1
+OD12681,2025-01-01,Sales & Marketing,Pay,No,My salary has fallen behind the market.,0,1,0
+OD12742,2025-01-01,Engineering,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD12887,2025-01-01,Sales & Marketing,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD13097,2024-12-01,Sales & Marketing,Manager relationship,Maybe,Communication with my line manager was difficult.,0,0,0
+OD13108,2025-01-01,Engineering,Workload / burnout,Maybe,Too many late nights covering open roles.,1,0,0
+OD13114,2025-01-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD13115,2025-01-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,0
+OD13279,2024-12-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD13282,2025-01-01,Data & AI,Role not as expected,Yes,The job was different from what was described.,0,0,0
+OD10663,2025-02-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,1,1
+OD10860,2025-02-01,Data & AI,Career progression,No,Looking for more growth.,0,0,1
+OD10926,2025-02-01,Data & AI,Career progression,Maybe,Looking for more growth.,0,0,1
+OD10937,2025-02-01,Data & AI,Career progression,Maybe,Looking for more growth.,0,0,1
+OD10954,2025-02-01,Data & AI,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD11157,2025-02-01,Product & Design,Better opportunity,No,I was offered a role I could not turn down.,0,1,1
+OD11189,2025-02-01,Product & Design,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD11652,2025-02-01,Customer Support,Career progression,Yes,Promotion kept being pushed back.,0,0,1
+OD11726,2025-02-01,Customer Support,Better opportunity,No,A great opportunity came up elsewhere.,0,0,1
+OD11753,2025-02-01,Customer Support,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD11857,2025-02-01,Sales & Marketing,Personal / relocation,Yes,Personal circumstances changed.,0,0,0
+OD11893,2025-02-01,Sales & Marketing,Career progression,Maybe,Promotion kept being pushed back.,0,0,0
+OD12014,2025-02-01,Sales & Marketing,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD12117,2025-01-01,Corporate Services,Personal / relocation,Maybe,Family reasons.,1,1,0
+OD12146,2025-02-01,Corporate Services,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,1
+OD12607,2025-02-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD12739,2025-02-01,Corporate Services,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD12912,2025-02-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD12998,2025-01-01,Sales & Marketing,Better opportunity,No,A great opportunity came up elsewhere.,0,1,0
+OD13028,2025-02-01,Product & Design,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD13113,2025-02-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD13207,2025-02-01,Engineering,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD13331,2025-02-01,Customer Support,Role not as expected,Yes,The job was different from what was described.,0,0,0
+OD10327,2025-02-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD10520,2025-02-01,Engineering,Career progression,No,Promotion kept being pushed back.,0,0,1
+OD10537,2025-03-01,Engineering,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,1
+OD10659,2025-03-01,Engineering,Flexibility / remote work,Yes,I want to keep working remotely.,0,0,1
+OD10781,2025-02-01,Engineering,Flexibility / remote work,Yes,The office policy no longer works for me.,0,0,1
+OD10814,2025-03-01,Engineering,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD10942,2025-03-01,Data & AI,Career progression,No,I could not see a path to the next level.,0,1,1
+OD10978,2025-03-01,Data & AI,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD11056,2025-03-01,Product & Design,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11057,2025-03-01,Product & Design,Career progression,No,I could not see a path to the next level.,0,0,1
+OD11235,2025-03-01,Delivery,Pay,No,My salary has fallen behind the market.,0,1,1
+OD11567,2025-03-01,Customer Support,Career progression,No,Promotion kept being pushed back.,0,0,1
+OD11589,2025-03-01,Customer Support,Better opportunity,No,A great opportunity came up elsewhere.,0,0,1
+OD11771,2025-03-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,1
+OD11934,2025-02-01,Sales & Marketing,Personal / relocation,No,Personal circumstances changed.,0,0,0
+OD12023,2025-03-01,Sales & Marketing,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,1
+OD12056,2025-03-01,Sales & Marketing,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD12080,2025-03-01,Sales & Marketing,Better opportunity,No,A great opportunity came up elsewhere.,1,0,1
+OD12169,2025-03-01,Corporate Services,Better opportunity,Maybe,Moving to a bigger role at another company.,0,1,0
+OD12352,2025-03-01,Customer Support,Personal / relocation,Maybe,Moving to another city.,1,0,0
+OD12688,2025-02-01,Engineering,Personal / relocation,Yes,Personal circumstances changed.,0,0,0
+OD12699,2025-03-01,Engineering,Personal / relocation,No,Personal circumstances changed.,0,0,0
+OD13066,2025-03-01,Engineering,Role not as expected,Yes,The job was different from what was described.,0,0,0
+OD13078,2025-03-01,Product & Design,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD13193,2025-03-01,Corporate Services,Career progression,Yes,I could not see a path to the next level.,0,0,0
+OD13203,2025-03-01,Engineering,Career progression,No,I could not see a path to the next level.,0,0,0
+OD13220,2025-02-01,Delivery,Personal / relocation,Maybe,Moving to another city.,1,0,0
+OD10093,2025-04-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,1,0
+OD10144,2025-04-01,Engineering,Career progression,No,Looking for more growth.,0,0,1
+OD10482,2025-04-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,1
+OD10899,2025-04-01,Data & AI,Better opportunity,No,I was offered a role I could not turn down.,0,1,1
+OD11186,2025-04-01,Product & Design,Better opportunity,Yes,I was offered a role I could not turn down.,1,0,1
+OD11433,2025-03-01,Customer Support,Workload / burnout,Maybe,I need a better work-life balance.,1,1,0
+OD11514,2025-04-01,Customer Support,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD11515,2025-04-01,Customer Support,Workload / burnout,Yes,Too many late nights covering open roles.,1,0,1
+OD11538,2025-03-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,0
+OD11580,2025-03-01,Customer Support,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,1
+OD11593,2025-04-01,Customer Support,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD11617,2025-04-01,Customer Support,Personal / relocation,No,Moving to another city.,0,0,1
+OD11960,2025-04-01,Sales & Marketing,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD12031,2025-04-01,Sales & Marketing,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,1
+OD12055,2025-04-01,Sales & Marketing,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD12079,2025-04-01,Sales & Marketing,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,1
+OD12130,2025-04-01,Corporate Services,Manager relationship,No,I did not get the support I needed from my manager.,0,0,1
+OD12191,2025-04-01,Corporate Services,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,1
+OD12508,2025-04-01,Engineering,Flexibility / remote work,Maybe,The office policy no longer works for me.,0,0,0
+OD12649,2025-04-01,Engineering,Pay,Maybe,The new offer is significantly higher.,1,0,0
+OD12782,2025-04-01,Customer Support,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD12945,2025-04-01,Corporate Services,Personal / relocation,No,Family reasons.,0,0,0
+OD12970,2025-04-01,Data & AI,Workload / burnout,Yes,Too many late nights covering open roles.,0,0,0
+OD13012,2025-04-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD13029,2025-04-01,Delivery,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD13200,2025-04-01,Engineering,Pay,Yes,My salary has fallen behind the market.,1,0,0
+OD13263,2025-04-01,Engineering,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD13303,2025-04-01,Corporate Services,Manager relationship,Yes,Communication with my line manager was difficult.,0,0,0
+OD10134,2025-05-01,Engineering,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD10356,2025-05-01,Engineering,Career progression,Maybe,Promotion kept being pushed back.,0,0,1
+OD10552,2025-05-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD10657,2025-05-01,Engineering,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,0
+OD10685,2025-05-01,Engineering,Workload / burnout,No,Too many late nights covering open roles.,1,0,1
+OD10735,2025-05-01,Engineering,Pay,Yes,Pay did not keep up with my responsibilities.,0,1,0
+OD11277,2025-05-01,Delivery,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,0
+OD11328,2025-05-01,Delivery,Better opportunity,Yes,A great opportunity came up elsewhere.,1,0,0
+OD11408,2025-04-01,Delivery,Better opportunity,Yes,Moving to a bigger role at another company.,0,1,1
+OD11645,2025-05-01,Customer Support,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD11775,2025-05-01,Customer Support,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD11958,2025-05-01,Sales & Marketing,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD12048,2025-05-01,Sales & Marketing,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD12475,2025-05-01,Data & AI,Flexibility / remote work,Yes,I want to keep working remotely.,0,0,0
+OD12736,2025-05-01,Sales & Marketing,Personal / relocation,Maybe,Moving to another city.,0,0,0
+OD12759,2025-05-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,1,0
+OD12854,2025-05-01,Engineering,Personal / relocation,Maybe,Moving to another city.,0,0,0
+OD12898,2025-05-01,Engineering,Personal / relocation,No,Family reasons.,0,0,0
+OD13010,2025-05-01,Engineering,Pay,No,My salary has fallen behind the market.,0,1,0
+OD13032,2025-05-01,Delivery,Career progression,Maybe,I could not see a path to the next level.,0,0,0
+OD13111,2025-05-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD13131,2025-05-01,Product & Design,Better opportunity,Yes,Moving to a bigger role at another company.,1,0,0
+OD13206,2025-05-01,Engineering,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,0,0
+OD10492,2025-06-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,0,0,1
+OD10540,2025-06-01,Engineering,Workload / burnout,Maybe,I need a better work-life balance.,0,0,1
+OD10776,2025-05-01,Engineering,Pay,No,The new offer is significantly higher.,0,1,1
+OD10777,2025-06-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD10792,2025-06-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,1,0,1
+OD10973,2025-06-01,Data & AI,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD11034,2025-06-01,Product & Design,Further study,Yes,Starting a full-time course.,0,0,0
+OD11092,2025-06-01,Product & Design,Personal / relocation,No,Moving to another city.,0,0,0
+OD11155,2025-06-01,Product & Design,Flexibility / remote work,No,I want to keep working remotely.,0,0,0
+OD11162,2025-06-01,Product & Design,Career progression,Yes,Looking for more growth.,0,0,1
+OD11284,2025-06-01,Delivery,Personal / relocation,Maybe,Moving to another city.,1,0,1
+OD11606,2025-06-01,Customer Support,Workload / burnout,No,I need a better work-life balance.,1,0,1
+OD11613,2025-06-01,Customer Support,Personal / relocation,Yes,Moving to another city.,0,0,0
+OD11762,2025-06-01,Customer Support,Workload / burnout,Maybe,I need a better work-life balance.,1,0,1
+OD11908,2025-06-01,Sales & Marketing,Career progression,Yes,Promotion kept being pushed back.,0,0,1
+OD11977,2025-06-01,Sales & Marketing,Personal / relocation,No,Moving to another city.,0,0,0
+OD12068,2025-06-01,Sales & Marketing,Better opportunity,No,Moving to a bigger role at another company.,0,0,1
+OD12151,2025-06-01,Corporate Services,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12158,2025-06-01,Corporate Services,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD12306,2025-06-01,Engineering,Pay,No,My salary has fallen behind the market.,0,1,0
+OD12510,2025-06-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,0
+OD12643,2025-06-01,Engineering,Flexibility / remote work,No,I want to keep working remotely.,0,0,0
+OD12670,2025-06-01,Customer Support,Further study,No,Going back to university.,0,0,0
+OD12738,2025-06-01,Sales & Marketing,Better opportunity,No,I was offered a role I could not turn down.,1,0,0
+OD12787,2025-06-01,Engineering,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,0,0
+OD12807,2025-05-01,Engineering,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,0,0
+OD13017,2025-06-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD13068,2025-06-01,Engineering,Career progression,No,Looking for more growth.,0,1,0
+OD13106,2025-05-01,Engineering,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD13162,2025-06-01,Engineering,Workload / burnout,Yes,Too many late nights covering open roles.,1,0,0
+OD10277,2025-06-01,Engineering,Workload / burnout,Yes,The workload has been unsustainable for months.,1,0,0
+OD10290,2025-06-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,0,1
+OD10436,2025-07-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,0,1
+OD10503,2025-07-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,1,0,1
+OD10698,2025-07-01,Engineering,Workload / burnout,Yes,I need a better work-life balance.,0,0,0
+OD10883,2025-07-01,Data & AI,Workload / burnout,No,I need a better work-life balance.,0,0,1
+OD10925,2025-07-01,Data & AI,Pay,Maybe,My salary has fallen behind the market.,0,1,1
+OD10947,2025-07-01,Data & AI,Better opportunity,Maybe,Moving to a bigger role at another company.,1,1,1
+OD11126,2025-07-01,Product & Design,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD11173,2025-07-01,Product & Design,Better opportunity,No,Moving to a bigger role at another company.,1,1,1
+OD11267,2025-07-01,Delivery,Better opportunity,No,A great opportunity came up elsewhere.,0,0,0
+OD11360,2025-06-01,Delivery,Pay,Yes,My salary has fallen behind the market.,0,1,0
+OD11384,2025-07-01,Delivery,Workload / burnout,Yes,The workload has been unsustainable for months.,1,0,1
+OD11542,2025-07-01,Customer Support,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD11692,2025-07-01,Customer Support,Manager relationship,No,I did not get the support I needed from my manager.,1,0,1
+OD11939,2025-07-01,Sales & Marketing,Pay,Yes,My salary has fallen behind the market.,1,1,1
+OD11983,2025-07-01,Sales & Marketing,Career progression,Maybe,Looking for more growth.,0,0,1
+OD12128,2025-07-01,Corporate Services,Career progression,Yes,Looking for more growth.,0,0,1
+OD12295,2025-07-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,1,0
+OD12476,2025-07-01,Product & Design,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12961,2025-07-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,0,0,0
+OD13152,2025-07-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD13223,2025-07-01,Delivery,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD13357,2025-07-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD13440,2025-07-01,Customer Support,Personal / relocation,Yes,Moving to another city.,1,0,0
+OD10117,2025-07-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,1
+OD10316,2025-08-01,Engineering,Workload / burnout,Maybe,Too many late nights covering open roles.,1,0,1
+OD10360,2025-08-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,1
+OD10409,2025-08-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,1
+OD10474,2025-07-01,Engineering,Pay,Maybe,Pay did not keep up with my responsibilities.,1,0,1
+OD10623,2025-08-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD10635,2025-08-01,Engineering,Career progression,Yes,Looking for more growth.,0,0,1
+OD10641,2025-08-01,Engineering,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD10660,2025-08-01,Engineering,Workload / burnout,No,The workload has been unsustainable for months.,1,0,1
+OD10677,2025-08-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,0,1
+OD10982,2025-07-01,Data & AI,Flexibility / remote work,Yes,I want to keep working remotely.,0,0,1
+OD11136,2025-08-01,Product & Design,Better opportunity,Yes,A great opportunity came up elsewhere.,1,1,1
+OD11278,2025-07-01,Delivery,Workload / burnout,Yes,I need a better work-life balance.,1,0,0
+OD11456,2025-08-01,Customer Support,Personal / relocation,Yes,Family reasons.,0,0,0
+OD11575,2025-07-01,Customer Support,Workload / burnout,No,The workload has been unsustainable for months.,1,0,1
+OD11619,2025-08-01,Customer Support,Workload / burnout,No,Too many late nights covering open roles.,1,1,1
+OD11743,2025-08-01,Customer Support,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,1,1
+OD11797,2025-08-01,Customer Support,Pay,Yes,My salary has fallen behind the market.,1,1,1
+OD12006,2025-08-01,Sales & Marketing,Further study,Maybe,Starting a full-time course.,0,0,0
+OD12481,2025-08-01,Customer Support,Better opportunity,Maybe,Moving to a bigger role at another company.,1,0,0
+OD12740,2025-08-01,Engineering,Workload / burnout,Maybe,Too many late nights covering open roles.,1,0,0
+OD12750,2025-08-01,Engineering,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,0,0
+OD12791,2025-07-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,1,0
+OD12815,2025-08-01,Data & AI,Personal / relocation,Yes,Family reasons.,0,0,0
+OD12852,2025-08-01,Engineering,Personal / relocation,No,Personal circumstances changed.,1,0,0
+OD12876,2025-08-01,Delivery,Pay,No,The new offer is significantly higher.,1,0,0
+OD12916,2025-08-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12949,2025-08-01,Engineering,Personal / relocation,Maybe,Personal circumstances changed.,0,0,0
+OD12990,2025-08-01,Customer Support,Workload / burnout,No,The workload has been unsustainable for months.,1,0,0
+OD13002,2025-08-01,Corporate Services,Career progression,No,I could not see a path to the next level.,0,1,0
+OD13053,2025-08-01,Corporate Services,Better opportunity,No,I was offered a role I could not turn down.,1,0,0
+OD13154,2025-08-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,1,0,0
+OD13258,2025-08-01,Engineering,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD13291,2025-08-01,Customer Support,Role not as expected,Maybe,Not the right fit for me.,0,0,0
+OD13308,2025-08-01,Engineering,Workload / burnout,Maybe,The workload has been unsustainable for months.,0,0,0
+OD13380,2025-08-01,Delivery,Personal / relocation,Maybe,Moving to another city.,1,1,0
+OD13387,2025-08-01,Customer Support,Workload / burnout,Yes,I need a better work-life balance.,1,0,0
+OD13451,2025-08-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,0
+OD10115,2025-09-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD10135,2025-09-01,Engineering,Workload / burnout,No,Too many late nights covering open roles.,1,1,1
+OD10320,2025-09-01,Engineering,Workload / burnout,Maybe,I need a better work-life balance.,1,0,0
+OD10321,2025-09-01,Engineering,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,0,1
+OD10523,2025-09-01,Engineering,Pay,Maybe,The new offer is significantly higher.,0,1,1
+OD10590,2025-09-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,1
+OD10932,2025-09-01,Data & AI,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD11005,2025-09-01,Data & AI,Workload / burnout,Yes,Too many late nights covering open roles.,1,0,1
+OD11281,2025-09-01,Delivery,Workload / burnout,No,I need a better work-life balance.,0,1,1
+OD11326,2025-09-01,Delivery,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD11397,2025-09-01,Delivery,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11509,2025-09-01,Customer Support,Better opportunity,No,Moving to a bigger role at another company.,1,0,1
+OD11601,2025-08-01,Customer Support,Pay,No,Pay did not keep up with my responsibilities.,1,1,1
+OD11633,2025-08-01,Customer Support,Workload / burnout,Yes,I need a better work-life balance.,0,1,1
+OD11760,2025-09-01,Customer Support,Pay,No,The new offer is significantly higher.,0,1,1
+OD11766,2025-09-01,Customer Support,Workload / burnout,Maybe,Too many late nights covering open roles.,1,0,0
+OD11802,2025-09-01,Customer Support,Workload / burnout,Yes,Too many late nights covering open roles.,1,1,0
+OD11860,2025-09-01,Sales & Marketing,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,0
+OD11927,2025-09-01,Sales & Marketing,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD11964,2025-08-01,Sales & Marketing,Pay,No,Pay did not keep up with my responsibilities.,0,1,1
+OD12138,2025-09-01,Corporate Services,Better opportunity,Yes,I was offered a role I could not turn down.,0,1,1
+OD12337,2025-09-01,Engineering,Workload / burnout,No,Too many late nights covering open roles.,0,0,0
+OD12370,2025-09-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,1,0,0
+OD12591,2025-09-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD12610,2025-09-01,Product & Design,Better opportunity,No,Moving to a bigger role at another company.,1,0,0
+OD12647,2025-09-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,1,1,0
+OD12772,2025-09-01,Delivery,Flexibility / remote work,Yes,The commute after the office change was too much.,0,0,0
+OD13226,2025-09-01,Customer Support,Better opportunity,No,Moving to a bigger role at another company.,1,0,0
+OD13253,2025-09-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0
+OD13277,2025-09-01,Engineering,Personal / relocation,No,Moving to another city.,1,0,0
+OD13285,2025-08-01,Product & Design,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD13312,2025-09-01,Engineering,Better opportunity,No,A great opportunity came up elsewhere.,1,0,0
+OD13335,2025-09-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,0,0,0
+OD13339,2025-09-01,Customer Support,Better opportunity,Maybe,Moving to a bigger role at another company.,1,0,0
+OD13475,2025-09-01,Engineering,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD10137,2025-10-01,Engineering,Flexibility / remote work,Maybe,The office policy no longer works for me.,1,0,1
+OD10500,2025-10-01,Engineering,Workload / burnout,Yes,The workload has been unsustainable for months.,1,0,1
+OD10508,2025-10-01,Engineering,Workload / burnout,No,The workload has been unsustainable for months.,1,1,1
+OD10570,2025-10-01,Engineering,Workload / burnout,No,Too many late nights covering open roles.,1,0,0
+OD10572,2025-10-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,1,1,0
+OD10592,2025-10-01,Engineering,Pay,No,My salary has fallen behind the market.,1,0,1
+OD10609,2025-10-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,1
+OD10611,2025-10-01,Engineering,Flexibility / remote work,Yes,The office policy no longer works for me.,0,0,1
+OD10626,2025-09-01,Engineering,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD10754,2025-10-01,Engineering,Pay,Maybe,The new offer is significantly higher.,1,1,1
+OD10889,2025-10-01,Data & AI,Career progression,Maybe,Looking for more growth.,0,0,1
+OD10894,2025-10-01,Data & AI,Better opportunity,No,I was offered a role I could not turn down.,0,0,1
+OD11110,2025-10-01,Product & Design,Workload / burnout,Yes,I need a better work-life balance.,1,0,0
+OD11199,2025-10-01,Delivery,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD11239,2025-10-01,Delivery,Flexibility / remote work,Yes,The commute after the office change was too much.,0,0,1
+OD11343,2025-10-01,Delivery,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,1
+OD11379,2025-10-01,Delivery,Career progression,Yes,I could not see a path to the next level.,0,0,1
+OD11586,2025-10-01,Customer Support,Better opportunity,No,Moving to a bigger role at another company.,1,0,1
+OD11598,2025-10-01,Customer Support,Career progression,No,Looking for more growth.,0,0,1
+OD11794,2025-10-01,Customer Support,Workload / burnout,Maybe,Too many late nights covering open roles.,0,0,1
+OD11855,2025-10-01,Sales & Marketing,Further study,Maybe,Going back to university.,0,0,0
+OD12027,2025-10-01,Sales & Marketing,Pay,Maybe,Pay did not keep up with my responsibilities.,1,0,1
+OD12034,2025-10-01,Sales & Marketing,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,1
+OD12318,2025-10-01,Sales & Marketing,Better opportunity,Yes,A great opportunity came up elsewhere.,0,0,0
+OD12427,2025-10-01,Product & Design,Further study,Maybe,Starting a full-time course.,0,0,0
+OD12730,2025-09-01,Customer Support,Personal / relocation,No,Moving to another city.,1,0,0
+OD12822,2025-10-01,Product & Design,Better opportunity,No,Moving to a bigger role at another company.,1,0,0
+OD13117,2025-09-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD13201,2025-09-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD13272,2025-10-01,Engineering,Role not as expected,No,Not the right fit for me.,0,0,0
+OD13498,2025-10-01,Engineering,Pay,Maybe,Pay did not keep up with my responsibilities.,0,0,0
+OD13504,2025-09-01,Engineering,Manager relationship,Yes,Communication with my line manager was difficult.,0,0,0
+OD13611,2025-09-01,Engineering,Role not as expected,No,The job was different from what was described.,0,0,0
+OD10083,2025-11-01,Engineering,Career progression,No,Looking for more growth.,0,0,1
+OD10095,2025-10-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,1
+OD10186,2025-11-01,Engineering,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,1,1
+OD10228,2025-11-01,Engineering,Workload / burnout,Yes,Too many late nights covering open roles.,1,1,0
+OD10507,2025-11-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,1,1,1
+OD10972,2025-11-01,Data & AI,Career progression,Maybe,Promotion kept being pushed back.,0,0,1
+OD11334,2025-10-01,Delivery,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD11362,2025-11-01,Delivery,Personal / relocation,Yes,Moving to another city.,1,0,0
+OD11432,2025-11-01,Customer Support,Workload / burnout,Yes,I need a better work-life balance.,1,1,0
+OD11573,2025-10-01,Customer Support,Pay,No,Pay did not keep up with my responsibilities.,1,1,1
+OD11690,2025-11-01,Customer Support,Better opportunity,No,I was offered a role I could not turn down.,1,0,1
+OD11718,2025-11-01,Customer Support,Workload / burnout,Maybe,The workload has been unsustainable for months.,1,0,1
+OD11759,2025-11-01,Customer Support,Career progression,Maybe,I could not see a path to the next level.,0,0,1
+OD11788,2025-11-01,Customer Support,Career progression,Yes,Looking for more growth.,0,0,1
+OD11837,2025-11-01,Customer Support,Workload / burnout,No,Too many late nights covering open roles.,1,0,0
+OD11889,2025-11-01,Sales & Marketing,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD12330,2025-11-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12500,2025-11-01,Engineering,Pay,Maybe,My salary has fallen behind the market.,0,1,0
+OD12507,2025-11-01,Engineering,Personal / relocation,Yes,Personal circumstances changed.,0,0,0
+OD12676,2025-11-01,Customer Support,Flexibility / remote work,Yes,The office policy no longer works for me.,0,0,0
+OD12827,2025-11-01,Customer Support,Manager relationship,Yes,Communication with my line manager was difficult.,0,0,0
+OD12867,2025-11-01,Engineering,Workload / burnout,Yes,Too many late nights covering open roles.,1,0,0
+OD13133,2025-11-01,Delivery,Workload / burnout,Yes,Too many late nights covering open roles.,1,0,0
+OD13395,2025-10-01,Sales & Marketing,Role not as expected,No,The job was different from what was described.,0,0,0
+OD13531,2025-11-01,Delivery,Manager relationship,Maybe,I did not get the support I needed from my manager.,0,0,0
+OD13634,2025-11-01,Delivery,Role not as expected,No,Not the right fit for me.,0,0,0
+OD13686,2025-11-01,Engineering,Personal / relocation,Yes,Family reasons.,0,0,0
+OD10116,2025-12-01,Engineering,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,1
+OD10618,2025-12-01,Engineering,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD10631,2025-12-01,Engineering,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,1
+OD10853,2025-12-01,Data & AI,Career progression,No,Looking for more growth.,0,0,1
+OD11010,2025-12-01,Data & AI,Pay,Yes,The new offer is significantly higher.,0,1,1
+OD11226,2025-12-01,Delivery,Pay,Yes,My salary has fallen behind the market.,0,1,1
+OD11317,2025-11-01,Delivery,Pay,Maybe,Pay did not keep up with my responsibilities.,0,1,1
+OD11609,2025-12-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,1,0,1
+OD11688,2025-12-01,Customer Support,Better opportunity,Maybe,A great opportunity came up elsewhere.,0,0,1
+OD11729,2025-12-01,Customer Support,Workload / burnout,Maybe,Too many late nights covering open roles.,1,0,0
+OD12170,2025-11-01,Corporate Services,Better opportunity,No,A great opportunity came up elsewhere.,0,0,1
+OD12339,2025-12-01,Engineering,Better opportunity,No,Moving to a bigger role at another company.,1,0,0
+OD12532,2025-12-01,Sales & Marketing,Flexibility / remote work,Maybe,The office policy no longer works for me.,0,0,0
+OD12623,2025-12-01,Customer Support,Better opportunity,Maybe,Moving to a bigger role at another company.,0,0,0
+OD12770,2025-12-01,Delivery,Personal / relocation,Yes,Personal circumstances changed.,0,0,0
+OD12914,2025-12-01,Engineering,Better opportunity,Yes,Moving to a bigger role at another company.,0,0,0
+OD12953,2025-12-01,Engineering,Flexibility / remote work,Yes,The commute after the office change was too much.,0,0,0
+OD13091,2025-12-01,Customer Support,Personal / relocation,Maybe,Family reasons.,0,0,0
+OD13375,2025-12-01,Data & AI,Role not as expected,Yes,Not the right fit for me.,0,0,0
+OD13446,2025-12-01,Engineering,Manager relationship,Yes,I did not get the support I needed from my manager.,0,0,0
+OD13465,2025-12-01,Customer Support,Better opportunity,Yes,I was offered a role I could not turn down.,0,0,0
+OD13540,2025-12-01,Customer Support,Workload / burnout,No,I need a better work-life balance.,1,0,0
+OD13552,2025-11-01,Sales & Marketing,Role not as expected,Maybe,The job was different from what was described.,0,0,0
+OD13567,2025-12-01,Engineering,Better opportunity,Maybe,I was offered a role I could not turn down.,0,0,0

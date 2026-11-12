@@ -1,0 +1,318 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "c8943c8394c15759bcc2",
+  "position": {
+    "x": 576,
+    "y": 230,
+    "z": 6200,
+    "height": 474,
+    "width": 480,
+    "tabOrder": 6200
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "manager_hotspots"
+                    }
+                  },
+                  "Property": "manager"
+                }
+              },
+              "queryRef": "manager_hotspots.manager",
+              "nativeQueryRef": "manager",
+              "displayName": "Manager"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "manager_hotspots"
+                    }
+                  },
+                  "Property": "department"
+                }
+              },
+              "queryRef": "manager_hotspots.department",
+              "nativeQueryRef": "department",
+              "displayName": "Department"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Team Resignations"
+                }
+              },
+              "queryRef": "_Measures.Team Resignations",
+              "nativeQueryRef": "Team Resignations",
+              "displayName": "Resigned"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Team Expected"
+                }
+              },
+              "queryRef": "_Measures.Team Expected",
+              "nativeQueryRef": "Team Expected",
+              "displayName": "Expected"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Team Ratio Shrunk"
+                }
+              },
+              "queryRef": "_Measures.Team Ratio Shrunk",
+              "nativeQueryRef": "Team Ratio Shrunk",
+              "displayName": "Ratio"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Team Support"
+                }
+              },
+              "queryRef": "_Measures.Team Support",
+              "nativeQueryRef": "Team Support",
+              "displayName": "Support score"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Team Ratio Shrunk"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Ratio Color"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_Measures.Team Ratio Shrunk"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "96.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "manager_hotspots.manager"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "82.0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "manager_hotspots.department"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "63.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Team Resignations"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "63.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Team Expected"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "67.1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Team Ratio Shrunk"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "63.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Team Support"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Managers ranked by resignations ÷ expected'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ratio shrunk toward 1 for small teams · hot spot = 1.6 x or more with 60+ person-months'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

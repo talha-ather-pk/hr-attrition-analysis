@@ -1,0 +1,110 @@
+table fact_exit
+	lineageTag: 37a4d5bd-daa6-5c77-985a-e9ffe77ff8de
+
+	column employee_id
+		dataType: string
+		isHidden
+		lineageTag: 028fe482-0a0e-52ff-9614-7623a30b4ff0
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = User
+
+	column interview_month
+		dataType: dateTime
+		isHidden
+		formatString: dd mmm yyyy
+		lineageTag: 728eca18-b44c-5780-a9f8-308919b30c5d
+		summarizeBy: none
+		sourceColumn: interview_month
+
+		annotation SummarizationSetBy = User
+
+	column department
+		dataType: string
+		isHidden
+		lineageTag: f937d23b-33cc-5bdc-bda7-51ddafe26c62
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = User
+
+	column primary_reason
+		dataType: string
+		sortByColumn: reason_order
+		lineageTag: d68bcb30-edde-5993-9c0e-b9865dc51d0a
+		summarizeBy: none
+		sourceColumn: primary_reason
+
+		annotation SummarizationSetBy = User
+
+	column would_return
+		dataType: string
+		lineageTag: e0ff9f12-6e41-59a0-80e5-e12c290bbf7f
+		summarizeBy: none
+		sourceColumn: would_return
+
+		annotation SummarizationSetBy = User
+
+	column comment
+		dataType: string
+		lineageTag: 9addca5c-aebc-5e80-95d9-0123b861ccd9
+		summarizeBy: none
+		sourceColumn: comment
+
+		annotation SummarizationSetBy = User
+
+	column on_high_overtime
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d47fb692-894e-59e4-8df7-83b47c44720f
+		summarizeBy: none
+		sourceColumn: on_high_overtime
+
+		annotation SummarizationSetBy = User
+
+	column below_band
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f24b1855-d098-552a-85d6-61346db8981b
+		summarizeBy: none
+		sourceColumn: below_band
+
+		annotation SummarizationSetBy = User
+
+	column promotion_stalled
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f172e9e6-6429-529b-9666-1ebdc44bef9b
+		summarizeBy: none
+		sourceColumn: promotion_stalled
+
+		annotation SummarizationSetBy = User
+
+	column reason_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f27b42b1-a076-5dc1-8ac0-57c00f2223f2
+		summarizeBy: none
+		sourceColumn: reason_order
+
+		annotation SummarizationSetBy = User
+
+	partition fact_exit = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "fact_exit.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"employee_id", "interview_month", "department", "primary_reason", "would_return", "comment", "on_high_overtime", "below_band", "promotion_stalled"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"employee_id", type text}, {"interview_month", type date}, {"department", type text}, {"primary_reason", type text}, {"would_return", type text}, {"comment", type text}, {"on_high_overtime", Int64.Type}, {"below_band", Int64.Type}, {"promotion_stalled", Int64.Type}}, "en-US"),
+				    Ord_reason_order = Table.AddColumn(Typed, "reason_order", each if [primary_reason] = null then null else List.PositionOf({"Better opportunity", "Pay", "Career progression", "Workload / burnout", "Personal / relocation", "Role not as expected", "Manager relationship", "Flexibility / remote work", "Further study"}, [primary_reason]) + 1, Int64.Type)
+				in
+				    Ord_reason_order
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,135 @@
+table manager_hotspots
+	lineageTag: 53c880e9-e68a-57de-b2a1-47cf8b8e6040
+
+	column manager_id
+		dataType: string
+		isHidden
+		lineageTag: 60a5860b-7937-5e62-af7b-66dd20c9e942
+		summarizeBy: none
+		sourceColumn: manager_id
+
+		annotation SummarizationSetBy = User
+
+	column manager
+		dataType: string
+		lineageTag: 40c6946b-512a-5eeb-9a7d-af68506c091c
+		summarizeBy: none
+		sourceColumn: manager
+
+		annotation SummarizationSetBy = User
+
+	column department
+		dataType: string
+		isHidden
+		lineageTag: c66e8786-fb20-527c-a936-2f2d08c9a79e
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = User
+
+	column employment_status
+		dataType: string
+		isHidden
+		lineageTag: c12fad34-58cc-5c04-8f14-b8f48b19b1ef
+		summarizeBy: none
+		sourceColumn: employment_status
+
+		annotation SummarizationSetBy = User
+
+	column person_months
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: fedc7f87-11b0-5d8b-9979-4db9834d0837
+		summarizeBy: none
+		sourceColumn: person_months
+
+		annotation SummarizationSetBy = User
+
+	column resignations
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8bbcc578-7019-596e-97be-5ebf7c48ec57
+		summarizeBy: none
+		sourceColumn: resignations
+
+		annotation SummarizationSetBy = User
+
+	column expected
+		dataType: double
+		isHidden
+		lineageTag: a1cbb266-0160-51b5-9d24-f8b999b343d8
+		summarizeBy: none
+		sourceColumn: expected
+
+		annotation SummarizationSetBy = User
+
+	column ratio_shrunk
+		dataType: double
+		isHidden
+		lineageTag: f832ab82-39a3-56d4-bbac-0a40e2b923bf
+		summarizeBy: none
+		sourceColumn: ratio_shrunk
+
+		annotation SummarizationSetBy = User
+
+	column excess_resignations
+		dataType: double
+		isHidden
+		lineageTag: e949c799-f2bb-5896-9b19-877c5653406e
+		summarizeBy: none
+		sourceColumn: excess_resignations
+
+		annotation SummarizationSetBy = User
+
+	column manager_support
+		dataType: double
+		isHidden
+		lineageTag: 508f708e-c2db-5f72-adee-596ac40e0687
+		summarizeBy: none
+		sourceColumn: manager_support
+
+		annotation SummarizationSetBy = User
+
+	column hotspot
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 5b82dbbd-c315-5992-a04a-5cd4a5f6daa7
+		summarizeBy: none
+		sourceColumn: hotspot
+
+		annotation SummarizationSetBy = User
+
+	column status
+		dataType: string
+		lineageTag: afcf2138-50ef-59c6-8d26-ca8abaa313dc
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = User
+
+	column true_bad_manager
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 131f0945-f728-5ccb-af7c-1ebd11fc1ac0
+		summarizeBy: none
+		sourceColumn: true_bad_manager
+
+		annotation SummarizationSetBy = User
+
+	partition manager_hotspots = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "manager_hotspots.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"manager_id", "manager", "department", "employment_status", "person_months", "resignations", "expected", "ratio_shrunk", "excess_resignations", "manager_support", "hotspot", "status", "true_bad_manager"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"manager_id", type text}, {"manager", type text}, {"department", type text}, {"employment_status", type text}, {"person_months", Int64.Type}, {"resignations", Int64.Type}, {"expected", type number}, {"ratio_shrunk", type number}, {"excess_resignations", type number}, {"manager_support", type number}, {"hotspot", Int64.Type}, {"status", type text}, {"true_bad_manager", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

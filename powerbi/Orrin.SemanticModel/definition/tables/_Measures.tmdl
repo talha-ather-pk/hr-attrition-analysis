@@ -1,0 +1,901 @@
+table _Measures
+	lineageTag: fce487d6-1c9a-5c07-a7a0-a54bd9be121b
+
+	measure 'Person Months' = COUNTROWS ( fact_employee_month )
+		formatString: #,0
+		displayFolder: 1 Workforce
+		lineageTag: 7701fee1-32da-549c-b2d0-a01d0b975160
+
+	measure Months = DISTINCTCOUNT ( fact_employee_month[month_date] )
+		formatString: #,0
+		isHidden
+		displayFolder: 1 Workforce
+		lineageTag: a1e4934e-55dd-514e-98ae-0266dc031045
+
+	measure 'Avg Headcount' = DIVIDE ( [Person Months], [Months] )
+		formatString: #,0
+		displayFolder: 1 Workforce
+		lineageTag: 348969a8-c7be-53e5-9d06-fbdb2acf09e3
+
+	measure Headcount = VAR d = MAX ( fact_employee_month[month_date] ) RETURN CALCULATE ( COUNTROWS ( fact_employee_month ), fact_employee_month[month_date] = d )
+		formatString: #,0
+		displayFolder: 1 Workforce
+		lineageTag: 232bc1b6-5c4f-5890-bb83-4b0c8bfb2c8f
+
+	measure Hires = SUM ( fact_employee_month[is_hire] )
+		formatString: #,0
+		displayFolder: 1 Workforce
+		lineageTag: 879d7398-f3eb-5a9d-9ba4-91e1df06e8b6
+
+	measure Resignations = SUM ( fact_employee_month[resigned] )
+		formatString: #,0
+		displayFolder: 1 Workforce
+		lineageTag: e61c033f-60ea-5ea6-9438-8e60b00d5890
+
+	measure 'Voluntary Attrition' = DIVIDE ( [Resignations] * 12, [Person Months] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1 Workforce
+		lineageTag: f9ea8ecc-04b2-56a2-8779-a7ce7f1fb377
+
+	measure 'Resignation Rate' = DIVIDE ( [Resignations] * 12, SUM ( fact_employee_month[at_risk] ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1 Workforce
+		lineageTag: b01e2666-bf28-5813-8e0a-a511bb92516d
+
+	measure 'Resignation Rate L1-3' = CALCULATE ( [Resignation Rate], KEEPFILTERS ( fact_employee_month[level] <= 3 ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1 Workforce
+		lineageTag: 30e05adf-8bf7-50fd-9fd6-b469d98285f2
+
+	measure 'Resignation Rate Timed' = CALCULATE ( [Resignation Rate], KEEPFILTERS ( NOT ISBLANK ( fact_employee_month[overtime_band] ) ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1 Workforce
+		lineageTag: 02e6b7cd-6515-560e-98a1-3ff8a236653f
+
+	measure 'Involuntary Leavers' = SUM ( fact_employee_month[involuntary] )
+		formatString: #,0
+		displayFolder: 1 Workforce
+		lineageTag: 8923a640-e9b0-5b97-b6ad-2c73c6247861
+
+	measure Regrettable = SUM ( fact_employee_month[regrettable] )
+		formatString: #,0
+		displayFolder: 1 Workforce
+		lineageTag: ba9179da-d7d4-532c-bac2-9c618234de62
+
+	measure 'Regrettable Share' = DIVIDE ( [Regrettable], [Resignations] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1 Workforce
+		lineageTag: 0b6eae08-00ba-5c51-8d04-7409b074c10c
+
+	measure 'Resignation Cost' = SUM ( fact_employee_month[resignation_cost] )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 1 Workforce
+		lineageTag: c1bed6a8-cb7a-50b3-94a9-ac21a1f600da
+
+	measure 'Cost per Resignation' = DIVIDE ( [Resignation Cost], [Resignations] )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 1 Workforce
+		lineageTag: a5f6d3bb-b969-529f-b99d-8113ede2e9f0
+
+	measure 'Avg Salary' = AVERAGE ( fact_employee_month[annual_salary] )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 1 Workforce
+		lineageTag: 4958dc2b-bd3a-5db4-a842-3e2cc678a875
+
+	measure 'Avg Tenure' = DIVIDE ( AVERAGE ( fact_employee_month[tenure_months] ), 12 )
+		formatString: #,0.0
+		displayFolder: 1 Workforce
+		lineageTag: fbc48087-9726-5743-bbe2-a9bec78f7666
+
+	measure 'Overtime High %' = AVERAGE ( fact_employee_month[ot_high] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2 Drivers
+		lineageTag: 836053f2-fadc-5308-a00e-66e0c71428de
+
+	measure 'Below Band %' = AVERAGE ( fact_employee_month[below_band] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2 Drivers
+		lineageTag: e795b11a-2cae-538b-9450-375e35927e21
+
+	measure 'Stalled %' = CALCULATE ( AVERAGE ( fact_employee_month[promotion_stalled] ), KEEPFILTERS ( fact_employee_month[level] <= 3 ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2 Drivers
+		lineageTag: 7ebdbc49-4cb6-5f5c-b95f-b85ee5584889
+
+	measure 'Low Engagement %' = AVERAGE ( fact_employee_month[low_engagement] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2 Drivers
+		lineageTag: 4f7d1248-8bda-5899-86eb-e36f4c18a3db
+
+	measure 'Avg Overtime' = AVERAGE ( fact_employee_month[overtime_3m] )
+		formatString: #,0.0
+		displayFolder: 2 Drivers
+		lineageTag: bef295c4-7b55-5f3c-ae46-fa9dcab6e784
+
+	measure 'Avg Pay Position' = AVERAGE ( fact_employee_month[compa_ratio] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2 Drivers
+		lineageTag: fc66207b-e20a-5c87-9cf5-f7b53abe9dc7
+
+	measure 'Avg Engagement' = AVERAGE ( fact_employee_month[engagement] )
+		formatString: #,0.00
+		displayFolder: 2 Drivers
+		lineageTag: e674b562-9e63-5685-9a7b-6794af59189f
+
+	measure 'Absence Days' = DIVIDE ( SUM ( fact_employee_month[absence_days] ) * 12, [Person Months] )
+		formatString: #,0.0
+		displayFolder: 2 Drivers
+		lineageTag: 55c57c6c-57e9-5521-8e80-e8b563ab9bfc
+
+	measure 'OR Model' = MAX ( driver_odds[odds_ratio] )
+		formatString: 0.00"x"
+		displayFolder: 2 Drivers
+		lineageTag: 5feacb47-3cbf-54b3-a3b3-c25ef538fbc1
+
+	measure 'OR True' = MAX ( driver_odds[true_odds_ratio] )
+		formatString: 0.00"x"
+		displayFolder: 2 Drivers
+		lineageTag: bd1dbc56-d46b-5efb-9fd6-afc6cb93b372
+
+	measure 'OR Low' = MAX ( driver_odds[ci_low] )
+		formatString: 0.00"x"
+		displayFolder: 2 Drivers
+		lineageTag: 2d5e00aa-3e95-556c-a0de-a0c7b44748d3
+
+	measure 'OR High' = MAX ( driver_odds[ci_high] )
+		formatString: 0.00"x"
+		displayFolder: 2 Drivers
+		lineageTag: 310788c6-28b1-520c-9d83-33a92c5cac4f
+
+	measure 'OR Prevalence' = DIVIDE ( MAX ( driver_odds[prevalence_pct] ), 100 )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2 Drivers
+		lineageTag: 11b8e0ce-f086-5d67-b436-7bad49693e08
+
+	measure 'OR In CI' = IF ( HASONEVALUE ( driver_odds[label] ), SWITCH ( MAX ( driver_odds[truth_in_ci] ), "True", "✓", "False", "✗", "–" ) )
+		displayFolder: 2 Drivers
+		lineageTag: 083e195a-f8ac-575b-ad07-c0a2afc19e73
+
+	measure 'Caused Model' = SUM ( driver_attributable[attributable_resignations] )
+		formatString: #,0.0
+		displayFolder: 2 Drivers
+		lineageTag: 7cc943bd-188d-5796-b771-48bf4e8c30c4
+
+	measure 'Caused True' = SUM ( driver_attributable[true_attributable] )
+		formatString: #,0.0
+		displayFolder: 2 Drivers
+		lineageTag: 50d0e527-cde4-519c-83cb-c103d136e71c
+
+	measure 'Caused Share' = DIVIDE ( SUM ( driver_attributable[share_of_resignations_pct] ), 100 )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 2 Drivers
+		lineageTag: a5519131-dc4a-5480-9afd-ea049cc77a09
+
+	measure 'Truth In CI' = VAR t = FILTER ( driver_odds, NOT ISBLANK ( driver_odds[true_odds_ratio] ) ) RETURN COUNTROWS ( FILTER ( t, driver_odds[truth_in_ci] = "True" ) ) & " of " & COUNTROWS ( t )
+		displayFolder: 2 Drivers
+		lineageTag: 513a45c4-a217-5959-adb2-ad6d7c25d96d
+
+	measure 'Top Three Match' = VAR t3 = TOPN ( 3, driver_attributable, driver_attributable[attributable_resignations], DESC ) RETURN COUNTROWS ( FILTER ( t3, driver_attributable[true_rank] <= 3 ) ) & " of 3"
+		displayFolder: 2 Drivers
+		lineageTag: f5a72ffb-0ac9-5f00-8f29-1b6fb6544b7b
+
+	measure Budget = SUM ( fact_budget[budget_fte] )
+		formatString: #,0
+		displayFolder: 3 Workload
+		lineageTag: 0968bca0-b2d9-5f5c-9adc-404cddf7cd6d
+
+	measure 'Vacancy Rate' = AVERAGEX ( VALUES ( dim_month[month_date] ), VAR b = CALCULATE ( SUM ( fact_budget[budget_fte] ) ) VAR w = CALCULATE ( COUNTROWS ( fact_employee_month ) ) RETURN DIVIDE ( b - w, b ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3 Workload
+		lineageTag: 2b3f38c7-77ba-58e7-afa7-9f3ac729406c
+
+	measure 'Freeze Saved' = CALCULATE ( MAX ( findings[value] ), findings[key] = "freeze_saved" )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 3 Workload
+		lineageTag: 57c8ea00-4bb9-5b1b-a331-907f4050bfe9
+
+	measure 'Freeze Overtime' = CALCULATE ( MAX ( findings[value] ), findings[key] = "freeze_overtime" )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 3 Workload
+		lineageTag: 8a859ffe-25c5-5635-8129-dd599c281337
+
+	measure 'Freeze Resignation Cost' = CALCULATE ( MAX ( findings[value] ), findings[key] = "freeze_resignation_cost" )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 3 Workload
+		lineageTag: a3d371b1-1b03-54e6-ac3b-e20282a10cae
+
+	measure 'Freeze Net' = CALCULATE ( MAX ( findings[value] ), findings[key] = "freeze_net" )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 3 Workload
+		lineageTag: 235e4665-0ac2-5b21-9e58-ee463aed1c89
+
+	measure 'Exit Leavers' = COUNTROWS ( fact_exit )
+		formatString: #,0
+		displayFolder: 3 Workload
+		lineageTag: 597e0aab-238d-5b10-8a23-4f79e1e6f8fb
+
+	measure 'Exit Overtime %' = AVERAGE ( fact_exit[on_high_overtime] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3 Workload
+		lineageTag: cb664fd6-d5f0-5de6-a731-60c803917f2a
+
+	measure 'Exit Below Band %' = AVERAGE ( fact_exit[below_band] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3 Workload
+		lineageTag: 524c6366-56b6-5833-bb5b-f4501da47a5e
+
+	measure 'Exit Stalled %' = AVERAGE ( fact_exit[promotion_stalled] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3 Workload
+		lineageTag: 51423840-1e67-5181-9aad-1b586a332dc9
+
+	measure 'Exit Share' = DIVIDE ( [Exit Leavers], CALCULATE ( [Exit Leavers], ALLSELECTED ( fact_exit ) ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3 Workload
+		lineageTag: 5ade228c-7130-5191-a309-63067653e350
+
+	measure 'Managers Scored' = COUNTROWS ( manager_hotspots )
+		formatString: #,0
+		displayFolder: 4 Managers
+		lineageTag: 38169aeb-1100-5518-8e36-3fac8138fc88
+
+	measure 'Hot Spots' = CALCULATE ( COUNTROWS ( manager_hotspots ), KEEPFILTERS ( manager_hotspots[hotspot] = 1 ) )
+		formatString: #,0
+		displayFolder: 4 Managers
+		lineageTag: 53ad8b88-7778-58f9-8fd5-9af78ac61dc0
+
+	measure 'Team Resignations' = SUM ( manager_hotspots[resignations] )
+		formatString: #,0
+		displayFolder: 4 Managers
+		lineageTag: 00cee86d-2bf0-58fd-a20a-07bf02b94ffc
+
+	measure 'Team Expected' = SUM ( manager_hotspots[expected] )
+		formatString: #,0.0
+		displayFolder: 4 Managers
+		lineageTag: 15f09189-7f49-5423-9918-110a1d324fa2
+
+	measure 'Team Ratio' = DIVIDE ( [Team Resignations], [Team Expected] )
+		formatString: 0.00"x"
+		displayFolder: 4 Managers
+		lineageTag: 411d1e2a-e920-5db6-b99e-0d48906b56fb
+
+	measure 'Team Ratio Shrunk' = MAX ( manager_hotspots[ratio_shrunk] )
+		formatString: 0.00"x"
+		displayFolder: 4 Managers
+		lineageTag: 016261eb-81f2-52ed-b20f-39e826f76023
+
+	measure 'Team Excess' = SUM ( manager_hotspots[excess_resignations] )
+		formatString: #,0.0
+		displayFolder: 4 Managers
+		lineageTag: 52380f07-b34d-5bde-8175-e9f04bcb50c7
+
+	measure 'Team Support' = AVERAGE ( manager_hotspots[manager_support] )
+		formatString: #,0.00
+		displayFolder: 4 Managers
+		lineageTag: 8a556ed9-d703-5367-8435-009d64096563
+
+	measure 'Hot Spot Excess' = CALCULATE ( [Team Excess], KEEPFILTERS ( manager_hotspots[hotspot] = 1 ) )
+		formatString: #,0.0
+		displayFolder: 4 Managers
+		lineageTag: 0e2cb3f4-4e74-5732-acec-c24f16e77696
+
+	measure 'Hot Spot Support' = CALCULATE ( [Team Support], KEEPFILTERS ( manager_hotspots[hotspot] = 1 ) )
+		formatString: #,0.00
+		displayFolder: 4 Managers
+		lineageTag: cdbaed38-2383-5002-8f87-1176da133daf
+
+	measure 'Other Support' = CALCULATE ( [Team Support], KEEPFILTERS ( manager_hotspots[hotspot] = 0 ) )
+		formatString: #,0.00
+		displayFolder: 4 Managers
+		lineageTag: 41f58dd1-28bd-5b77-8464-705dced4549f
+
+	measure 'Hot Spot Precision' = CALCULATE ( MAX ( findings[value] ), findings[key] = "hotspot_precision" )
+		formatString: 0%
+		displayFolder: 4 Managers
+		lineageTag: 8be8f018-2f74-580f-82bc-b4e4cf0c2603
+
+	measure 'Hot Spot Recall' = CALCULATE ( MAX ( findings[value] ), findings[key] = "hotspot_recall" )
+		formatString: 0%
+		displayFolder: 4 Managers
+		lineageTag: 5f9b2d27-4ca1-5cdb-b61e-b43483d3a5cc
+
+	measure 'Hot Spot Confirmed' = CALCULATE ( COUNTROWS ( manager_hotspots ), KEEPFILTERS ( manager_hotspots[hotspot] = 1 ), KEEPFILTERS ( manager_hotspots[true_bad_manager] = 1 ) )
+		formatString: #,0
+		displayFolder: 4 Managers
+		lineageTag: 92a43b64-b8b6-50c9-836a-a40690fa05e3
+
+	measure 'Scored People' = COUNTROWS ( fact_risk )
+		formatString: #,0
+		displayFolder: 5 Flight risk
+		lineageTag: d0c5b8d1-edda-5c41-8458-7ec35fd60dd5
+
+	measure 'High Risk People' = CALCULATE ( COUNTROWS ( fact_risk ), KEEPFILTERS ( fact_risk[risk_band] = "High" ) )
+		formatString: #,0
+		displayFolder: 5 Flight risk
+		lineageTag: 66297a60-21a7-5357-be58-d80b4ee8ea07
+
+	measure 'Expected Leavers' = SUM ( fact_risk[risk_score] )
+		formatString: #,0
+		displayFolder: 5 Flight risk
+		lineageTag: 1abb8780-3381-51d2-949a-e3e89e48b896
+
+	measure 'High Risk Regrettable' = CALCULATE ( COUNTROWS ( fact_risk ), KEEPFILTERS ( fact_risk[risk_band] = "High" ), KEEPFILTERS ( fact_risk[last_rating] >= 4 ) )
+		formatString: #,0
+		displayFolder: 5 Flight risk
+		lineageTag: cb59d232-c08c-54e8-b60e-e270650e4dfb
+
+	measure 'Cost at Risk' = CALCULATE ( SUM ( fact_risk[cost_if_leaves] ), KEEPFILTERS ( fact_risk[risk_band] = "High" ) )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 5 Flight risk
+		lineageTag: b824a2db-141f-5120-9c4a-423ddf5d607e
+
+	measure 'Risk Score' = CALCULATE ( MAX ( fact_risk[risk_score] ), KEEPFILTERS ( fact_risk[risk_band] = "High" ) )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 5 Flight risk
+		lineageTag: 518e6268-8831-5492-b778-05a2a477a36a
+
+	measure 'Risk Score Any' = MAX ( fact_risk[risk_score] )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 5 Flight risk
+		lineageTag: 4701daf2-91bd-5b29-a296-d53cd96faa1e
+
+	measure 'Risk Reasons' = CALCULATE ( SELECTEDVALUE ( fact_risk[reasons] ), KEEPFILTERS ( fact_risk[risk_band] = "High" ) )
+		displayFolder: 5 Flight risk
+		lineageTag: abb5f289-4cac-597f-a7e5-48eb6be63006
+
+	measure 'Risk Department' = CALCULATE ( SELECTEDVALUE ( fact_risk[department] ), KEEPFILTERS ( fact_risk[risk_band] = "High" ) )
+		displayFolder: 5 Flight risk
+		lineageTag: e213584f-4fd5-5159-adda-e2526a764a56
+
+	measure 'Risk Title' = CALCULATE ( SELECTEDVALUE ( fact_risk[job_title] ), KEEPFILTERS ( fact_risk[risk_band] = "High" ) )
+		displayFolder: 5 Flight risk
+		lineageTag: 2c7baa78-5fe9-5455-8c37-08b6b0b007c8
+
+	measure 'Risk Cost' = CALCULATE ( SUM ( fact_risk[cost_if_leaves] ), KEEPFILTERS ( fact_risk[risk_band] = "High" ) )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 5 Flight risk
+		lineageTag: 0b545451-7d91-51b6-a994-5d9b932483fa
+
+	measure 'Risk Pay Position' = CALCULATE ( MAX ( fact_risk[compa_ratio] ), KEEPFILTERS ( fact_risk[risk_band] = "High" ) )
+		formatString: 0%
+		displayFolder: 5 Flight risk
+		lineageTag: ce8279ca-7257-53c9-82a9-6279300587e5
+
+	measure 'Risk Pay Position Any' = MAX ( fact_risk[compa_ratio] )
+		formatString: 0%
+		displayFolder: 5 Flight risk
+		lineageTag: bb4ea829-6023-5abd-be53-6c53c8216450
+
+	measure 'Risk Cost Any' = SUM ( fact_risk[cost_if_leaves] )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 5 Flight risk
+		lineageTag: d43c5dbc-f5fb-580e-94da-a36c24bc80fe
+
+	measure 'Decile Predicted' = DIVIDE ( MAX ( risk_deciles[predicted_pct] ), 100 )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 5 Flight risk
+		lineageTag: d72ea61b-fe03-536b-90fc-32bd2feaa2bd
+
+	measure 'Decile Actual' = DIVIDE ( MAX ( risk_deciles[actual_pct] ), 100 )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 5 Flight risk
+		lineageTag: cc6f029c-b2df-5f54-a0ad-f251322c5375
+
+	measure 'Model AUC' = CALCULATE ( MAX ( findings[value] ), findings[key] = "auc" )
+		formatString: 0.000
+		displayFolder: 5 Flight risk
+		lineageTag: ce38326f-f3c1-5fb2-83c8-5ec814fa35ee
+
+	measure 'Ceiling AUC' = CALCULATE ( MAX ( findings[value] ), findings[key] = "auc_ceiling" )
+		formatString: 0.000
+		displayFolder: 5 Flight risk
+		lineageTag: 2fb5adf4-9f67-5527-85c7-e0f6ae39228e
+
+	measure 'Top Decile Capture' = CALCULATE ( MAX ( findings[value] ), findings[key] = "top_decile_capture" )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 5 Flight risk
+		lineageTag: 891f4ad9-3981-5dfe-8707-cd6c88025c8d
+
+	measure 'Ceiling Capture' = CALCULATE ( MAX ( findings[value] ), findings[key] = "top_decile_capture_ceiling" )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 5 Flight risk
+		lineageTag: 48a15ed4-f948-5348-a1b9-dd00e61c93f3
+
+	measure 'Top Decile Precision' = CALCULATE ( MAX ( findings[value] ), findings[key] = "top_decile_precision" )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 5 Flight risk
+		lineageTag: 19f6ef6b-9858-593b-abf3-69c06e5a331f
+
+	measure 'Base Rate' = CALCULATE ( MAX ( findings[value] ), findings[key] = "base_rate" )
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 5 Flight risk
+		lineageTag: afda0628-13cc-5a72-bfa7-3492958ad8cd
+
+	measure 'Scenario Net' = SUM ( scenarios[net_annual_benefit] )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 6 Business case
+		lineageTag: 8bacb6da-1217-5cd7-bee4-4a7938f548c1
+
+	measure 'Scenario Benefit' = SUM ( scenarios[annual_benefit] )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 6 Business case
+		lineageTag: 00c3126c-ddb8-59a8-a42d-b34a52a47275
+
+	measure 'Scenario Cost' = SUM ( scenarios[annual_cost] )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 6 Business case
+		lineageTag: a32417ad-a79e-5b44-8968-22bf2b828edb
+
+	measure 'Scenario Avoided' = SUM ( scenarios[avoided_resignations] )
+		formatString: #,0.0
+		displayFolder: 6 Business case
+		lineageTag: 2a1d87cd-0f9e-5471-892e-741d573e30ce
+
+	measure 'Scenario ROI' = DIVIDE ( MAX ( scenarios[roi_pct] ), 100 )
+		formatString: 0%
+		displayFolder: 6 Business case
+		lineageTag: 13542878-3392-56a6-9083-14d9222dbd59
+
+	measure 'Package Cost' = CALCULATE ( MAX ( findings[value] ), findings[key] = "package_cost" )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 6 Business case
+		lineageTag: 015e75f8-88bf-5f03-9f21-40d1a9ee3954
+
+	measure 'Package Avoided' = CALCULATE ( MAX ( findings[value] ), findings[key] = "package_avoided" )
+		formatString: #,0
+		displayFolder: 6 Business case
+		lineageTag: 07e6c666-de2c-5145-b721-f71a3491261c
+
+	measure 'Package Net' = CALCULATE ( MAX ( findings[value] ), findings[key] = "package_net" )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 6 Business case
+		lineageTag: 90d60fcd-1106-5447-ad84-0c743467e4a8
+
+	measure 'Cost Share' = MAX ( cost_assumptions[cost_share_of_salary] )
+		formatString: 0%
+		displayFolder: 6 Business case
+		lineageTag: a3af566e-3d6c-5580-87f8-3cf77189472f
+
+	measure 'Recruitment Share' = DIVIDE ( MAX ( cost_assumptions[recruitment_pct] ), 100 )
+		formatString: 0%
+		displayFolder: 6 Business case
+		lineageTag: acc7ec88-9643-579b-8b18-fa67a23dd6a9
+
+	measure 'Vacancy Months' = MAX ( cost_assumptions[vacancy_months] )
+		formatString: #,0.0
+		displayFolder: 6 Business case
+		lineageTag: a4956a05-6a68-526b-b71a-3526607205a5
+
+	measure 'Ramp Months' = MAX ( cost_assumptions[ramp_months] )
+		formatString: 0
+		displayFolder: 6 Business case
+		lineageTag: 373293be-f842-512a-a197-76cb1e72f67e
+
+	measure 'Team Time Share' = DIVIDE ( MAX ( cost_assumptions[team_time_pct] ), 100 )
+		formatString: 0%
+		displayFolder: 6 Business case
+		lineageTag: 02723258-4b58-52a6-9f8c-79301f9aa875
+
+	measure 'DQ Rows' = SUM ( dq_log[rows_affected] )
+		formatString: #,0
+		displayFolder: 7 Data quality
+		lineageTag: 0487829c-bd09-5680-a5c8-f8851cd53392
+
+	measure 'DQ Injected' = SUM ( dq_log[injected] )
+		formatString: #,0
+		displayFolder: 7 Data quality
+		lineageTag: 1afee443-3848-575c-82c5-c10d39f399e6
+
+	measure 'DQ Match' = IF ( ISBLANK ( [DQ Injected] ), BLANK (), IF ( [DQ Rows] = [DQ Injected], "✓", "✗" ) )
+		displayFolder: 7 Data quality
+		lineageTag: c84c6e08-3bb6-508e-980c-54eaf39eafc9
+
+	measure Fixes = CALCULATE ( [DQ Rows], NOT ISBLANK ( dq_log[injected] ) )
+		formatString: #,0
+		displayFolder: 7 Data quality
+		lineageTag: 65938e8a-1b22-52f0-b80a-d2ae5447d27c
+
+	measure 'Rows Removed' = CALCULATE ( [Fixes], dq_log[issue] IN { "Exact duplicate rows (event posted twice)", "Test / sandbox records" } )
+		formatString: #,0
+		displayFolder: 7 Data quality
+		lineageTag: b6ad093c-587f-50e0-bccf-a14eb9b92889
+
+	measure 'Field Fixes' = CALCULATE ( [Fixes], NOT dq_log[issue] IN { "Exact duplicate rows (event posted twice)", "Test / sandbox records" } )
+		formatString: #,0
+		displayFolder: 7 Data quality
+		lineageTag: b42fd8e4-61e9-5c83-82d0-3a053fc6fe04
+
+	measure 'Records Received' = CALCULATE ( [DQ Rows], dq_log[table_name] = "employees", dq_log[issue] = "Rows received" )
+		formatString: #,0
+		displayFolder: 7 Data quality
+		lineageTag: d202fb06-fcbd-59fc-913c-7c1c10c7bb50
+
+	measure 'Person Months Built' = CALCULATE ( [DQ Rows], dq_log[issue] = "Person-months built from effective-dated history" )
+		formatString: #,0
+		displayFolder: 7 Data quality
+		lineageTag: 1ee698ff-6145-5ccd-9740-4bf50fe80753
+
+	measure 'Rehires Linked' = CALCULATE ( [DQ Rows], dq_log[issue] = "Rehired under a new id (same name + date of birth)" )
+		formatString: #,0
+		displayFolder: 7 Data quality
+		lineageTag: cf9b2e98-6187-528e-94e6-69fbfc8a7783
+
+	measure 'Checks Matched' = VAR t = FILTER ( dq_log, NOT ISBLANK ( dq_log[injected] ) ) RETURN COUNTROWS ( FILTER ( t, dq_log[rows_affected] = dq_log[injected] ) ) & " of " & COUNTROWS ( t ) & " fixes = injected count"
+		displayFolder: 7 Data quality
+		lineageTag: a1210aff-c297-5b3c-9daf-a821809862e5
+
+	measure 'Emp Salary' = VAR d = MAX ( fact_employee_month[month_date] ) RETURN CALCULATE ( MAX ( fact_employee_month[annual_salary] ), fact_employee_month[month_date] = d )
+		formatString: £#,0;-£#,0;£#,0
+		displayFolder: 8 Employee
+		lineageTag: d1cf0bf7-2125-50e3-ab64-cc3a1885a8d6
+
+	measure 'Emp Pay Position' = VAR d = MAX ( fact_employee_month[month_date] ) RETURN CALCULATE ( MAX ( fact_employee_month[compa_ratio] ), fact_employee_month[month_date] = d )
+		formatString: 0%
+		displayFolder: 8 Employee
+		lineageTag: caf60b2b-4500-57fd-b2ee-d39e93e2de96
+
+	measure 'Emp Overtime' = VAR d = MAX ( fact_employee_month[month_date] ) RETURN CALCULATE ( MAX ( fact_employee_month[overtime_3m] ), fact_employee_month[month_date] = d )
+		formatString: #,0.0
+		displayFolder: 8 Employee
+		lineageTag: 17e06692-f352-5259-8b37-0f3a6a45ac8e
+
+	measure 'Emp Months Since Promotion' = VAR d = MAX ( fact_employee_month[month_date] ) RETURN CALCULATE ( MAX ( fact_employee_month[months_since_promotion] ), fact_employee_month[month_date] = d )
+		formatString: #,0
+		displayFolder: 8 Employee
+		lineageTag: 91c098f5-5326-5d3e-8e94-db5c172a72d6
+
+	measure 'Emp Tenure' = VAR d = MAX ( fact_employee_month[month_date] ) RETURN CALCULATE ( DIVIDE ( MAX ( fact_employee_month[tenure_months] ), 12 ), fact_employee_month[month_date] = d )
+		formatString: #,0.0
+		displayFolder: 8 Employee
+		lineageTag: 472c86f3-3718-541b-8ef5-034bedc22565
+
+	measure 'Emp Rating' = VAR d = MAX ( fact_employee_month[month_date] ) RETURN CALCULATE ( MAX ( fact_employee_month[last_rating] ), fact_employee_month[month_date] = d )
+		formatString: 0
+		displayFolder: 8 Employee
+		lineageTag: 107292a5-1ea2-52a5-8396-4e9fa8ec0c6d
+
+	measure 'Emp Engagement' = VAR d = MAX ( fact_employee_month[month_date] ) RETURN CALCULATE ( MAX ( fact_employee_month[engagement] ), fact_employee_month[month_date] = d )
+		formatString: #,0.0
+		displayFolder: 8 Employee
+		lineageTag: 598409d2-f403-5132-8974-3c1e9da090ae
+
+	measure 'Pay Position' = AVERAGE ( fact_employee_month[compa_ratio] )
+		formatString: 0%
+		displayFolder: 8 Employee
+		lineageTag: 55b343d2-4994-5983-8f95-dce05d8fa630
+
+	measure 'Overtime Hours' = AVERAGE ( fact_employee_month[overtime_hours] )
+		formatString: #,0.0
+		displayFolder: 8 Employee
+		lineageTag: cd4ec794-6971-5c71-bdf2-7bac18865bda
+
+	measure Events = COUNTROWS ( fact_event )
+		formatString: #,0
+		displayFolder: 8 Employee
+		lineageTag: a7210c88-4710-5224-a030-0fcbf0b81683
+
+	measure 'Filter Context' = IF ( ISFILTERED ( dim_month[year] ), CONCATENATEX ( VALUES ( dim_month[year] ), dim_month[year], ", ", dim_month[year], ASC ), "Jan 2023 – Dec 2025" ) & "   ·   " & IF ( ISFILTERED ( dim_department[department] ), CONCATENATEX ( VALUES ( dim_department[department] ), dim_department[department], ", ", dim_department[department], ASC ), "All departments" ) & "   ·   " & IF ( ISFILTERED ( dim_location[location] ), CONCATENATEX ( VALUES ( dim_location[location] ), dim_location[location], ", ", dim_location[location], ASC ), "All locations" )
+		displayFolder: 9 Dynamic text
+		lineageTag: 88218b6c-07e5-5014-bcb2-8d73e1be424c
+
+	measure 'Blank Text' = ""
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 083b96e2-4625-5f04-a57d-ba17ba3f933c
+
+	measure 'Title Employee' = SELECTEDVALUE ( dim_employee[name] ) & "  ·  " & SELECTEDVALUE ( dim_employee[job_title] ) & "  ·  " & SELECTEDVALUE ( dim_employee[department] )
+		displayFolder: 9 Dynamic text
+		lineageTag: 6b4f82e2-c7eb-5846-8157-9600cd568aaa
+
+	measure 'Title Tip Employee' = SELECTEDVALUE ( dim_employee[name] ) & " · " & SELECTEDVALUE ( dim_employee[job_title] )
+		displayFolder: 9 Dynamic text
+		lineageTag: ea08ac78-0faa-5f5d-9abd-bd2ce8af9ed4
+
+	measure 'Employee Status' = VAR s = SELECTEDVALUE ( dim_employee[employment_status] ) RETURN IF ( s = "Terminated", "Left " & FORMAT ( SELECTEDVALUE ( dim_employee[termination_date] ), "d mmm yyyy" ) & " · " & SELECTEDVALUE ( dim_employee[termination_type] ), "Employed · hired " & FORMAT ( SELECTEDVALUE ( dim_employee[hire_date] ), "d mmm yyyy" ) & " · manager " & SELECTEDVALUE ( dim_employee[manager] ) )
+		displayFolder: 9 Dynamic text
+		lineageTag: 24fce9e2-b126-55b0-8b6c-ae73abde63fe
+
+	measure 'Employee Reasons' = VAR r = MAX ( fact_risk[reasons] ) RETURN IF ( ISBLANK ( r ), "Not scored (left before Dec 2025)", "Flight risk " & FORMAT ( MAX ( fact_risk[risk_score] ), "0%" ) & " (" & MAX ( fact_risk[risk_band] ) & ") · " & r )
+		displayFolder: 9 Dynamic text
+		lineageTag: d3134a26-5558-570f-bf96-d2e4cd0faf23
+
+	measure 'Note Headcount' = "Average " & FORMAT ( [Avg Headcount], "#,0" ) & " · " & FORMAT ( [Hires], "#,0" ) & " hires"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 449b9736-6adc-52bd-852e-4e10fda47b54
+
+	measure 'Note Regrettable' = FORMAT ( [Regrettable], "#,0" ) & " leavers rated 4-5"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 697249d6-5776-5a8e-8ab4-6a7bc276315c
+
+	measure 'Note Cost' = FORMAT ( [Cost per Resignation], "£#,0" ) & " per resignation"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 777990d3-7bb6-5855-977a-7eb03b22d5cc
+
+	measure 'Note Involuntary' = "Dismissals and redundancies, excluded"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 73932e88-3ccb-5888-83bc-ba9c42ac137b
+
+	measure 'Note Below Band' = "Odds of resigning x" & FORMAT ( CALCULATE ( [OR Model], driver_odds[term] = "below_band" ), "0.00" )
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 5b18ae01-38ca-5108-b79c-61708b714ca3
+
+	measure 'Note Overtime' = "Odds of resigning x" & FORMAT ( CALCULATE ( [OR Model], driver_odds[term] = "overtime_high" ), "0.00" )
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: b680467e-842b-599f-80b3-bbfafadacfe2
+
+	measure 'Note Stalled' = "Odds of resigning x" & FORMAT ( CALCULATE ( [OR Model], driver_odds[term] = "promotion_stalled" ), "0.00" )
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 535a3dc4-36e2-50f2-a109-351ddebd37c1
+
+	measure 'Note Truth' = "True odds ratio inside the 95% interval"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 441f9b1c-cf48-53be-b1ff-c17da7edda8d
+
+	measure 'Note Top Three' = "Same top three as the generator's truth"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: cf47a3cb-adf5-59d7-8a02-e21070c19a4c
+
+	measure 'Note Vacancy' = "Approved headcount not filled"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: d3fbed26-30d5-55ac-b57b-4cee2ae70a8c
+
+	measure 'Note Freeze Saved' = "Salaries not paid, Jan-Dec 2025"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: ee4823ad-8dd3-5aee-80a0-4b50c85c9b7f
+
+	measure 'Note Freeze OT' = "Extra overtime at 1.25 x hourly rate"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 80283908-27b8-53bf-a155-c1478880e241
+
+	measure 'Note Freeze Res' = "Resignations caused by the extra overtime"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 0186949f-3328-5a86-a3a4-3d3c4c9f0584
+
+	measure 'Note Freeze Net' = "Saved − overtime − resignations"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: c52aeb44-f137-5608-8f4f-ab851aac1523
+
+	measure 'Note Managers' = "Teams with 60+ person-months"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 2153672b-d658-56e2-abd6-8a01766ed825
+
+	measure 'Note Hot Spots' = "Resign 1.6 x+ what the model expects"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 81de97d9-5ca8-5904-a337-595504159a5c
+
+	measure 'Note Excess' = "Resignations above expected, 2023-25"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: c125a10f-0453-58f2-bf30-49b6c22755fe
+
+	measure 'Note Precision' = FORMAT ( [Hot Spot Confirmed], "0" ) & " of " & FORMAT ( [Hot Spots], "0" ) & " are truly poor managers"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 8155eba7-7c78-592c-879d-0653aade54d2
+
+	measure 'Note Support' = "Survey score vs " & FORMAT ( [Other Support], "0.00" ) & " elsewhere"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 54aedb17-d22d-599a-bebb-cee7bfe1ea5a
+
+	measure 'Note High Risk' = "Top 10% of scores · of " & FORMAT ( [Scored People], "#,0" ) & " scored"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 98ff6c84-4637-5079-a230-f234fd28304f
+
+	measure 'Note Expected' = "Sum of 12-month probabilities"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: b3c7da7e-0ec1-5427-9e9d-ced8c1d2d5c2
+
+	measure 'Note Regret Risk' = "High risk and rated 4-5"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: e6bfefec-e0c0-5431-845c-f2f4ee7c4df6
+
+	measure 'Note Cost Risk' = "Replacement cost of the High band"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 92486f39-b976-5f28-bffa-227563e0cd45
+
+	measure 'Note Capture' = "Ceiling " & FORMAT ( [Ceiling Capture], "0%" ) & " with the true formula"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: c7025c63-97b2-5fbb-a3ef-3cf4e1a88f37
+
+	measure 'Note CPR' = "Recruitment, vacancy, ramp-up, team time"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 5b663551-abbc-5008-8c55-29ebbca891c7
+
+	measure 'Note Package Cost' = "Pay correction, coaching, hiring"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 15e2efce-f706-51c3-98cb-0e5a8c4351e5
+
+	measure 'Note Package Avoided' = "Resignations avoided a year"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 3ca36e09-c016-5e01-87d0-b0e138d5e5f8
+
+	measure 'Note Package Net' = "Benefit minus cost, a year"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: f63f2e93-f097-5568-ae04-0c348a8a977d
+
+	measure 'Note Records' = "HRIS employee export"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 889ea648-2241-52b3-956e-d3cafb943783
+
+	measure 'Note Removed' = "Test records, double-posted events"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 74ceb354-7d49-5519-8e8e-2f7ae7df5b9b
+
+	measure 'Note Fixes' = "Departments, dates, pay, gender, ids"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 16dae954-a10e-5528-8d47-efe175fb7276
+
+	measure 'Note Built' = "One row per person per month"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 82ad4196-ec29-5040-8110-1d646d947995
+
+	measure 'Note Checks' = [Checks Matched]
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 7c478929-037d-53c0-8c9a-8d959d2e238d
+
+	measure 'Note Emp Salary' = "Pay position " & FORMAT ( [Emp Pay Position], "0%" ) & " of band midpoint"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: edebc6ea-111a-5413-87de-df35d8ee9af1
+
+	measure 'Note Emp Overtime' = "3-month average, hours a month"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: dbc7e987-5c1e-5647-a6c7-cc0cad7ccb38
+
+	measure 'Note Emp Promo' = "Months since last promotion or hire"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: aeac783d-2ce6-595f-910f-21f92f7eb5dd
+
+	measure 'Note Emp Tenure' = "Last rating " & FORMAT ( [Emp Rating], "0" )
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 94c43d30-df32-561b-95ef-0d3d876e7d12
+
+	measure 'Note Emp Engagement' = "Last survey answer (1-5)"
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 52e2957d-bfc5-5e3a-8a2a-5b58b9b25f6a
+
+	measure 'Attrition Color' = VAR v = [Resignation Rate] RETURN IF ( v >= 0.2, "#C8364B", IF ( v >= 0.16, "#E8A33D", "#3B2F80" ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: bb68cc6a-7871-5d51-9bd5-d514583b9082
+
+	measure 'Net Color' = IF ( [Scenario Net] >= 0, "#2E9E7A", "#C8364B" )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: d8e9bbc2-fabb-5384-967f-0f9414ecbb19
+
+	measure 'Hot Spot Color' = IF ( MAX ( manager_hotspots[hotspot] ) = 1, "#F2795B", "#B9B3D9" )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: cacfca8b-622e-514d-9a80-5ec822c62d3e
+
+	measure 'Ratio Color' = VAR v = [Team Ratio Shrunk] RETURN IF ( v >= 1.6, "#C8364B", IF ( v >= 1.2, "#E8A33D", "#1F1B33" ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: 02263f5f-fff7-5dd4-934a-c150f2d79688
+
+	measure 'Risk Color' = VAR v = [Risk Score Any] RETURN IF ( v >= 0.45, "#C8364B", IF ( v >= 0.35, "#F2795B", "#E8A33D" ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: f3b9980b-ca93-5810-8550-0a961598539a
+
+	measure 'Match Color' = IF ( [DQ Match] = "✓", "#2E9E7A", "#C8364B" )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: 8031780e-6be5-5d90-9c35-c8e975922fe8
+
+	measure 'CI Color' = IF ( [OR In CI] = "✓", "#2E9E7A", "#C8364B" )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: eae2e568-dffe-516d-acc3-2d7fd0c8bfe5
+
+	measure 'Fix Color' = IF ( SELECTEDVALUE ( dq_log[issue] ) IN { "Exact duplicate rows (event posted twice)", "Test / sandbox records" }, "#C8364B", "#E8A33D" )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: b5e6883b-bf11-50f8-b5db-902e20e1b161
+
+	measure 'Heat Attrition' = VAR v = [Voluntary Attrition] RETURN IF ( ISBLANK ( v ), BLANK (), IF ( v >= 0.2, "#F7D9DD", IF ( v >= 0.16, "#FBEBD3", "#E3F2EC" ) ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: 8a1828f2-30d3-5508-832c-7dc25b2baa77
+
+	measure 'Heat Share' = VAR v = [Overtime High %] RETURN IF ( ISBLANK ( v ), BLANK (), IF ( v >= 0.15, "#F7D9DD", IF ( v >= 0.08, "#FBEBD3", "#FFFFFF" ) ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: 41e59f0e-45a1-513e-a92e-c9bdfb60dc7f
+
+	measure 'Heat Band' = VAR v = [Below Band %] RETURN IF ( ISBLANK ( v ), BLANK (), IF ( v >= 0.25, "#F7D9DD", IF ( v >= 0.18, "#FBEBD3", "#FFFFFF" ) ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: a7610adb-67b7-5e60-9ce0-d06c7dc5763e
+
+	measure 'RAG Attrition' = VAR v = [Voluntary Attrition] RETURN IF ( ISBLANK ( v ), BLANK (), "●  " & IF ( v <= 0.12, "On target · ≤ 12%", IF ( v <= 0.15, "Watch · target ≤ 12%", "Off target · ≤ 12%" ) ) )
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: df844403-aed7-54b0-8c4d-94f17242135d
+
+	measure 'RAG Attrition Color' = VAR v = [Voluntary Attrition] RETURN IF ( v <= 0.12, "#2E9E7A", IF ( v <= 0.15, "#E8A33D", "#C8364B" ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: 171e7e29-c8b6-51bf-8dc7-a26d2adb6807
+
+	measure 'RAG Regret' = VAR v = [Regrettable Share] RETURN IF ( ISBLANK ( v ), BLANK (), "●  " & IF ( v <= 0.15, "On target · ≤ 15%", IF ( v <= 0.25, "Watch · target ≤ 15%", "Off target · ≤ 15%" ) ) )
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: d5d18162-1de3-5c02-81ef-bddae07c5d50
+
+	measure 'RAG Regret Color' = VAR v = [Regrettable Share] RETURN IF ( v <= 0.15, "#2E9E7A", IF ( v <= 0.25, "#E8A33D", "#C8364B" ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: 68999df8-f89c-50d8-bc9c-b118fa0888b7
+
+	measure 'RAG Overtime' = VAR v = [Overtime High %] RETURN IF ( ISBLANK ( v ), BLANK (), "●  " & IF ( v <= 0.05, "On target · ≤ 5%", IF ( v <= 0.10, "Watch · target ≤ 5%", "Off target · ≤ 5%" ) ) )
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: 67a5a4e5-4fcf-502e-a962-c79926ce9f91
+
+	measure 'RAG Overtime Color' = VAR v = [Overtime High %] RETURN IF ( v <= 0.05, "#2E9E7A", IF ( v <= 0.10, "#E8A33D", "#C8364B" ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: 785812fd-0e4c-51df-82f3-1e540b748c82
+
+	measure 'RAG Vacancy' = VAR v = [Vacancy Rate] RETURN IF ( ISBLANK ( v ), BLANK (), "●  " & IF ( v <= 0.02, "On target · ≤ 2%", IF ( v <= 0.04, "Watch · target ≤ 2%", "Off target · ≤ 2%" ) ) )
+		isHidden
+		displayFolder: 9 Helpers
+		lineageTag: ce050742-09db-5471-a2d8-e677e35ce447
+
+	measure 'RAG Vacancy Color' = VAR v = [Vacancy Rate] RETURN IF ( v <= 0.02, "#2E9E7A", IF ( v <= 0.04, "#E8A33D", "#C8364B" ) )
+		isHidden
+		displayFolder: 10 Formatting
+		lineageTag: 3289cce4-c95a-5924-80e3-fc2d5e3ccd14
+
+	column Value
+		dataType: string
+		isHidden
+		lineageTag: 08f8e5e6-7e2c-5153-930c-a29eab7a2bb4
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				#table(type table [Value = text], {})
+
+	annotation PBI_ResultType = Table

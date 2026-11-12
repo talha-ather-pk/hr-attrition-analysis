@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Orrin"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0bd6b7e4-816b-5a03-bcfd-a2c9befd487a"
+  }
+}

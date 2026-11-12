@@ -1,0 +1,117 @@
+table driver_odds
+	lineageTag: 0003b6cc-8820-50ee-a1a6-c5f9bfc90326
+
+	column term
+		dataType: string
+		isHidden
+		lineageTag: 453f5492-bee1-580a-a714-56a4e21513a3
+		summarizeBy: none
+		sourceColumn: term
+
+		annotation SummarizationSetBy = User
+
+	column label
+		dataType: string
+		sortByColumn: order
+		lineageTag: f3daaa53-f72a-5466-bee5-41a79e3ec82e
+		summarizeBy: none
+		sourceColumn: label
+
+		annotation SummarizationSetBy = User
+
+	column driver
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 79c96c55-7ebc-546f-994d-9b359bb70a48
+		summarizeBy: none
+		sourceColumn: driver
+
+		annotation SummarizationSetBy = User
+
+	column prevalence_pct
+		dataType: double
+		isHidden
+		lineageTag: a05b90bc-0fc5-59ef-9e81-1e164032495b
+		summarizeBy: none
+		sourceColumn: prevalence_pct
+
+		annotation SummarizationSetBy = User
+
+	column odds_ratio
+		dataType: double
+		isHidden
+		lineageTag: e5e61d2a-ab03-58e3-b823-ebb3bfc66c00
+		summarizeBy: none
+		sourceColumn: odds_ratio
+
+		annotation SummarizationSetBy = User
+
+	column ci_low
+		dataType: double
+		isHidden
+		lineageTag: 41689de5-2b23-5bd7-86b9-7b48df5fbe56
+		summarizeBy: none
+		sourceColumn: ci_low
+
+		annotation SummarizationSetBy = User
+
+	column ci_high
+		dataType: double
+		isHidden
+		lineageTag: 537a7ccf-9980-5739-b063-57a371cd2021
+		summarizeBy: none
+		sourceColumn: ci_high
+
+		annotation SummarizationSetBy = User
+
+	column p_value
+		dataType: double
+		isHidden
+		lineageTag: 40c38e37-4e8d-5894-bbb2-e0964f756d57
+		summarizeBy: none
+		sourceColumn: p_value
+
+		annotation SummarizationSetBy = User
+
+	column true_odds_ratio
+		dataType: double
+		isHidden
+		lineageTag: 781234b3-ed2e-5081-9cec-320a05cd715b
+		summarizeBy: none
+		sourceColumn: true_odds_ratio
+
+		annotation SummarizationSetBy = User
+
+	column truth_in_ci
+		dataType: string
+		isHidden
+		lineageTag: fb3f7398-1eb0-5c91-8f6d-b6e91af55f41
+		summarizeBy: none
+		sourceColumn: truth_in_ci
+
+		annotation SummarizationSetBy = User
+
+	column order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6c688af8-066b-510f-b9f5-ee2b5106f511
+		summarizeBy: none
+		sourceColumn: order
+
+		annotation SummarizationSetBy = User
+
+	partition driver_odds = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "driver_odds.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"term", "label", "driver", "prevalence_pct", "odds_ratio", "ci_low", "ci_high", "p_value", "true_odds_ratio", "truth_in_ci", "order"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"term", type text}, {"label", type text}, {"driver", Int64.Type}, {"prevalence_pct", type number}, {"odds_ratio", type number}, {"ci_low", type number}, {"ci_high", type number}, {"p_value", type number}, {"true_odds_ratio", type number}, {"truth_in_ci", type text}, {"order", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,14 @@
+term,label,driver,prevalence_pct,odds_ratio,ci_low,ci_high,p_value,true_odds_ratio,truth_in_ci
+overtime_high,Overtime > 20 h a month (3-month average),1,11.0,2.21,1.91,2.55,1.6522723216763767e-27,2.41,True
+below_band,Paid under 90 % of band midpoint,1,21.1,2.14,1.88,2.43,2.021006415836742e-31,1.9,True
+promotion_stalled,3+ years without promotion (levels 1-3),1,26.4,1.75,1.53,2.0,1.572553880907838e-16,1.6,True
+low_engagement,Last survey engagement under 2.9,1,13.1,1.07,0.92,1.25,0.39117913692610684,1.6,False
+rto_mandate,Moved remote to hybrid (Sep 2024 mandate),1,4.9,1.77,1.44,2.19,9.424180357985335e-08,1.7,True
+first_year,First year in the job,1,19.4,1.68,1.44,1.97,7.028495632995699e-11,1.51,True
+survey_silent,Has not answered the survey for 6+ months,0,7.3,1.13,0.92,1.38,0.25534735820559584,,
+long_tenure,8+ years tenure,0,10.7,0.75,0.61,0.91,0.003514102207688273,0.74,True
+age_under_30,Under 30,0,15.5,1.29,1.11,1.49,0.0007653386477277333,1.22,True
+age_55_plus,55 and over,0,0.8,1.11,0.55,2.27,0.770346306529618,0.67,True
+manager_level,Line manager (level 4),0,9.0,0.64,0.49,0.85,0.0016261880856605244,0.78,True
+rating_1_2,Last rating 1-2,0,14.7,1.19,1.03,1.38,0.020363402816975625,1.16,True
+rating_5,Last rating 5,0,7.7,0.88,0.69,1.12,0.28499474009043413,0.9,True

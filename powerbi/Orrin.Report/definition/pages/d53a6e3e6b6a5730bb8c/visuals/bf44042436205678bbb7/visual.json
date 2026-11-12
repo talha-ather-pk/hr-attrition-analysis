@@ -1,0 +1,288 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "bf44042436205678bbb7",
+  "position": {
+    "x": 506,
+    "y": 473,
+    "z": 6600,
+    "height": 231,
+    "width": 550,
+    "tabOrder": 6600
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "cost_assumptions"
+                    }
+                  },
+                  "Property": "level_name"
+                }
+              },
+              "queryRef": "cost_assumptions.level_name",
+              "nativeQueryRef": "level_name",
+              "displayName": "Level"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Recruitment Share"
+                }
+              },
+              "queryRef": "_Measures.Recruitment Share",
+              "nativeQueryRef": "Recruitment Share",
+              "displayName": "Recruitment"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Vacancy Months"
+                }
+              },
+              "queryRef": "_Measures.Vacancy Months",
+              "nativeQueryRef": "Vacancy Months",
+              "displayName": "Months empty"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Ramp Months"
+                }
+              },
+              "queryRef": "_Measures.Ramp Months",
+              "nativeQueryRef": "Ramp Months",
+              "displayName": "Ramp-up months"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Team Time Share"
+                }
+              },
+              "queryRef": "_Measures.Team Time Share",
+              "nativeQueryRef": "Team Time Share",
+              "displayName": "Team time"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Cost Share"
+                }
+              },
+              "queryRef": "_Measures.Cost Share",
+              "nativeQueryRef": "Cost Share",
+              "displayName": "Cost of one resignation"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "cost_assumptions"
+                  }
+                },
+                "Property": "level_name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "115.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "cost_assumptions.level_name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "79.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Recruitment Share"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "75.5D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Vacancy Months"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "75.5D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Ramp Months"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "79.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Team Time Share"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "79.9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Cost Share"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'What one resignation costs, as a share of salary'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Vacancy cover and lost ramp-up output at 50% of pay · editable in the Excel template'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

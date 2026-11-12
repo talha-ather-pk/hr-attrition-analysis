@@ -1,0 +1,108 @@
+table driver_attributable
+	lineageTag: f52f66af-ca3a-5b4b-96d0-5c5ad75b0da6
+
+	column driver
+		dataType: string
+		isHidden
+		lineageTag: cc8fee9d-9482-55e0-a9b3-889bcfd5dd17
+		summarizeBy: none
+		sourceColumn: driver
+
+		annotation SummarizationSetBy = User
+
+	column label
+		dataType: string
+		sortByColumn: rank
+		lineageTag: 9c8bd704-e1e0-5b6e-b51d-70f2f845ba94
+		summarizeBy: none
+		sourceColumn: label
+
+		annotation SummarizationSetBy = User
+
+	column attributable_resignations
+		dataType: double
+		isHidden
+		lineageTag: 5ec83b6b-ebfc-5fdc-95ba-8169f2d037f4
+		summarizeBy: none
+		sourceColumn: attributable_resignations
+
+		annotation SummarizationSetBy = User
+
+	column share_of_resignations_pct
+		dataType: double
+		isHidden
+		lineageTag: c7933bf1-f3f9-5993-a153-561c32b2a3a4
+		summarizeBy: none
+		sourceColumn: share_of_resignations_pct
+
+		annotation SummarizationSetBy = User
+
+	column true_attributable
+		dataType: double
+		isHidden
+		lineageTag: f75555ec-ae4c-57c3-8578-79b7ce98e7e7
+		summarizeBy: none
+		sourceColumn: true_attributable
+
+		annotation SummarizationSetBy = User
+
+	column att_2023
+		dataType: double
+		isHidden
+		lineageTag: 3d5c171e-33e5-5122-8d8f-cee144733a6c
+		summarizeBy: none
+		sourceColumn: att_2023
+
+		annotation SummarizationSetBy = User
+
+	column att_2024
+		dataType: double
+		isHidden
+		lineageTag: 615b05dd-ce01-5aff-bdf2-514ea62e8a56
+		summarizeBy: none
+		sourceColumn: att_2024
+
+		annotation SummarizationSetBy = User
+
+	column att_2025
+		dataType: double
+		isHidden
+		lineageTag: 3d1ea646-3b3f-54a9-bfd2-e85bed9f52d3
+		summarizeBy: none
+		sourceColumn: att_2025
+
+		annotation SummarizationSetBy = User
+
+	column rank
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e199fd06-b2d7-54c4-adff-c4aaa195ee52
+		summarizeBy: none
+		sourceColumn: rank
+
+		annotation SummarizationSetBy = User
+
+	column true_rank
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d3ea4cf7-51f3-54ff-9f0b-fb0940c0b735
+		summarizeBy: none
+		sourceColumn: true_rank
+
+		annotation SummarizationSetBy = User
+
+	partition driver_attributable = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "driver_attributable.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"driver", "label", "attributable_resignations", "share_of_resignations_pct", "true_attributable", "att_2023", "att_2024", "att_2025", "rank", "true_rank"}),
+				    Blanks = Table.TransformColumns(Kept, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"driver", type text}, {"label", type text}, {"attributable_resignations", type number}, {"share_of_resignations_pct", type number}, {"true_attributable", type number}, {"att_2023", type number}, {"att_2024", type number}, {"att_2025", type number}, {"rank", Int64.Type}, {"true_rank", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
