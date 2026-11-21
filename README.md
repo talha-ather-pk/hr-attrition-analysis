@@ -7,7 +7,7 @@ Product & Design, Delivery, Customer Support, Sales & Marketing and Corporate Se
 Belfast and remote. One in five people resigned in 2025. The people team wants to know **what attrition really costs,
 what is driving it, who is likely to leave next, and which fix pays back**.
 
-**Summary page:** [`site/index.html`](site/index.html)
+**Live summary page:** https://hr-attrition-analysis-beryl.vercel.app (source in [`site/index.html`](site/index.html))
 
 **Hire me:** [Upwork profile](https://www.upwork.com/freelancers/~01da74f8f9f4611503) · Talha Ather, data analyst and ACCA student
 
